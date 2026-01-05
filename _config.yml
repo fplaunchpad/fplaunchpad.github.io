@@ -1,0 +1,22 @@
+title: FP Launchpad
+description: A Centre for Functional Systems Research and Education at IIT Madras
+baseurl: ""
+url: "https://fplaunchpad.org"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+
+# Social links (optional - add as needed)
+# github_username: prismlab
+# twitter_username:
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
