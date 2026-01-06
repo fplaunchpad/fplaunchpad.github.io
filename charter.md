@@ -26,7 +26,7 @@ The fellows then engage in long-horizon research on functional systems, with an 
 
 - An open-source, verifiable voting system for general elections, built on top of [Shakti](https://shakti.org.in/) RISC-V processor, [MirageOS](https://mirage.io/) unikernels and O(x)Caml.
 - A programmable public infrastructure for environmental planning, combining [TESSERA](https://github.com/ucam-eo/geotessera)'s satellite-derived representations with [CoRE Stack](https://core-stack.org/) data and compositional functional models in O(x)Caml to support auditable indicators and scenario analysis for India's water and habitat systems.
-- High-assurance digital public infrastructure (DPI) for high-risk domains such as welfare delivery, financial transactions, legal and regulatory processes, identity and consent management, and taxation, with a formally specified O(x)Caml core and large language models used at the edges for authoring, adaptation, and interaction at population scale.
+- A formally verified runtime system for O(x)Caml in O(x)Caml extending the [Gospel](https://github.com/ocaml-gospel/gospel) specification language to support verification of functional correctness properties.
 
 ## Impact
 
