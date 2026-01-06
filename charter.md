@@ -26,7 +26,7 @@ The fellows then engage in long-horizon research on functional systems, with an 
 
 - An open-source, verifiable voting system for general elections, built on top of [Shakti](https://shakti.org.in/) RISC-V processor, [MirageOS](https://mirage.io/) unikernels and O(x)Caml.
 - A programmable public infrastructure for environmental planning, combining [TESSERA](https://github.com/ucam-eo/geotessera)'s satellite-derived representations with [CoRE Stack](https://core-stack.org/) data and compositional functional models in O(x)Caml to support auditable indicators and scenario analysis for India's water and habitat systems.
-- A formally verified runtime system for O(x)Caml in O(x)Caml extending the [Gospel](https://github.com/ocaml-gospel/gospel) specification language to support verification of functional correctness properties.
+- A formally verified runtime system for O(x)Caml in O(x)Caml, to verify memory safety and functional correctness properties. The focus will also include tools for debugging and observability, such as eBPF-based tracing, continuous runtime contract checking, and deterministic record and replay to support root-cause analysis in production deployments.
 
 ## Impact
 
