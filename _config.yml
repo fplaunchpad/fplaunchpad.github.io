@@ -6,6 +6,8 @@ logo: /assets/images/logo-400.png
 
 # Build settings
 markdown: kramdown
+kramdown:
+  auto_ids: true
 theme: minima
 
 # Navigation

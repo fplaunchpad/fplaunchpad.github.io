@@ -1,0 +1,32 @@
+---
+---
+
+@import "minima";
+
+/* Anchor links for headings */
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+}
+
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  opacity: 1;
+}
+
+.anchor-link {
+  position: absolute;
+  left: -1.2em;
+  opacity: 0;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  color: #828282;
+  font-weight: normal;
+}
+
+.anchor-link:hover {
+  color: #2a7ae2;
+}

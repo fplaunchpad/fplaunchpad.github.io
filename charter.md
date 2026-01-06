@@ -20,13 +20,13 @@ FP Launchpad pursues the following objectives across three aligned areas:
 
 FP Launchpad's activities are organised as a tightly coupled loop that links education and training, long-horizon research, and open systems building. The loop begins by developing early-career systems researchers through **post-baccalaureate research fellowships** that provide the time and mentorship needed to do impactful work, complemented by graduate- and undergraduate-level courses, intensive summer and winter schools, and Dagstuhl-style research seminars. To broaden access to systems education across India and serve as pathways into research and advanced systems work, the centre will offer MOOC courses on the well-established [NPTEL](https://nptel.ac.in/) platform. The centre also has funding earmarked for short-term visiting positions at partner institutions, enabling fellows to collaborate and immerse themselves in active systems-building environments.
 
-The fellows then engage in long-horizon research on functional systems, with an emphasis on building, evaluating, and maintaining real systems rather than isolated prototypes. Research hypotheses are explored through the design and deployment of impactful open-source systems in collaboration with the broader systems community in India, as well as through the establishment of international collaborations.
+The fellows then engage in long-horizon research on functional systems, with an emphasis on building, evaluating, and maintaining real systems rather than isolated prototypes. Research hypotheses are explored through the design and deployment of impactful open-source systems in collaboration with the broader systems community in India and elsewhere.
 
 ## Illustrative Projects
 
 - An open-source, verifiable voting system for general elections, built on top of [Shakti](https://shakti.org.in/) RISC-V processor, [MirageOS](https://mirage.io/) unikernels and O(x)Caml.
 - A programmable public infrastructure for environmental planning, combining [TESSERA](https://github.com/ucam-eo/geotessera)'s satellite-derived representations with [CoRE Stack](https://core-stack.org/) data and compositional functional models in O(x)Caml to support auditable indicators and scenario analysis for India's water and habitat systems.
-- A formally verified runtime system for O(x)Caml in O(x)Caml, to verify memory safety and functional correctness properties. The focus will also include formal verification of tools for debugging and observability, such as eBPF-based tracing, continuous runtime contract checking, and deterministic record and replay.
+- A formally verified runtime system for O(x)Caml in O(x)Caml guaranteeing memory safety and functional correctness properties. The focus will also include formal verification of tools for debugging and observability, such as eBPF-based tracing, continuous runtime contract checking, and deterministic record and replay.
 
 ## Impact
 
