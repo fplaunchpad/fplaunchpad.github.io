@@ -4,7 +4,7 @@ title: Charter
 permalink: /charter/
 ---
 
-FP Launchpad is a newly established centre at [IIT Madras](https://www.iitm.ac.in/) that aims to build long-term research and educational capacity in functional programming, bringing together principled programming languages and systems research, open artefacts, and the training of future researchers and engineers. The centre has been established with generous support from [Jane Street](https://www.janestreet.com/), with a commitment of INR 23.5 crore (approximately USD 2.5 million). The focus is on the [OCaml](https://ocaml.org/) programming language and its ecosystem, as well as [OxCaml](https://oxcaml.org/), a rapidly evolving set of extensions to OCaml that aims to bridge the gap between performance and correctness.
+FP Launchpad is a centre at [IIT Madras](https://www.iitm.ac.in/), founded in January 2026, that aims to build long-term research and educational capacity in functional programming, bringing together principled programming languages and systems research, open artefacts, and the training of future researchers and engineers. The centre has been established with generous support from [Jane Street](https://www.janestreet.com/), with a commitment of INR 23.5 crore (approximately USD 2.5 million). The focus is on the [OCaml](https://ocaml.org/) programming language and its ecosystem, as well as [OxCaml](https://oxcaml.org/), a rapidly evolving set of extensions to OCaml that aims to bridge the gap between performance and correctness.
 
 ## Three Pillars
 
