@@ -23,5 +23,6 @@ The Functional Programming (FP) Launchpad at [IIT Madras](https://www.iitm.ac.in
 
 * [Shriram Krishnamurthi](https://www.cs.brown.edu/~sk/), Professor, Brown University
 * [Suresh Jagannathan](https://www.cs.purdue.edu/homes/suresh/), Professor, Purdue University
+* [Ranjit Jhala](https://www.cs.ucsd.edu/~ranjit/), Professor, University of California, San Diego
 * [Anil Madhavapeddy](https://anil.recoil.org/), Professor, University of Cambridge
 * [Sriram Rajamani](https://research.microsoft.com/en-us/people/sriramr/), Corporate Vice President, Microsoft Research
