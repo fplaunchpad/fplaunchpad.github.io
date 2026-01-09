@@ -26,4 +26,5 @@ The Functional Programming (FP) Launchpad at [IIT Madras](https://www.iitm.ac.in
 * [Shriram Krishnamurthi](https://www.cs.brown.edu/~sk/), Professor, Brown University
 * [Anil Madhavapeddy](https://anil.recoil.org/), Professor, University of Cambridge
 * [Sriram Rajamani](https://research.microsoft.com/en-us/people/sriramr/), Corporate Vice President, Microsoft Research
+* [Satnam Singh](https://satnam6502.github.io/bio/), Software Engineer, [Harmonic](https://harmonic.fun/)
 * [Nik Swamy](https://www.microsoft.com/en-us/research/people/nswamy/), Senior Principal Researcher, Microsoft Research
