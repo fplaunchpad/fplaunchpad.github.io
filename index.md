@@ -21,6 +21,7 @@ The Functional Programming (FP) Launchpad at [IIT Madras](https://www.iitm.ac.in
 
 ### Advisory Board
 
+* [Chris Casinghino](https://tyconmismatch.com/), Software Engineer, Jane Street
 * [Suresh Jagannathan](https://www.cs.purdue.edu/homes/suresh/), Professor, Purdue University
 * [Ranjit Jhala](https://www.cs.ucsd.edu/~ranjit/), Professor, University of California, San Diego
 * [Shriram Krishnamurthi](https://www.cs.brown.edu/~sk/), Professor, Brown University
