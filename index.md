@@ -23,9 +23,9 @@ The Functional Programming (FP) Launchpad at [IIT Madras](https://www.iitm.ac.in
 
 * [Chris Casinghino](https://tyconmismatch.com/), Software Engineer, Jane Street
 * [Suresh Jagannathan](https://www.cs.purdue.edu/homes/suresh/), Professor, Purdue University
-* [Ranjit Jhala](https://www.cs.ucsd.edu/~ranjit/), Professor, University of California, San Diego
+* [Ranjit Jhala](https://ranjitjhala.github.io/), Professor, University of California, San Diego
 * [Shriram Krishnamurthi](https://www.cs.brown.edu/~sk/), Professor, Brown University
 * [Anil Madhavapeddy](https://anil.recoil.org/), Professor, University of Cambridge
-* [Sriram Rajamani](https://research.microsoft.com/en-us/people/sriramr/), Corporate Vice President, Microsoft Research
+* [Sriram Rajamani](https://www.microsoft.com/en-us/research/people/sriram/), Corporate Vice President, Microsoft Research
 * [Satnam Singh](https://satnam6502.github.io/bio/), Software Engineer, [Harmonic](https://harmonic.fun/)
 * [Nik Swamy](https://www.microsoft.com/en-us/research/people/nswamy/), Senior Principal Researcher, Microsoft Research
