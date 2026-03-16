@@ -1,0 +1,168 @@
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<style>
+.tag-filters { margin-bottom: 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tag-btn {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #828282;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #828282;
+}
+.tag-btn.is-active {
+  background: #2a7ae2;
+  border-color: #2a7ae2;
+  color: white;
+}
+.research-theme { margin-bottom: 3rem; }
+.theme-tags { margin-bottom: 0.5rem; }
+.theme-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: monospace;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.3rem;
+}
+.pub-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #2a7ae2;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.pub-toggle:hover { text-decoration: underline; }
+</style>
+
+<div x-data="{ active: 'all' }">
+
+  <div class="tag-filters">
+    <button class="tag-btn" :class="{ 'is-active': active === 'all' }" @click="active = 'all'">All</button>
+    <button class="tag-btn" :class="{ 'is-active': active === 'OCaml' }" @click="active = 'OCaml'">OCaml</button>
+    <button class="tag-btn" :class="{ 'is-active': active === 'PLT' }" @click="active = 'PLT'">PLT</button>
+    <button class="tag-btn" :class="{ 'is-active': active === 'Systems' }" @click="active = 'Systems'">Systems</button>
+  </div>
+
+  <div class="research-theme" x-data="{ open: false }" x-show="active === 'all' || active === 'PLT' || active === 'OCaml'">
+    <h2>Effect Handlers &amp; Language Design</h2>
+    <div class="theme-tags">
+      <span class="theme-tag">PLT</span>
+      <span class="theme-tag">OCaml</span>
+    </div>
+    <p>Algebraic effect handlers offer a principled, composable abstraction for programming with side effects, unifying exceptions, async I/O, and coroutines under a single framework. This line of work spans foundational theory, compilation strategies, and practical integration into OCaml and WebAssembly.</p>
+    <p style="font-size:0.9rem;">Related open source work: <a href="/opensource/#ocaml-5-multicore--algebraic-effects">OCaml 5: Multicore &amp; Algebraic Effects</a></p>
+    <button class="pub-toggle" @click="open = !open" x-text="open ? '▲ Hide publications' : '▼ Show publications'"></button>
+    <ul x-show="open">
+      <li>Continuing WebAssembly with Effect Handlers — Luna Phipps-Costin et al. <em>(OOPSLA 2023)</em></li>
+      <li>Eio 1.0 – Effects-based IO for OCaml 5 — Thomas Leonard et al. <em>(OCaml Workshop 2023)</em></li>
+      <li>Composing Schedulers using Effect Handlers — Deepali Ande, KC Sivaramakrishnan <em>(OCaml Workshop 2022)</em></li>
+      <li>Retrofitting Effect Handlers to OCaml — KC Sivaramakrishnan et al. <em>(PLDI 2021)</em></li>
+      <li>Experiences with Effects — Thomas Leonard et al. <em>(OCaml Workshop 2021)</em></li>
+      <li>Concurrent System Programming with Effect Handlers — Stephen Dolan et al. <em>(TFP 2017)</em></li>
+      <li>Continuation Passing Style for Effect Handlers — Daniel Hillerström et al. <em>(FSCD 2017)</em></li>
+      <li>Eff Directly in OCaml — Oleg Kiselyov, KC Sivaramakrishnan <em>(ML Workshop 2016)</em></li>
+      <li>Compiling Links Effect Handlers to the OCaml Backend — Daniel Hillerström et al. <em>(ML Workshop 2016)</em></li>
+      <li>Effectively Tackling the Awkward Squad — Stephen Dolan et al. <em>(ML Workshop 2017)</em></li>
+      <li>Effective Concurrency with Algebraic Effects — Stephen Dolan et al. <em>(OCaml Workshop 2015)</em></li>
+      <li>Effectively Composing Concurrency Libraries — Deepali Ande et al. <em>(Working Draft 2023)</em></li>
+    </ul>
+  </div>
+
+  <div class="research-theme" x-data="{ open: false }" x-show="active === 'all' || active === 'OCaml' || active === 'Systems'">
+    <h2>Concurrency &amp; Parallelism</h2>
+    <div class="theme-tags">
+      <span class="theme-tag">OCaml</span>
+      <span class="theme-tag">Systems</span>
+    </div>
+    <p>Building the theory and infrastructure for safe, scalable concurrent and parallel programming. The flagship contribution is Multicore OCaml, which introduced parallel domains and effect handlers into OCaml 5, alongside work on scheduling, lock-free data structures, and testing tools for concurrent programs.</p>
+    <p style="font-size:0.9rem;">Related open source work: <a href="/opensource/#ocaml-5-multicore--algebraic-effects">OCaml 5: Multicore &amp; Algebraic Effects</a>, <a href="/opensource/#multicore-runtimes--performance">Multicore Runtimes &amp; Performance</a></p>
+    <button class="pub-toggle" @click="open = !open" x-text="open ? '▲ Hide publications' : '▼ Show publications'"></button>
+    <ul x-show="open">
+      <li>Retrofitting Parallelism onto OCaml — KC Sivaramakrishnan et al. <em>(ICFP 2020, Distinguished Paper)</em></li>
+      <li>Parallelising your OCaml Code with Multicore OCaml — Sadiq Jaffer et al. <em>(OCaml Workshop 2020)</em></li>
+      <li>Adapting the OCaml Ecosystem for Multicore OCaml — Sudha Parimala et al. <em>(OCaml Workshop 2021)</em></li>
+      <li>Parafuzz: Coverage-guided Property Fuzzing for Multicore OCaml — Sumit Padhiyar et al. <em>(OCaml Workshop 2021)</em></li>
+      <li>Building a Lock-free STM for OCaml — Vesa Karvonen et al. <em>(OCaml Workshop 2023)</em></li>
+      <li>Lock-free Programming for the Masses — KC Sivaramakrishnan, Théo Laurent <em>(OCaml Workshop 2016)</em></li>
+      <li>ConFuzz: Coverage-guided Property Fuzzing for Event-driven Programs — Sumit Padhiyar, KC Sivaramakrishnan <em>(PADL 2023, Distinguished Paper)</em></li>
+      <li>Composable Scheduler Activations for Haskell — KC Sivaramakrishnan et al. <em>(JFP 2016)</em></li>
+      <li>MultiMLton: A Multicore-aware Runtime for Standard ML — KC Sivaramakrishnan et al. <em>(JFP 2014)</em></li>
+      <li>Rx-CML: A Prescription for Safely Relaxing Synchrony — KC Sivaramakrishnan et al. <em>(PADL 2014)</em></li>
+      <li>Composable Asynchronous Events — Lukasz Ziarek et al. <em>(PLDI 2011)</em></li>
+      <li>Migrating MultiMLton to the Cloud — KC Sivaramakrishnan et al. <em>(ML Workshop 2013)</em></li>
+      <li>Scalable Lightweight Task Management Schemes for MIMD Processors — Daniel Waddington et al. <em>(SFMA 2011)</em></li>
+      <li>Featherweight Threads for Communication — KC Sivaramakrishnan et al. <em>(Purdue TR 2011)</em></li>
+      <li>Design Rationale for MultiMLton — Suresh Jagannathan et al. <em>(ML Workshop 2010)</em></li>
+      <li>Lightweight Asynchrony using Parasitic Threads — KC Sivaramakrishnan et al. <em>(DAMP 2010)</em></li>
+      <li>Partial Memoization of Concurrency and Communication — Lukasz Ziarek et al. <em>(ICFP 2009)</em></li>
+    </ul>
+  </div>
+
+  <div class="research-theme" x-data="{ open: false }" x-show="active === 'all' || active === 'Systems'">
+    <h2>Distributed Systems &amp; Consistency</h2>
+    <div class="theme-tags">
+      <span class="theme-tag">Systems</span>
+    </div>
+    <p>Programming language approaches to the challenges of distributed consistency, including mergeable replicated data types, coordination-free transactions, and declarative models for eventually consistent stores. This work shows how functional abstractions can tame the complexity of weak consistency.</p>
+    <p style="font-size:0.9rem;">Related open source work: <a href="/opensource/#distributed--eventually-consistent-systems">Distributed &amp; Eventually Consistent Systems</a></p>
+    <button class="pub-toggle" @click="open = !open" x-text="open ? '▲ Hide publications' : '▼ Show publications'"></button>
+    <ul x-show="open">
+      <li>Sal: Multi-modal Verification of Replicated Data Types — Pranav Ramesh et al. <em>(Working Draft 2026)</em></li>
+      <li>Automatically Verifying Replication-aware Linearizability — Vimala Soundarapandian et al. <em>(OOPSLA 2025)</em></li>
+      <li>Certified Mergeable Replicated Datatypes — Vimala Soundarapandian et al. <em>(PLDI 2022)</em></li>
+      <li>Marrying Replicated and Functional Data Structures — Vimala Soundarapandian et al. <em>(PaPoC 2022)</em></li>
+      <li>Certified Mergeable Replicated Data Types — Vimala Soundarapandian et al. <em>(PaPoC 2021)</em></li>
+      <li>Banyan: Coordination-free Distributed Transactions over Mergeable Types — Shashank Dubey et al. <em>(APLAS 2020)</em></li>
+      <li>Mergeable Replicated Data Types — Gowtham Kaki et al. <em>(OOPSLA 2019)</em></li>
+      <li>Version Control Is For Your Data Too — Gowtham Kaki et al. <em>(SNAPL 2019)</em></li>
+      <li>Safe Replication through Bounded Concurrency Verification — Gowtham Kaki et al. <em>(OOPSLA 2018)</em></li>
+      <li>An Architecture for Interspatial Communication — Anil Madhavapeddy et al. <em>(HotPOST 2018)</em></li>
+      <li>DaLi: Database as a Library — Gowtham Kaki et al. <em>(SNAPL 2017)</em></li>
+      <li>Mergeable Types — Gowtham Kaki et al. <em>(ML Workshop 2017)</em></li>
+      <li>Representation without Taxation — KC Sivaramakrishnan et al. <em>(IEEE Data Engineering Bulletin 2016, Invited)</em></li>
+      <li>Declarative Programming over Eventually Consistent Data Stores — KC Sivaramakrishnan et al. <em>(PLDI 2015)</em></li>
+      <li>Functional Programming Abstractions for Weakly Consistent Systems — KC Sivaramakrishnan <em>(PhD Dissertation, Purdue 2014)</em></li>
+    </ul>
+  </div>
+
+  <div class="research-theme" x-data="{ open: false }" x-show="active === 'all' || active === 'OCaml' || active === 'Systems'">
+    <h2>Memory Management &amp; Runtime Systems</h2>
+    <div class="theme-tags">
+      <span class="theme-tag">OCaml</span>
+      <span class="theme-tag">Systems</span>
+    </div>
+    <p>Designing and verifying the runtime substrate of functional languages, from garbage collectors to memory models. This work includes a mechanically verified GC for OCaml and techniques for reducing runtime overheads in concurrent settings.</p>
+    <p style="font-size:0.9rem;">Related open source work: <a href="/opensource/#multicore-runtimes--performance">Multicore Runtimes &amp; Performance</a></p>
+    <button class="pub-toggle" @click="open = !open" x-text="open ? '▲ Hide publications' : '▼ Show publications'"></button>
+    <ul x-show="open">
+      <li>A Mechanically Verified Garbage Collector for OCaml — Sheera Shamsu et al. <em>(Journal of Automated Reasoning 2025)</em></li>
+      <li>A Mechanically Verified Garbage Collector for OCaml — Sheera Shamsu et al. <em>(OCaml Workshop 2025)</em></li>
+      <li>Bounding Data Races in Space and Time — Stephen Dolan et al. <em>(PLDI 2018)</em></li>
+      <li>A Memory Model for Multicore OCaml — Stephen Dolan, KC Sivaramakrishnan <em>(OCaml Workshop 2017)</em></li>
+      <li>A Coherent and Managed Runtime for ML on the SCC — KC Sivaramakrishnan et al. <em>(MARC 2012, Best Paper)</em></li>
+      <li>Eliminating Read Barriers through Procrastination and Cleanliness — KC Sivaramakrishnan et al. <em>(ISMM 2012)</em></li>
+    </ul>
+  </div>
+
+  <div class="research-theme" x-data="{ open: false }" x-show="active === 'all' || active === 'PLT'">
+    <h2>Formal Verification &amp; Safety</h2>
+    <div class="theme-tags">
+      <span class="theme-tag">PLT</span>
+    </div>
+    <p>Applying formal methods to verify correctness and security properties of systems. This includes session types for safe distributed interaction, mechanised proofs for critical infrastructure, and compartmentalisation for mixed-language security.</p>
+    <button class="pub-toggle" @click="open = !open" x-text="open ? '▲ Hide publications' : '▼ Show publications'"></button>
+    <ul x-show="open">
+      <li>FIDES: End-to-end Compartments for Mixed-language Systems — Sai Venkata Krishnan et al. <em>(AsiaCCS 2026)</em></li>
+      <li>TallyGuard: Privacy Preserving Tallied-as-cast Guarantee — Athish Pranav Dharmalingam et al. <em>(Working Draft 2025)</em></li>
+      <li>Efficient Sessions — KC Sivaramakrishnan et al. <em>(Science of Computer Programming 2014)</em></li>
+      <li>Efficient Session Type Guided Distributed Interaction — KC Sivaramakrishnan et al. <em>(COORDINATION 2010, Distinguished Paper)</em></li>
+    </ul>
+  </div>
+
+</div>
