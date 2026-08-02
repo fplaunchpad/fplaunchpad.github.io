@@ -14,6 +14,9 @@ members:
   - name: Harisankar Binod
     site: https://methaphur.github.io/blogs/
     feed: https://methaphur.github.io/blogs/index.xml
+  - name: Alina Banerjee
+    site: https://blue-indus.in
+    feed: https://blue-indus.in/rss.xml
 
 friends:
   - name: Anil Madhavapeddy
