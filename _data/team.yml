@@ -3,7 +3,7 @@
     - name: KC Sivaramakrishnan
       photo: https://kcsrk.info/assets/profile.jpeg
       website: https://kcsrk.info
-      designation: Head of FP Launchpad · Assistant Professor, CSE IIT Madras · CTO, Tarides
+      designation: Head, FP Launchpad · Asst. Professor, CSE IIT Madras · CTO, Tarides
       bio: Builds robust, secure, and scalable systems using PL technology; led the development of Multicore OCaml, now OCaml 5.
 
 - role: Research Staff
@@ -19,14 +19,25 @@
       designation: Research Staff
       bio: Performance evaluation, benchmarking, and eBPF-based tooling for OCaml runtime analysis.
 
-- role: PhD Students
-  members:
     - name: Vimala Soundarapandian
       photo: https://avatars.githubusercontent.com/u/59866854?v=4
       website: https://sites.google.com/view/vimala90/
-      designation: "PhD student (2020–), CSE IIT Madras · Prime Minister's Research Fellow"
+      designation: Research Staff, FP Launchpad
       bio: Formal verification of distributed systems; certified mergeable replicated data types; replication-aware linearizability.
 
+    - name: Akhil Tulluri
+      photo: /assets/images/person-placeholder.svg
+      designation: Project Staff, FP Launchpad · Northeastern University
+      bio: ""
+
+    - name: Kartik Nagar
+      photo: https://kartiknagar.github.io/authors/admin/avatar_hu5e211fc92955e0d7ae0916788998d721_97472_250x250_fill_q90_lanczos_center.jpg
+      website: https://kartiknagar.github.io/
+      designation: Faculty, FP Launchpad · Asst. Professor, CSE IIT Madras
+      bio: ""
+
+- role: PhD Students
+  members:
     - name: Nitish Yadav
       photo: https://yadavnitishyn.github.io/NitishYadavWebpage/images/IMG_0625.jpeg
       website: https://yadavnitishyn.github.io/NitishYadavWebpage/
@@ -47,7 +58,7 @@
     - name: Sai Venkata Krishnan
       photo: https://cystar.iitm.ac.in/wp-content/uploads/2024/11/inner_SaiVenkata.webp
       website: https://saivk.github.io/
-      designation: "PhD student (2021–), CSE IIT Madras · Prime Minister's Research Fellow"
+      designation: "PhD student (2021–), CSE IIT Madras · PMRF"
       bio: Memory and control-flow security; secure-by-default unikernels for IoT; hardware-software co-designed memory safety and compartmentalization.
 
 - role: MS Students
@@ -64,19 +75,18 @@
 
 - role: MTech Students
   members:
-    - name: Sagar Biswas
-      photo: https://mrsagarbiswas.dpdns.org/Sagar_Biswas.jpeg
-      website: https://mrsagarbiswas.dpdns.org/
-      designation: MTech student (2024–2026), CSE IIT Madras
-      bio: High-performance computing, distributed systems, GPU acceleration (CUDA), multicore GC for OCaml.
-
-    - name: Surendar
+    - name: Prakhand Patel
       photo: /assets/images/person-placeholder.svg
-      designation: MTech student, CSE IIT Madras
-      bio: "Garbage collection for OCaml's effect handlers and continuation/fiber stack management."
+      designation: MTech student (2025–), CSE IIT Madras
+      bio: ""
 
 - role: BTech Students
   members:
+    - name: Nandha Gopi Krishna N
+      photo: /assets/images/person-placeholder.svg
+      designation: BTech student (UGRC, 2026), CSE IIT Madras
+      bio: ""
+
     - name: Pranav Ramesh
       photo: /assets/images/person-placeholder.svg
       designation: BTech student (BTP, Spring 2026), CSE IIT Madras
@@ -86,6 +96,11 @@
       photo: /assets/images/aadi-srivastava.jpg
       designation: BTech student (UGRC, Spring 2026), CSE IIT Madras
       bio: Integrating the MMTk memory management toolkit with the OCaml runtime.
+
+    - name: S Naveen
+      photo: /assets/images/person-placeholder.svg
+      designation: BTech student, IIIT Manipur
+      bio: ""
 
     - name: Md. Isfarul Haque
       photo: /assets/images/person-placeholder.svg
@@ -97,5 +112,70 @@
   members:
     - name: Sanjay Karanth
       photo: /assets/images/sanjay-karanth.jpeg
-      designation: Technical Program Manager
+      designation: Technical Program Manager, FP Launchpad
       bio: ""
+
+- role: Post-Baccalaureate Fellows
+  members:
+    - name: Pragyansh Chaturvedi
+      photo: /assets/images/person-placeholder.svg
+      website: https://people.ubuntu.com/~r41k0u/portfolio/
+      designation: Post-Baccalaureate Fellow, FP Launchpad · IIT Roorkee (Jun 2026 – Mar 2027)
+      bio: ""
+
+    - name: Avik Shakhari
+      photo: /assets/images/person-placeholder.svg
+      designation: Post-Baccalaureate Fellow, FP Launchpad · CMI
+      bio: ""
+
+    - name: Smayan Agarwal
+      photo: /assets/images/person-placeholder.svg
+      designation: Post-Baccalaureate Fellow, FP Launchpad · Ashoka University
+      bio: ""
+
+    - name: Dhruv Piyush Rambhia
+      photo: /assets/images/person-placeholder.svg
+      designation: Post-Baccalaureate Fellow, FP Launchpad · IIT Bombay (Jul 2026 – Mar 2027)
+      bio: ""
+
+    - name: Kaustubh Maske Patil
+      photo: /assets/images/person-placeholder.svg
+      website: https://kaustubh.page
+      designation: Post-Baccalaureate Fellow, FP Launchpad · BITS Pilani (Aug 2026 – Mar 2027)
+      bio: ""
+
+    - name: Vipul Cariappa
+      photo: /assets/images/person-placeholder.svg
+      designation: Post-Baccalaureate Fellow, FP Launchpad · Ramaiah University (Aug 2026 – Mar 2027)
+      bio: ""
+
+- role: Interns
+  members:
+    - name: Chaitanya Agarwal
+      photo: /assets/images/person-placeholder.svg
+      designation: Intern, FP Launchpad · NYU (May 2026 – TBD)
+      bio: ""
+
+    - name: Harisankar Binod
+      photo: /assets/images/person-placeholder.svg
+      website: https://methaphur.github.io/
+      designation: Intern, FP Launchpad · NISER Bhubaneswar (Jun – Jul 2026)
+      bio: ""
+
+    - name: Somnath Pai
+      photo: /assets/images/person-placeholder.svg
+      designation: Intern, FP Launchpad · CSE IIT Madras
+      bio: ""
+
+- role: Alumni
+  members:
+    - name: Sagar Biswas
+      photo: https://mrsagarbiswas.dpdns.org/Sagar_Biswas.jpeg
+      website: https://mrsagarbiswas.dpdns.org/
+      designation: MTech student (2024–2026), CSE IIT Madras
+      bio: High-performance computing, distributed systems, GPU acceleration (CUDA), multicore GC for OCaml.
+
+    - name: Surendar
+      photo: /assets/images/person-placeholder.svg
+      designation: MTech student, CSE IIT Madras
+      bio: "Garbage collection for OCaml's effect handlers and continuation/fiber stack management."
