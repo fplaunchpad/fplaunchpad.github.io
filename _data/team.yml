@@ -156,12 +156,6 @@
       designation: Intern, FP Launchpad · NYU (May 2026 – TBD)
       bio: ""
 
-    - name: Harisankar Binod
-      photo: /assets/images/person-placeholder.svg
-      website: https://methaphur.github.io/
-      designation: Intern, FP Launchpad · NISER Bhubaneswar (Jun – Jul 2026)
-      bio: ""
-
     - name: Somnath Pai
       photo: /assets/images/person-placeholder.svg
       designation: Intern, FP Launchpad · CSE IIT Madras
@@ -179,3 +173,9 @@
       photo: /assets/images/person-placeholder.svg
       designation: MTech student, CSE IIT Madras
       bio: "Garbage collection for OCaml's effect handlers and continuation/fiber stack management."
+
+    - name: Harisankar Binod
+      photo: https://avatars.githubusercontent.com/u/94229107?v=4
+      website: https://methaphur.github.io/
+      designation: Intern, FP Launchpad · NISER Bhubaneswar (Jun – Jul 2026)
+      bio: "Proof complexity, automated theorem proving, and type theory, using Lean 4 and Coq/Rocq."
