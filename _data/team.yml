@@ -102,12 +102,6 @@
       designation: BTech student, IIIT Manipur
       bio: ""
 
-    - name: Md. Isfarul Haque
-      photo: /assets/images/person-placeholder.svg
-      website: https://innocentzero.is-a.dev
-      designation: BTech student (2022 batch), CSE IIT Madras
-      bio: Systems and OS developer; interests in type theory, Rust, hardware-software security.
-
 - role: Program
   members:
     - name: Sanjay Karanth
@@ -179,3 +173,9 @@
       website: https://methaphur.github.io/
       designation: Intern, FP Launchpad · NISER Bhubaneswar (Jun – Jul 2026)
       bio: "Proof complexity, automated theorem proving, and type theory, using Lean 4 and Coq/Rocq."
+
+    - name: Md. Isfarul Haque
+      photo: /assets/images/person-placeholder.svg
+      website: https://innocentzero.is-a.dev
+      designation: BTech student (2022 batch), CSE IIT Madras
+      bio: Systems and OS developer; interests in type theory, Rust, hardware-software security.
