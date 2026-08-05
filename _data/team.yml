@@ -9,7 +9,7 @@
 - role: Research Staff
   members:
     - name: Alina Banerjee
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/alina-banerjee.jpg
       website: https://www.blue-indus.in/
       designation: Research Staff (2025–), CSE IIT Madras
       bio: Working to improve semantics for the OCaml 5 effects system.
@@ -88,7 +88,7 @@
       bio: ""
 
     - name: Pranav Ramesh
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/pranav-ramesh.jpg
       designation: BTech student (BTP, Spring 2026), CSE IIT Madras
       bio: Intersection of formal methods and large language models.
 
@@ -133,10 +133,10 @@
       designation: Post-Baccalaureate Fellow, FP Launchpad · Ashoka University
       bio: ""
 
-    - name: Dhruv Piyush Rambhia
-      photo: /assets/images/person-placeholder.svg
+    - name: Dhruv
+      photo: /assets/images/dhruv.jpg
       designation: Post-Baccalaureate Fellow, FP Launchpad · IIT Bombay (Jul 2026 – Mar 2027)
-      bio: ""
+      bio: "Ex-Finance Bro rediscovering my love for all things geeky. Currently exploring my next gig at FP Launchpad. Broadly interested in Security, PL and low-level stuff."
 
     - name: Kaustubh Maske Patil
       photo: /assets/images/person-placeholder.svg
@@ -157,9 +157,9 @@
       bio: ""
 
     - name: Somnath Pai
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/somnath-pai.jpg
       designation: Intern, FP Launchpad · CSE IIT Madras
-      bio: ""
+      bio: "BTech Student (2024 batch), CSE, IIT Madras. Currently working on proof-carrying code approaches for safe and efficient eBPF verification."
 
 - role: Alumni
   members:
