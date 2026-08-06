@@ -15,7 +15,7 @@
       bio: Working to improve semantics for the OCaml 5 effects system.
 
     - name: Navaneeth Nambiar
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/navaneeth-nambiar.jpg
       designation: Research Staff
       bio: Performance evaluation, benchmarking, and eBPF-based tooling for OCaml runtime analysis.
 
@@ -26,15 +26,15 @@
       bio: Formal verification of distributed systems; certified mergeable replicated data types; replication-aware linearizability.
 
     - name: Akhil Tulluri
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/akhil-tulluri.jpg
       designation: Research Staff, FP Launchpad · Northeastern University
-      bio: ""
+      bio: "Previously MS CS student @ Northeastern University. Currently working on performance evaluation, benchmarking and formal verification (using F*/Pulse) of OCaml Runtime (Garbage Collectors) as part of FPLaunchpad."
 
     - name: Kartik Nagar
       photo: https://kartiknagar.github.io/authors/admin/avatar_hu5e211fc92955e0d7ae0916788998d721_97472_250x250_fill_q90_lanczos_center.jpg
       website: https://kartiknagar.github.io/
       designation: Faculty, FP Launchpad · Asst. Professor, CSE IIT Madras
-      bio: ""
+      bio: "Co-advisor on FPL formal-methods student projects; programming languages and verification."
 
 - role: PhD Students
   members:
@@ -76,9 +76,9 @@
 - role: MTech Students
   members:
     - name: Prakhand Patel
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/prakhand-patel.jpg
       designation: MTech student (2025–), CSE IIT Madras
-      bio: ""
+      bio: "Final-year MTech student in CSE at IIT Madras, working on his Master's Thesis under Prof. KC Sivaramakrishnan in systems security. Passionate about building and understanding low-level systems."
 
 - role: BTech Students
   members:
@@ -98,9 +98,9 @@
       bio: Integrating the MMTk memory management toolkit with the OCaml runtime.
 
     - name: S Naveen
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/s-naveen.jpg
       designation: BTech student, IIIT Manipur
-      bio: ""
+      bio: "S Naveen is a 4th-year Computer Science undergraduate at IIIT Manipur, currently an exchange student at IIT Madras working on the CoreStack project. As the COO of O3Origin, he specialized in backend development with Django, system architecture, and building end-to-end data pipelines."
 
 - role: Program
   members:
@@ -123,9 +123,9 @@
       bio: ""
 
     - name: Smayan Agarwal
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/smayan-agarwal.jpg
       designation: Post-Baccalaureate Fellow, FP Launchpad · Ashoka University
-      bio: ""
+      bio: "PL for social good. Automata Theory, Algebra, and Logic."
 
     - name: Dhruv
       photo: /assets/images/dhruv.jpg
@@ -139,16 +139,17 @@
       bio: "Generalist programmer; interested in FOSS, self-hosting, and functional programming."
 
     - name: Vipul Cariappa
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/vipul-cariappa.jpg
+      website: https://vipulcariappa.xyz/
       designation: Post-Baccalaureate Fellow, FP Launchpad · Ramaiah University (Aug 2026 – Mar 2027)
-      bio: ""
+      bio: "Vipul Cariappa studied Computer Science and Engineering at Ramaiah University of Applied Science, Bangalore. During which he also worked at CERN, Geneva, as a Technical Student on Python - C/C++ interoperability. He is an open source contributor and maintainer and is interested in compiler technology and developer tools."
 
 - role: Interns
   members:
     - name: Chaitanya Agarwal
-      photo: /assets/images/person-placeholder.svg
+      photo: /assets/images/chaitanya-agarwal.jpg
       designation: Intern, FP Launchpad · NYU (May 2026 – TBD)
-      bio: ""
+      bio: "I am a 3rd year computer science PhD student at the Courant Institute of Mathematical Sciences, New York University, advised by Joseph Tassarotti. I am broadly interested in formal methods. Lately, I have been working at the intersection of programming languages and formal verification for security properties."
 
     - name: Somnath Pai
       photo: /assets/images/somnath-pai.jpg
