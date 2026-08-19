@@ -3,7 +3,7 @@ talks:
   - title: "Neurosymbolic Planner Synthesis Incorporating Specification Closeness"
     speaker: Pranav Ramesh
     date: 2026-08-12
-    venue: SSB 334, IIT Madras
+    venue: Turing Hall, Department of Computer Science, IIT Madras
     abstract: >
       In robotics and related applications, specifications used to define objectives, as well as
       safety or liveness constraints, may result in infeasible solutions because of characteristics
@@ -18,7 +18,7 @@ talks:
   - title: "Convergence is Not Correctness: Verifying a Tombstone-free Sequence MRDT in Lean 4"
     speaker: Harisankar B
     date: 2026-07-30
-    venue: SSB 334, IIT Madras
+    venue: Turing Hall, Department of Computer Science, IIT Madras
     abstract: >
       A collaborative editor cannot describe an edit by the offset where it lands, since a
       concurrent edit moves every offset after it. RGA solves this by naming characters, but keeps
