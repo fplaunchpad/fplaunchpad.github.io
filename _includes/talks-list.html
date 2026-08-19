@@ -56,6 +56,14 @@
   font-size: 0.88rem;
   font-weight: 600;
 }
+.talk-repos {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+.talk-repos code {
+  font-size: 0.85em;
+}
 </style>
 
 {% assign external_talks = site.data.talks.talks | where: "venue_type", "external" %}
@@ -81,6 +89,11 @@
     {% if talk.slides %}
     <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
     {% endif %}
+    {% if talk.repos %}
+    <p class="talk-repos">Repo{% if talk.repos.size > 1 %}s{% endif %}:
+      {% for repo in talk.repos %}<a href="{{ repo.url }}" target="_blank"><code>{{ repo.name }}</code></a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+    </p>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
@@ -105,6 +118,11 @@
     {% endif %}
     {% if talk.slides %}
     <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
+    {% endif %}
+    {% if talk.repos %}
+    <p class="talk-repos">Repo{% if talk.repos.size > 1 %}s{% endif %}:
+      {% for repo in talk.repos %}<a href="{{ repo.url }}" target="_blank"><code>{{ repo.name }}</code></a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+    </p>
     {% endif %}
   </div>
   {% endfor %}

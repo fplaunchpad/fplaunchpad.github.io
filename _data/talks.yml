@@ -6,6 +6,9 @@ talks:
     date: 2026-08-19
     venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
+    repos:
+      - name: model_checking_rdts
+        url: https://github.com/fplaunchpad/model_checking_rdts
 
   - title: "Introduction to Separation Logic :: Part II"
     speaker: Chaitanya Agarwal
@@ -35,6 +38,11 @@ talks:
       this space, using these as potential alternatives. This idea is broadly related to the notion
       of robustness in learning but framed at the level of logic, rather than observations.
     slides: /assets/talks/pranav-ramesh-neurosymbolic-planner-synthesis.pdf
+    repos:
+      - name: specification-closeness
+        url: https://github.com/fplaunchpad/specification-closeness
+      - name: nuplan_to_buchi
+        url: https://github.com/pranavramesh2003/nuplan_to_buchi
 
   - title: "Introduction to Separation Logic"
     speaker: Chaitanya Agarwal
@@ -76,6 +84,9 @@ talks:
       tombstones: a tombstone-free RGA as a Mergeable Replicated Data Type, verified in Lean 4
       using Sal, a port of the F* framework Neem.
     slides: /assets/talks/harisankar-b-tombstone-free-rga.pdf
+    repos:
+      - name: sal
+        url: https://github.com/fplaunchpad/sal
 
   - title: "Convergence is Not Enough: Automatically Verifying Replicated Data Types"
     speaker: KC Sivaramakrishnan
@@ -85,6 +96,9 @@ talks:
     venue: "Invited Talk, SERI 2026, IIIT Hyderabad"
     venue_type: external
     slides: https://kcsrk.info/slides/RDT_verification_SERI_IIITH.pdf
+    repos:
+      - name: sal
+        url: https://github.com/fplaunchpad/sal
 
   - title: "Making Sense of eBPF"
     speaker: Pragyansh Chaturvedi
@@ -97,6 +111,9 @@ talks:
       and the programming languages available for eBPF development. The core of the talk covers
       the BPF instruction set architecture, its type system, and the verification step, alongside
       the kernel's JIT compiler backend, concluding with the challenges the current BPF model poses.
+    repos:
+      - name: ebpf_gen
+        url: https://github.com/fplaunchpad/ebpf_gen
 
   - title: "Long Division Has a Proof: Teaching Formal Verification Through School Arithmetic"
     speaker: Anubhav Paul
@@ -114,6 +131,9 @@ talks:
       open-access book, Learn2Lean, makes this concrete: each chapter implements one algorithm in
       Lean 4, proves it correct, and pairs the proof with step-by-step visualizations and an
       in-browser exercise checker that compiles real Lean code against student submissions.
+    repos:
+      - name: Learn2Lean
+        url: https://github.com/fplaunchpad/Learn2Lean
 
   - title: "Benchmarking on Modern Hardware"
     speaker: Navaneeth M. Nambiar
@@ -129,6 +149,9 @@ talks:
       supports cutting-edge research while preserving legacy code performance and production
       stability.
     slides: https://pliss.org/2026/slides/marr2.pdf
+    repos:
+      - name: retro-httpaf-bench
+        url: https://github.com/fplaunchpad/retro-httpaf-bench
 
   - title: "Convergence is Not Enough: Verifying Replicated Data Types in Lean"
     speaker: KC Sivaramakrishnan
@@ -138,3 +161,6 @@ talks:
     venue: "Lean Language Summer School, IISc Bengaluru"
     venue_type: external
     slides: https://kcsrk.info/slides/RDT_verification_Lean_IISc.pdf
+    repos:
+      - name: sal
+        url: https://github.com/fplaunchpad/sal
