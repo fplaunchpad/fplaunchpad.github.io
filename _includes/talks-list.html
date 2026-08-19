@@ -32,6 +32,11 @@
   font-weight: 600;
   color: #333;
 }
+.talk-meta .talk-designation {
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
 .talk-abstract {
   margin: 0 0 0.6rem 0;
 }
@@ -63,7 +68,7 @@
   <div class="talk-card">
     <h3>{{ talk.title }}</h3>
     <p class="talk-meta">
-      <span class="talk-speaker">{% if talk.designation %}({{ talk.designation }}) {% endif %}{{ talk.speaker }}</span>
+      <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
       &middot; {% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %B %Y" }}{% endif %}
       &middot; {{ talk.venue }}
     </p>
@@ -88,7 +93,7 @@
   <div class="talk-card">
     <h3>{{ talk.title }}</h3>
     <p class="talk-meta">
-      <span class="talk-speaker">{% if talk.designation %}({{ talk.designation }}) {% endif %}{{ talk.speaker }}</span>
+      <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
       &middot; {% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %B %Y" }}{% endif %}
       &middot; {{ talk.venue }}
     </p>
