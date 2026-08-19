@@ -1,0 +1,112 @@
+<style>
+.talks-section {
+  margin-top: 1.5rem;
+}
+.talks-section h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.talk-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  background: #fff;
+}
+.talk-card h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.05rem;
+}
+.talk-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 0.6rem 0;
+}
+.talk-meta .talk-speaker {
+  font-weight: 600;
+  color: #333;
+}
+.talk-meta .talk-designation {
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+.talk-abstract {
+  margin: 0 0 0.6rem 0;
+}
+.talk-abstract summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+}
+.talk-abstract p {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0.5rem 0 0 0;
+}
+.talk-slides {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+</style>
+
+{% assign external_talks = site.data.talks.talks | where: "venue_type", "external" %}
+{% assign internal_talks = site.data.talks.talks | where: "venue_type", "internal" %}
+
+{% if external_talks.size > 0 %}
+<div class="talks-section">
+  <h2>External</h2>
+  {% for talk in external_talks %}
+  <div class="talk-card">
+    <h3>{{ talk.title }}</h3>
+    <p class="talk-meta">
+      <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
+      &middot; {% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %B %Y" }}{% endif %}
+      &middot; {{ talk.venue }}
+    </p>
+    {% if talk.abstract %}
+    <details class="talk-abstract">
+      <summary>Abstract &gt;</summary>
+      <p>{{ talk.abstract }}</p>
+    </details>
+    {% endif %}
+    {% if talk.slides %}
+    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if internal_talks.size > 0 %}
+<div class="talks-section">
+  <h2>Internal</h2>
+  {% for talk in internal_talks %}
+  <div class="talk-card">
+    <h3>{{ talk.title }}</h3>
+    <p class="talk-meta">
+      <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
+      &middot; {% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %B %Y" }}{% endif %}
+      &middot; {{ talk.venue }}
+    </p>
+    {% if talk.abstract %}
+    <details class="talk-abstract">
+      <summary>Abstract &gt;</summary>
+      <p>{{ talk.abstract }}</p>
+    </details>
+    {% endif %}
+    {% if talk.slides %}
+    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
