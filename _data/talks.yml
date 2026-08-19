@@ -1,14 +1,16 @@
-# Newest first.
+# Newest first within each venue_type (internal / external).
 talks:
   - title: "Sound and Optimal Stateless Model Checking for Operation Based CRDTs"
     speaker: Nitish Yadav
     date: 2026-08-19
     venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue_type: internal
 
   - title: "Introduction to Separation Logic :: Part II"
     speaker: Chaitanya Agarwal
     date: 2026-08-13
     venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue_type: internal
     abstract: >
       A gentle introduction to the core ideas behind Separation Logic and the Iris framework.
       Covers how assertions about memory differ from classical Hoare Logic, the separating
@@ -19,6 +21,7 @@ talks:
     speaker: Pranav Ramesh
     date: 2026-08-12
     venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue_type: internal
     abstract: >
       In robotics and related applications, specifications used to define objectives, as well as
       safety or liveness constraints, may result in infeasible solutions because of characteristics
@@ -34,6 +37,7 @@ talks:
     speaker: Chaitanya Agarwal
     date: 2026-08-06
     venue: SSB 233, IIT Madras
+    venue_type: internal
     abstract: >
       An introduction to core concepts of Separation Logic and the Iris framework. Covers how
       memory assertions differ from classical Hoare Logic, the separating conjunction operator
@@ -44,6 +48,7 @@ talks:
     speaker: Pranav Ramesh
     date: 2026-07-31
     venue: Online (Google Meet)
+    venue_type: internal
     abstract: >
       Inductive types play a central role in functional programming, enabling developers to
       construct types with multiple constructors. This talk explores how these constructs
@@ -56,6 +61,7 @@ talks:
     speaker: Harisankar B
     date: 2026-07-30
     venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue_type: internal
     abstract: >
       A collaborative editor cannot describe an edit by the offset where it lands, since a
       concurrent edit moves every offset after it. RGA solves this by naming characters, but keeps
@@ -70,12 +76,14 @@ talks:
     date: 2026-07-16
     date_display: "16–18 July 2026"
     venue: "Invited Talk, SERI 2026, IIIT Hyderabad"
+    venue_type: external
     slides: https://kcsrk.info/slides/RDT_verification_SERI_IIITH.pdf
 
   - title: "Making Sense of eBPF"
     speaker: Pragyansh Chaturvedi
     date: 2026-07-15
     venue: Online (Google Meet)
+    venue_type: internal
     abstract: >
       An exploration of the eBPF subsystem of the Linux kernel, starting with historical context
       and the programming languages available for eBPF development. The core of the talk covers
@@ -86,6 +94,7 @@ talks:
     speaker: Anubhav Paul
     date: 2026-07-14
     venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue_type: internal
     abstract: >
       Formal verification, the practice of proving that a program is correct for every possible
       input, not merely those that have been tested, is widely regarded as specialist work. This
@@ -101,6 +110,7 @@ talks:
     speaker: Navaneeth M. Nambiar
     date: 2026-07-10
     venue: SSB 233, IIT Madras
+    venue_type: internal
     abstract: >
       As technology evolves, attributing performance improvements becomes harder: gains can come
       from code changes, caching, or garbage collection, and it is not always obvious which. This
@@ -114,4 +124,5 @@ talks:
     date: 2026-07-06
     date_display: "6–10 July 2026"
     venue: "Lean Language Summer School, IISc Bengaluru"
+    venue_type: external
     slides: https://kcsrk.info/slides/RDT_verification_Lean_IISc.pdf
