@@ -2,14 +2,14 @@
 talks:
   - title: "Sound and Optimal Stateless Model Checking for Operation Based CRDTs"
     speaker: Nitish Yadav
-    designation: PhD student
+    designation: PhD student, IIT Madras
     date: 2026-08-19
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
 
   - title: "Introduction to Separation Logic :: Part II"
     speaker: Chaitanya Agarwal
-    designation: Intern
+    designation: Intern, NYU
     date: 2026-08-13
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -21,7 +21,7 @@ talks:
 
   - title: "Neurosymbolic Planner Synthesis Incorporating Specification Closeness"
     speaker: Pranav Ramesh
-    designation: BTech student
+    designation: BTech student, IIT Madras
     date: 2026-08-12
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -38,7 +38,7 @@ talks:
 
   - title: "Introduction to Separation Logic"
     speaker: Chaitanya Agarwal
-    designation: Intern
+    designation: Intern, NYU
     date: 2026-08-06
     venue: SSB 233, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -50,7 +50,7 @@ talks:
 
   - title: "What is in an Inductive Type? A Look in with Lean"
     speaker: Pranav Ramesh
-    designation: BTech student
+    designation: BTech student, IIT Madras
     date: 2026-07-31
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -64,7 +64,7 @@ talks:
 
   - title: "Convergence is Not Correctness: Verifying a Tombstone-free Sequence MRDT in Lean 4"
     speaker: Harisankar B
-    designation: Intern
+    designation: Intern, NISER Bhubaneswar
     date: 2026-07-30
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -100,7 +100,7 @@ talks:
 
   - title: "Long Division Has a Proof: Teaching Formal Verification Through School Arithmetic"
     speaker: Anubhav Paul
-    designation: Intern
+    designation: Intern, IIT Delhi
     date: 2026-07-14
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
