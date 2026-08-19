@@ -2,12 +2,14 @@
 talks:
   - title: "Sound and Optimal Stateless Model Checking for Operation Based CRDTs"
     speaker: Nitish Yadav
+    designation: PhD student
     date: 2026-08-19
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
 
   - title: "Introduction to Separation Logic :: Part II"
     speaker: Chaitanya Agarwal
+    designation: Intern
     date: 2026-08-13
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -19,6 +21,7 @@ talks:
 
   - title: "Neurosymbolic Planner Synthesis Incorporating Specification Closeness"
     speaker: Pranav Ramesh
+    designation: BTech student
     date: 2026-08-12
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -35,8 +38,9 @@ talks:
 
   - title: "Introduction to Separation Logic"
     speaker: Chaitanya Agarwal
+    designation: Intern
     date: 2026-08-06
-    venue: SSB 233, IIT Madras
+    venue: SSB 233, Department of Computer Science, IIT Madras
     venue_type: internal
     abstract: >
       An introduction to core concepts of Separation Logic and the Iris framework. Covers how
@@ -46,8 +50,9 @@ talks:
 
   - title: "What is in an Inductive Type? A Look in with Lean"
     speaker: Pranav Ramesh
+    designation: BTech student
     date: 2026-07-31
-    venue: Online (Google Meet)
+    venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
     abstract: >
       Inductive types play a central role in functional programming, enabling developers to
@@ -59,6 +64,7 @@ talks:
 
   - title: "Convergence is Not Correctness: Verifying a Tombstone-free Sequence MRDT in Lean 4"
     speaker: Harisankar B
+    designation: Intern
     date: 2026-07-30
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -73,6 +79,7 @@ talks:
 
   - title: "Convergence is Not Enough: Automatically Verifying Replicated Data Types"
     speaker: KC Sivaramakrishnan
+    designation: PI
     date: 2026-07-16
     date_display: "16–18 July 2026"
     venue: "Invited Talk, SERI 2026, IIIT Hyderabad"
@@ -81,6 +88,7 @@ talks:
 
   - title: "Making Sense of eBPF"
     speaker: Pragyansh Chaturvedi
+    designation: Fellow
     date: 2026-07-15
     venue: Online (Google Meet)
     venue_type: internal
@@ -92,6 +100,7 @@ talks:
 
   - title: "Long Division Has a Proof: Teaching Formal Verification Through School Arithmetic"
     speaker: Anubhav Paul
+    designation: Intern
     date: 2026-07-14
     venue: Turing Hall, Department of Computer Science, IIT Madras
     venue_type: internal
@@ -108,8 +117,9 @@ talks:
 
   - title: "Benchmarking on Modern Hardware"
     speaker: Navaneeth M. Nambiar
+    designation: Research Staff
     date: 2026-07-10
-    venue: SSB 233, IIT Madras
+    venue: SSB 233, Department of Computer Science, IIT Madras
     venue_type: internal
     abstract: >
       As technology evolves, attributing performance improvements becomes harder: gains can come
@@ -121,6 +131,7 @@ talks:
 
   - title: "Convergence is Not Enough: Verifying Replicated Data Types in Lean"
     speaker: KC Sivaramakrishnan
+    designation: PI
     date: 2026-07-06
     date_display: "6–10 July 2026"
     venue: "Lean Language Summer School, IISc Bengaluru"
