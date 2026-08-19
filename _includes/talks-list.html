@@ -40,12 +40,14 @@
     <h3>{{ talk.title }}</h3>
     <p class="talk-meta">
       <span class="talk-speaker">{{ talk.speaker }}</span>
-      &middot; {{ talk.date | date: "%-d %B %Y" }}
+      &middot; {% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %B %Y" }}{% endif %}
       &middot; {{ talk.venue }}
     </p>
+    {% if talk.abstract %}
     <p class="talk-abstract">{{ talk.abstract }}</p>
+    {% endif %}
     {% if talk.slides %}
-    <a class="talk-slides" href="{{ talk.slides | relative_url }}" target="_blank">Slides (PDF)</a>
+    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
     {% endif %}
   </div>
   {% endfor %}

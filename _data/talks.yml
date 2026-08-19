@@ -1,5 +1,20 @@
 # Newest first.
 talks:
+  - title: "Sound and Optimal Stateless Model Checking for Operation Based CRDTs"
+    speaker: Nitish Yadav
+    date: 2026-08-19
+    venue: Turing Hall, Department of Computer Science, IIT Madras
+
+  - title: "Introduction to Separation Logic :: Part II"
+    speaker: Chaitanya Agarwal
+    date: 2026-08-13
+    venue: Turing Hall, Department of Computer Science, IIT Madras
+    abstract: >
+      A gentle introduction to the core ideas behind Separation Logic and the Iris framework.
+      Covers how assertions about memory differ from classical Hoare Logic, the separating
+      conjunction (*) and the frame rule, and how these concepts simplify correctness proofs for
+      programs operating on linked data structures.
+
   - title: "Neurosymbolic Planner Synthesis Incorporating Specification Closeness"
     speaker: Pranav Ramesh
     date: 2026-08-12
@@ -15,6 +30,28 @@ talks:
       of robustness in learning but framed at the level of logic, rather than observations.
     slides: /assets/talks/pranav-ramesh-neurosymbolic-planner-synthesis.pdf
 
+  - title: "Introduction to Separation Logic"
+    speaker: Chaitanya Agarwal
+    date: 2026-08-06
+    venue: SSB 233, IIT Madras
+    abstract: >
+      An introduction to core concepts of Separation Logic and the Iris framework. Covers how
+      memory assertions differ from classical Hoare Logic, the separating conjunction operator
+      and frame rule, and how these principles streamline correctness proofs for programs working
+      with linked data structures.
+
+  - title: "What is in an Inductive Type? A Look in with Lean"
+    speaker: Pranav Ramesh
+    date: 2026-07-31
+    venue: Online (Google Meet)
+    abstract: >
+      Inductive types play a central role in functional programming, enabling developers to
+      construct types with multiple constructors. This talk explores how these constructs
+      facilitate recursive function definitions while addressing termination verification
+      challenges, and examines their application to mathematical induction principles commonly
+      used in formal proofs. Using Lean as the primary tool, the session investigates the
+      fundamental properties and practical implications of inductive types in theorem proving.
+
   - title: "Convergence is Not Correctness: Verifying a Tombstone-free Sequence MRDT in Lean 4"
     speaker: Harisankar B
     date: 2026-07-30
@@ -27,3 +64,54 @@ talks:
       tombstones: a tombstone-free RGA as a Mergeable Replicated Data Type, verified in Lean 4
       using Sal, a port of the F* framework Neem.
     slides: /assets/talks/harisankar-b-tombstone-free-rga.pdf
+
+  - title: "Convergence is Not Enough: Automatically Verifying Replicated Data Types"
+    speaker: KC Sivaramakrishnan
+    date: 2026-07-16
+    date_display: "16–18 July 2026"
+    venue: "Invited Talk, SERI 2026, IIIT Hyderabad"
+    slides: https://kcsrk.info/slides/RDT_verification_SERI_IIITH.pdf
+
+  - title: "Making Sense of eBPF"
+    speaker: Pragyansh Chaturvedi
+    date: 2026-07-15
+    venue: Online (Google Meet)
+    abstract: >
+      An exploration of the eBPF subsystem of the Linux kernel, starting with historical context
+      and the programming languages available for eBPF development. The core of the talk covers
+      the BPF instruction set architecture, its type system, and the verification step, alongside
+      the kernel's JIT compiler backend, concluding with the challenges the current BPF model poses.
+
+  - title: "Long Division Has a Proof: Teaching Formal Verification Through School Arithmetic"
+    speaker: Anubhav Paul
+    date: 2026-07-14
+    venue: Turing Hall, Department of Computer Science, IIT Madras
+    abstract: >
+      Formal verification, the practice of proving that a program is correct for every possible
+      input, not merely those that have been tested, is widely regarded as specialist work. This
+      talk argues that this reputation is largely a teaching problem. Using familiar pen-and-paper
+      arithmetic algorithms as case studies, it shows that the central ideas of formal
+      verification (specifications, loop invariants, induction, and termination) are already
+      latent in these algorithms and emerge naturally once we ask why they work. The accompanying
+      open-access book, Learn2Lean, makes this concrete: each chapter implements one algorithm in
+      Lean 4, proves it correct, and pairs the proof with step-by-step visualizations and an
+      in-browser exercise checker that compiles real Lean code against student submissions.
+
+  - title: "Benchmarking on Modern Hardware"
+    speaker: Navaneeth M. Nambiar
+    date: 2026-07-10
+    venue: SSB 233, IIT Madras
+    abstract: >
+      As technology evolves, attributing performance improvements becomes harder: gains can come
+      from code changes, caching, or garbage collection, and it is not always obvious which. This
+      talk looks at what to watch out for when benchmarking, with scenarios drawn from real-world
+      OCaml optimization work, and lays out ideas, old and new, for a benchmark suite that
+      supports cutting-edge research while preserving legacy code performance and production
+      stability.
+
+  - title: "Convergence is Not Enough: Verifying Replicated Data Types in Lean"
+    speaker: KC Sivaramakrishnan
+    date: 2026-07-06
+    date_display: "6–10 July 2026"
+    venue: "Lean Language Summer School, IISc Bengaluru"
+    slides: https://kcsrk.info/slides/RDT_verification_Lean_IISc.pdf
