@@ -128,6 +128,7 @@ talks:
       OCaml optimization work, and lays out ideas, old and new, for a benchmark suite that
       supports cutting-edge research while preserving legacy code performance and production
       stability.
+    slides: https://pliss.org/2026/slides/marr2.pdf
 
   - title: "Convergence is Not Enough: Verifying Replicated Data Types in Lean"
     speaker: KC Sivaramakrishnan
