@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FP Launchpad at IndiaFOSS 2026"
+title: "FP Launchpad is actively participating in IndiaFOSS 2026"
 date: 2026-08-19
 ---
 
