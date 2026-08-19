@@ -4,14 +4,14 @@ talks:
     speaker: Nitish Yadav
     designation: PhD student, IIT Madras
     date: 2026-08-19
-    venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
 
   - title: "Introduction to Separation Logic :: Part II"
     speaker: Chaitanya Agarwal
     designation: Intern, NYU
     date: 2026-08-13
-    venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     abstract: >
       A gentle introduction to the core ideas behind Separation Logic and the Iris framework.
@@ -23,7 +23,7 @@ talks:
     speaker: Pranav Ramesh
     designation: BTech student, IIT Madras
     date: 2026-08-12
-    venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     abstract: >
       In robotics and related applications, specifications used to define objectives, as well as
@@ -40,7 +40,7 @@ talks:
     speaker: Chaitanya Agarwal
     designation: Intern, NYU
     date: 2026-08-06
-    venue: SSB 233, Department of Computer Science, IIT Madras
+    venue: SSB 233, CSE, IIT Madras
     venue_type: internal
     abstract: >
       An introduction to core concepts of Separation Logic and the Iris framework. Covers how
@@ -52,7 +52,7 @@ talks:
     speaker: Pranav Ramesh
     designation: BTech student, IIT Madras
     date: 2026-07-31
-    venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     abstract: >
       Inductive types play a central role in functional programming, enabling developers to
@@ -66,7 +66,7 @@ talks:
     speaker: Harisankar B
     designation: Intern, NISER Bhubaneswar
     date: 2026-07-30
-    venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     abstract: >
       A collaborative editor cannot describe an edit by the offset where it lands, since a
@@ -90,7 +90,7 @@ talks:
     speaker: Pragyansh Chaturvedi
     designation: Fellow
     date: 2026-07-15
-    venue: Online (Google Meet)
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     abstract: >
       An exploration of the eBPF subsystem of the Linux kernel, starting with historical context
@@ -102,7 +102,7 @@ talks:
     speaker: Anubhav Paul
     designation: Intern, IIT Delhi
     date: 2026-07-14
-    venue: Turing Hall, Department of Computer Science, IIT Madras
+    venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     abstract: >
       Formal verification, the practice of proving that a program is correct for every possible
@@ -119,7 +119,7 @@ talks:
     speaker: Navaneeth M. Nambiar
     designation: Research Staff
     date: 2026-07-10
-    venue: SSB 233, Department of Computer Science, IIT Madras
+    venue: SSB 233, CSE, IIT Madras
     venue_type: internal
     abstract: >
       As technology evolves, attributing performance improvements becomes harder: gains can come
@@ -128,6 +128,7 @@ talks:
       OCaml optimization work, and lays out ideas, old and new, for a benchmark suite that
       supports cutting-edge research while preserving legacy code performance and production
       stability.
+    slides: https://pliss.org/2026/slides/marr2.pdf
 
   - title: "Convergence is Not Enough: Verifying Replicated Data Types in Lean"
     speaker: KC Sivaramakrishnan
