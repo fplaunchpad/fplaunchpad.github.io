@@ -4,7 +4,7 @@ title: FP Launchpad at IndiaFOSS 2026
 permalink: /indiafoss-2026/
 ---
 
-IndiaFOSS 2026 runs 26–27 September 2026 at NIMHANS Convention Centre, Bengaluru. FP Launchpad has six talks and workshops accepted, across the main track and the Compilers, Programming Languages and Systems devroom.
+IndiaFOSS 2026 runs 25–27 September 2026 at NIMHANS Convention Centre, Bengaluru. FP Launchpad has six talks and workshops accepted, across the main track and the Compilers, Programming Languages and Systems devroom.
 
 | Speaker | Talk / Workshop | Proposal |
 |---|---|---|
