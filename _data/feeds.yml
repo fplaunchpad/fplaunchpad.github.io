@@ -4,7 +4,7 @@ members:
     feed: https://kcsrk.info/feed.xml
   - name: Durwasa Chakraborty
     site: https://durwasa-chakraborty.github.io
-    feed: https://durwasa-chakraborty.github.io/index.xml
+    feed: https://durwasa-chakraborty.github.io/tags/fpl/index.xml
   - name: Kartik Nagar
     site: https://kartiknagar.github.io
     feed: https://kartiknagar.github.io/index.xml
@@ -20,6 +20,9 @@ members:
   - name: Kaustubh M
     site: https://kaustubh.page
     feed: https://kaustubh.page/rss.xml
+  - name: Pragyansh Chaturvedi
+    site: https://people.ubuntu.com/~r41k0u/portfolio
+    feed: https://people.ubuntu.com/~r41k0u/portfolio/blog/index.xml
 
 friends:
   - name: Anil Madhavapeddy
