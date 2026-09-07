@@ -8,12 +8,6 @@ members:
   - name: Kartik Nagar
     site: https://kartiknagar.github.io
     feed: https://kartiknagar.github.io/index.xml
-  - name: Pranav Ramesh
-    site: https://pranavramesh2003.github.io
-    feed: https://pranavramesh2003.github.io/atom.xml
-  - name: Harisankar Binod
-    site: https://methaphur.github.io/blogs/
-    feed: https://methaphur.github.io/blogs/index.xml
   - name: Alina Banerjee
     site: https://blue-indus.in
     feed: https://blue-indus.in/rss.xml
@@ -34,3 +28,9 @@ friends:
   - name: Ilya Sergey
     site: https://ilyasergey.net
     feed: https://ilyasergey.net/feed.xml
+  - name: Pranav Ramesh
+    site: https://pranavramesh2003.github.io
+    feed: https://pranavramesh2003.github.io/atom.xml
+  - name: Harisankar Binod
+    site: https://methaphur.github.io/blogs/
+    feed: https://methaphur.github.io/blogs/index.xml
