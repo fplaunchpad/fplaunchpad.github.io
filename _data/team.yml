@@ -120,7 +120,7 @@
     - name: Avik Shakhari
       photo: /assets/images/person-placeholder.svg
       designation: Post-Baccalaureate Fellow, FP Launchpad · CMI
-      bio: ""
+      bio: "CMI graduate with a deep interest in programming languages research, functional programming, and type theory. Also into logic, formal methods, and formal security analysis, with an occasional detour into category theory (aka abstract nonsense). A FOSS proponent and NixOS enthusiast."
 
     - name: Smayan Agarwal
       photo: /assets/images/smayan-agarwal.jpg
