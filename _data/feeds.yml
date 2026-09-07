@@ -20,6 +20,9 @@ members:
   - name: Kaustubh M
     site: https://kaustubh.page
     feed: https://kaustubh.page/rss.xml
+  - name: Pragyansh Chaturvedi
+    site: https://people.ubuntu.com/~r41k0u/portfolio
+    feed: https://people.ubuntu.com/~r41k0u/portfolio/blog/index.xml
 
 friends:
   - name: Anil Madhavapeddy
