@@ -53,7 +53,14 @@ def fetch_posts_for_group(feed_list, seen_urls, since, until):
             print(f"Warning: could not fetch {feed_info['url']}: {e}", file=sys.stderr)
             continue
 
+        require_tag = feed_info.get('require_tag')
+
         for entry in parsed.entries:
+            if require_tag:
+                tags = [t.get('term', '') for t in getattr(entry, 'tags', [])]
+                if not any(t.lower() == require_tag.lower() for t in tags):
+                    continue
+
             published = None
             for attr in ('published_parsed', 'updated_parsed'):
                 val = getattr(entry, attr, None)
