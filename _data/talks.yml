@@ -10,8 +10,8 @@ talks:
     repos:
       - name: ocaml-mmtk
         url: https://github.com/fplaunchpad/ocaml-mmtk
-      - name: mmtk-ocaml
-        url: https://github.com/fplaunchpad/mmtk-ocaml
+      - name: mmtk-core
+        url: https://github.com/fplaunchpad/mmtk-core
 
   - title: "How to Interoperate with C++? By Using the Compiler as a Service"
     speaker: Vipul Cariappa
