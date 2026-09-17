@@ -1,5 +1,18 @@
 # Newest first within each venue_type (internal / external).
 talks:
+  - title: "ocaml-mmtk: OCaml on the Memory Management Toolkit as a testbed for functional-language Garbage Collection"
+    speaker: Pragyansh Chaturvedi
+    designation: Fellow
+    date: 2026-10-02
+    date_display: "2-3 October 2026"
+    venue: "IICT 2026, IISc Bengaluru"
+    venue_type: external
+    repos:
+      - name: ocaml-mmtk
+        url: https://github.com/fplaunchpad/ocaml-mmtk
+      - name: mmtk-ocaml
+        url: https://github.com/fplaunchpad/mmtk-ocaml
+
   - title: "How to Interoperate with C++? By Using the Compiler as a Service"
     speaker: Vipul Cariappa
     designation: Fellow
