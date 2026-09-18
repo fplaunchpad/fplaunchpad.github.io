@@ -31,7 +31,7 @@ The fellowship received **48 applications**. We shortlisted **12 candidates**, w
 - **[Pragyansh Chaturvedi](https://people.ubuntu.com/~r41k0u/portfolio/)**, from IIT Roorkee, is an Ubuntu maintainer with experience in open-source systems development.
 - **[Avik Shakhari](https://github.com/recluse099)**, from Chennai Mathematical Institute, is interested in type theory and formal methods, and works on programming-language approaches to security.
 - **[Smayan Agarwal](https://github.com/SmayanAgarwal)**, from Ashoka University, combines interests in mathematics and programming languages with a focus on social good.
-- **[Dhruv Piyush Rambhia](https://github.com/ButteryPaws)**, from IIT Bombay, joins after working in finance and is exploring security and low-level systems.
+- **[Dhruv](https://github.com/ButteryPaws)**, from IIT Bombay, joins after working in finance and is exploring security and low-level systems.
 - **[Kaustubh Maske Patil](https://kaustubh.page)**, from BITS Pilani, is a generalist programmer with interests in free and open-source software, self-hosting, and functional programming.
 - **[Vipul Cariappa](https://vipulcariappa.xyz/)**, from Ramaiah University, worked on Python and C/C++ interoperability at CERN and is interested in compilers and developer tools.
 
