@@ -1,5 +1,51 @@
 # Newest first within each venue_type (internal / external).
 talks:
+  - title: "Introduction to Modes in OxCaml, Part III: Beyond Modes"
+    speaker: Avik Shakhari
+    designation: Post-Baccalaureate Fellow
+    date: 2026-09-18
+    venue: Turing Hall, CSE, IIT Madras
+    venue_type: internal
+    video: https://www.youtube.com/watch?v=IoD15o7QpcI
+    slides: https://github.com/fplaunchpad/oxcaml-talk
+    slides_label: "Slides (runnable, live)"
+
+  - title: "Introduction to Modes in OxCaml, Part II"
+    speaker: Avik Shakhari
+    designation: Post-Baccalaureate Fellow
+    date: 2026-09-11
+    venue: SSB 233, CSE, IIT Madras
+    venue_type: internal
+    video: https://www.youtube.com/watch?v=Fyoz4QYAd9A
+    abstract: >
+      OCaml's type system tells you the shape of a value, but not where it lives in memory, how
+      many places still point to it, or whether it's safe to touch from another thread at the
+      same time. This talk introduces OxCaml's mode system: a set of extra, independent checks
+      the compiler layers on top of ordinary types to catch exactly these problems before the
+      program ever runs, enabling faster memory management, safer mutation, and safe parallelism,
+      all with zero runtime cost. We'll build up the intuition behind each of these checks from
+      simple examples, and see where these checks apply and where they don't.
+    slides: https://github.com/fplaunchpad/oxcaml-talk
+    slides_label: "Slides (runnable, live)"
+
+  - title: "Introduction to Modes in OxCaml, Part I"
+    speaker: Avik Shakhari
+    designation: Post-Baccalaureate Fellow
+    date: 2026-08-28
+    venue: SSB 233, CSE, IIT Madras
+    venue_type: internal
+    video: https://www.youtube.com/watch?v=4bGWg3liqZU
+    abstract: >
+      OCaml's type system tells you the shape of a value, but not where it lives in memory, how
+      many places still point to it, or whether it's safe to touch from another thread at the
+      same time. This talk introduces OxCaml's mode system: a set of extra, independent checks
+      the compiler layers on top of ordinary types to catch exactly these problems before the
+      program ever runs, enabling faster memory management, safer mutation, and safe parallelism,
+      all with zero runtime cost. We'll build up the intuition behind each of these checks from
+      simple examples, and see where these checks apply and where they don't.
+    slides: https://github.com/fplaunchpad/oxcaml-talk
+    slides_label: "Slides (runnable, live)"
+
   - title: "ocaml-mmtk: OCaml on the Memory Management Toolkit as a testbed for functional-language Garbage Collection"
     speaker: Pragyansh Chaturvedi
     designation: Fellow
