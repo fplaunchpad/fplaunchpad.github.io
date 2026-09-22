@@ -92,7 +92,7 @@
     </details>
     {% endif %}
     {% if talk.slides %}
-    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
+    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">{{ talk.slides_label | default: "Slides (PDF)" }}</a>
     {% endif %}
     {% if talk.video %}
     <a class="talk-video" href="{{ talk.video }}" target="_blank">Video</a>
@@ -125,7 +125,7 @@
     </details>
     {% endif %}
     {% if talk.slides %}
-    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">Slides (PDF)</a>
+    <a class="talk-slides" href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">{{ talk.slides_label | default: "Slides (PDF)" }}</a>
     {% endif %}
     {% if talk.video %}
     <a class="talk-video" href="{{ talk.video }}" target="_blank">Video</a>

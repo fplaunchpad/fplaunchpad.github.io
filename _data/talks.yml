@@ -7,9 +7,8 @@ talks:
     venue: Turing Hall, CSE, IIT Madras
     venue_type: internal
     video: https://www.youtube.com/watch?v=IoD15o7QpcI
-    repos:
-      - name: oxcaml-talk
-        url: https://github.com/fplaunchpad/oxcaml-talk
+    slides: https://github.com/fplaunchpad/oxcaml-talk
+    slides_label: "Slides (runnable, live)"
 
   - title: "Introduction to Modes in OxCaml, Part II"
     speaker: Avik Shakhari
@@ -26,9 +25,8 @@ talks:
       program ever runs, enabling faster memory management, safer mutation, and safe parallelism,
       all with zero runtime cost. We'll build up the intuition behind each of these checks from
       simple examples, and see where these checks apply and where they don't.
-    repos:
-      - name: oxcaml-talk
-        url: https://github.com/fplaunchpad/oxcaml-talk
+    slides: https://github.com/fplaunchpad/oxcaml-talk
+    slides_label: "Slides (runnable, live)"
 
   - title: "Introduction to Modes in OxCaml, Part I"
     speaker: Avik Shakhari
@@ -45,9 +43,8 @@ talks:
       program ever runs, enabling faster memory management, safer mutation, and safe parallelism,
       all with zero runtime cost. We'll build up the intuition behind each of these checks from
       simple examples, and see where these checks apply and where they don't.
-    repos:
-      - name: oxcaml-talk
-        url: https://github.com/fplaunchpad/oxcaml-talk
+    slides: https://github.com/fplaunchpad/oxcaml-talk
+    slides_label: "Slides (runnable, live)"
 
   - title: "ocaml-mmtk: OCaml on the Memory Management Toolkit as a testbed for functional-language Garbage Collection"
     speaker: Pragyansh Chaturvedi
