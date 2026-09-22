@@ -51,6 +51,24 @@
   history: ""
   future_plan: ""
 
+- name: NYU
+  website: https://www.nyu.edu/
+  contact_person: ""
+  contact_email: ""
+  logo: ""
+  description: Partner on the verified compilers project.
+  history: ""
+  future_plan: ""
+
+- name: University of Cambridge
+  website: https://www.cam.ac.uk/
+  contact_person: ""
+  contact_email: ""
+  logo: ""
+  description: Partner on the TESSERA project, satellite-derived representations for environmental applications.
+  history: ""
+  future_plan: ""
+
 # Collaboration not yet started — uncommenting when active
 #- name: FOSS United Foundation
 #  website: https://fossunited.org/
