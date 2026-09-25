@@ -1,0 +1,19 @@
+---
+permalink: /blog/
+redirect_to: /updates/#blog
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FP Launchpad Blog</title>
+  <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
+  <meta name="robots" content="noindex">
+  <script>location.replace("{{ page.redirect_to | relative_url }}");</script>
+</head>
+<body>
+  <p>The blog is now part of <a href="{{ page.redirect_to | relative_url }}">Updates</a>.</p>
+</body>
+</html>
