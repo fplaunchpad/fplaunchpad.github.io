@@ -47,6 +47,10 @@
   padding: 0.9rem 0;
   border-bottom: 1px solid #f0f0f0;
 }
+.update-item.is-target {
+  background: #fffbe6;
+  box-shadow: -0.6rem 0 0 #fffbe6, 0.6rem 0 0 #fffbe6;
+}
 .update-item[hidden] {
   display: none;
 }
@@ -205,11 +209,12 @@
 
     {%- elsif kind == "talk" -%}
     {%- assign talk = all_talks[idx] -%}
-    <li class="update-item" data-type="talk" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
+    {%- assign talk_slug = talk.title | slugify -%}
+    <li class="update-item" id="talk-{{ talk_slug }}" data-type="talk" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
       <div class="update-date">{% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %b %Y" }}{% endif %}</div>
       <div>
         <span class="update-tag tag-talk">Talk</span>
-        <h3 class="update-title">{{ talk.title }}</h3>
+        <h3 class="update-title"><a href="{{ '/talks/' | relative_url }}#{{ talk_slug }}">{{ talk.title }}</a></h3>
         <p class="update-meta">
           <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
           &middot; {{ talk.venue }}
@@ -299,8 +304,20 @@
     apply(filter);
   });
 
+  // A single talk (/talks/#<slug> forwards to /updates/#talk-<slug>): open the Talks tab and
+  // scroll to it.
   function fromHash() {
-    apply(hashToFilter[location.hash.slice(1)] || 'all');
+    var hash = location.hash.slice(1);
+    var prev = document.querySelector('.update-item.is-target');
+    if (prev) prev.classList.remove('is-target');
+    if (hash.indexOf('talk-') === 0 && document.getElementById(hash)) {
+      var item = document.getElementById(hash);
+      apply('talk');
+      item.classList.add('is-target');
+      item.scrollIntoView({ block: 'center' });
+      return;
+    }
+    apply(hashToFilter[hash] || 'all');
   }
   window.addEventListener('hashchange', fromHash);
   tabs.classList.add('is-ready');

@@ -1,0 +1,25 @@
+---
+permalink: /talks/
+sitemap: false
+---
+{%- comment -%}
+  Talks are listed on /updates/. /talks/ opens the Talks tab; /talks/#<slug> jumps to one talk
+  (each talk's title on /updates/ links here, <slug> = the talk title slugified).
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FP Launchpad Talks</title>
+  <link rel="canonical" href="{{ '/updates/#talks' | absolute_url }}">
+  <meta name="robots" content="noindex">
+  <script>
+    var slug = location.hash.slice(1);
+    location.replace("{{ '/updates/' | relative_url }}#" + (slug ? "talk-" + slug : "talks"));
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url={{ '/updates/#talks' | relative_url }}"></noscript>
+</head>
+<body>
+  <p>Talks are now part of <a href="{{ '/updates/#talks' | relative_url }}">Updates</a>.</p>
+</body>
+</html>
