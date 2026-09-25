@@ -214,7 +214,7 @@
       <div class="update-date">{% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %b %Y" }}{% endif %}</div>
       <div>
         <span class="update-tag tag-talk">Talk</span>
-        <h3 class="update-title"><a href="{{ '/talks/' | relative_url }}#{{ talk_slug }}">{{ talk.title }}</a></h3>
+        <h3 class="update-title"><a href="{{ '/updates/' | relative_url }}#talk-{{ talk_slug }}">{{ talk.title }}</a></h3>
         <p class="update-meta">
           <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
           &middot; {{ talk.venue }}
@@ -304,8 +304,7 @@
     apply(filter);
   });
 
-  // A single talk (/talks/#<slug> forwards to /updates/#talk-<slug>): open the Talks tab and
-  // scroll to it.
+  // A link to a single talk (#talk-<slug>): open the Talks tab and scroll to it.
   function fromHash() {
     var hash = location.hash.slice(1);
     var prev = document.querySelector('.update-item.is-target');
