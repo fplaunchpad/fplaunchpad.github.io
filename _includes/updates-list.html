@@ -1,0 +1,309 @@
+<style>
+.updates-tabs {
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.25rem 0 0.5rem 0;
+}
+.updates-tabs.is-ready {
+  display: flex;
+}
+.updates-tab {
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 999px;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+}
+.updates-tab:hover {
+  border-color: #999;
+}
+.updates-tab[aria-pressed="true"] {
+  background: #333;
+  border-color: #333;
+  color: #fff;
+}
+.updates-section h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3rem;
+  margin: 2rem 0 0 0;
+}
+.updates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.update-item {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.update-item[hidden] {
+  display: none;
+}
+.update-date {
+  font-size: 0.85rem;
+  color: #828282;
+  padding-top: 0.15rem;
+}
+.update-tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.05rem 0.45rem;
+  border-radius: 3px;
+  margin-bottom: 0.25rem;
+}
+.tag-news  { background: #e8f0fe; color: #1a4fa0; }
+.tag-event { background: #fdf0e1; color: #9a5300; }
+.tag-talk  { background: #e7f5ec; color: #1f6b3a; }
+.tag-blog  { background: #f1eafb; color: #5b3596; }
+.update-title {
+  font-size: 1.02rem;
+  margin: 0 0 0.2rem 0;
+}
+.update-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 0.4rem 0;
+}
+.update-meta .talk-speaker {
+  font-weight: 600;
+  color: #333;
+}
+.update-meta .talk-designation {
+  font-style: italic;
+  color: #999;
+}
+.update-summary {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 0.4rem 0;
+}
+.update-item details {
+  margin: 0 0 0.4rem 0;
+}
+.update-item details summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+}
+.update-item details p {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0.5rem 0 0 0;
+}
+.update-links {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.update-links a + a {
+  margin-left: 1rem;
+}
+.update-repos {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.3rem 0 0 0;
+}
+.update-repos code {
+  font-size: 0.85em;
+}
+@media (max-width: 600px) {
+  .update-item {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+</style>
+
+{%- comment -%}
+  Build one sort key per item ("YYYY-MM-DD~type~index"), sort newest first, then render each
+  item by looking it up in its source list. Sorting keys as strings avoids comparing Jekyll
+  document dates (Time) with YAML dates (Date), which the sort filter can't do.
+{%- endcomment -%}
+{%- assign all_talks = site.data.talks.talks -%}
+{%- assign all_events = site.data.events.events -%}
+{%- comment -%}
+  News is only for items that aren't an event, talk, or blog post. A news post is skipped when
+  its URL (or its `link`) is an event's link, a blog post's URL, or listed under an event's or
+  talk's `news`.
+{%- endcomment -%}
+{%- capture covered -%}|
+{%- for e in all_events -%}{{ e.link }}|{%- for n in e.news -%}{{ n }}|{%- endfor -%}{%- endfor -%}
+{%- for t in all_talks -%}{%- for n in t.news -%}{{ n }}|{%- endfor -%}{%- endfor -%}
+{%- for b in site.blog -%}{{ b.url }}|{%- endfor -%}
+{%- endcapture -%}
+{%- capture keys -%}
+{%- for p in site.posts -%}
+{%- capture post_url -%}|{{ p.url }}|{%- endcapture -%}
+{%- capture post_link -%}|{{ p.link }}|{%- endcapture -%}
+{%- unless covered contains post_url or p.link and covered contains post_link -%}{{ p.date | date: "%Y-%m-%d" }}~news~{{ forloop.index0 }}|{%- endunless -%}
+{%- endfor -%}
+{%- for p in site.blog -%}{{ p.date | date: "%Y-%m-%d" }}~blog~{{ forloop.index0 }}|{%- endfor -%}
+{%- for t in all_talks -%}{{ t.date | date: "%Y-%m-%d" }}~talk~{{ forloop.index0 }}|{%- endfor -%}
+{%- for e in all_events -%}{{ e.date | date: "%Y-%m-%d" }}~event~{{ forloop.index0 }}|{%- endfor -%}
+{%- endcapture -%}
+{%- assign keys = keys | split: "|" | sort | reverse -%}
+
+<div class="updates-tabs" role="group" aria-label="Filter updates">
+  <button type="button" class="updates-tab" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="updates-tab" data-filter="news" aria-pressed="false">Announcements</button>
+  <button type="button" class="updates-tab" data-filter="event" aria-pressed="false">Events</button>
+  <button type="button" class="updates-tab" data-filter="talk" aria-pressed="false">Talks</button>
+  <button type="button" class="updates-tab" data-filter="blog" aria-pressed="false">Blog</button>
+</div>
+
+<div class="updates-section" id="updates-upcoming" hidden>
+  <h2>Upcoming</h2>
+  <ul class="updates-list"></ul>
+</div>
+
+<div class="updates-section" id="updates-recent">
+  <h2>Recent</h2>
+  <ul class="updates-list">
+  {%- for key in keys -%}
+    {%- assign parts = key | split: "~" -%}
+    {%- assign kind = parts[1] -%}
+    {%- assign idx = parts[2] | plus: 0 -%}
+
+    {%- if kind == "news" -%}
+    {%- assign post = site.posts[idx] -%}
+    {%- assign target = post.link | default: post.url -%}
+    <li class="update-item" data-type="news" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
+      <div class="update-date">{{ post.date | date: "%-d %b %Y" }}</div>
+      <div>
+        <span class="update-tag tag-news">Announcement</span>
+        <h3 class="update-title"><a href="{{ target | relative_url }}">{{ post.title | escape }}</a></h3>
+      </div>
+    </li>
+
+    {%- elsif kind == "blog" -%}
+    {%- assign post = site.blog[idx] -%}
+    <li class="update-item" data-type="blog" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
+      <div class="update-date">{{ post.date | date: "%-d %b %Y" }}</div>
+      <div>
+        <span class="update-tag tag-blog">Blog</span>
+        <h3 class="update-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        {%- if post.author %}<p class="update-meta">{{ post.author }}</p>{% endif %}
+        <p class="update-summary">{% if post.blurb %}{{ post.blurb | strip_html | truncatewords: 30 }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{% endif %}</p>
+      </div>
+    </li>
+
+    {%- elsif kind == "talk" -%}
+    {%- assign talk = all_talks[idx] -%}
+    <li class="update-item" data-type="talk" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
+      <div class="update-date">{% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %b %Y" }}{% endif %}</div>
+      <div>
+        <span class="update-tag tag-talk">Talk</span>
+        <h3 class="update-title">{{ talk.title }}</h3>
+        <p class="update-meta">
+          <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
+          &middot; {{ talk.venue }}
+        </p>
+        {%- if talk.abstract %}
+        <details>
+          <summary>Abstract</summary>
+          <p>{{ talk.abstract }}</p>
+        </details>
+        {%- endif %}
+        {%- if talk.slides or talk.video or talk.links %}
+        <div class="update-links">
+          {%- if talk.slides %}<a href="{% if talk.slides contains '://' %}{{ talk.slides }}{% else %}{{ talk.slides | relative_url }}{% endif %}" target="_blank">{{ talk.slides_label | default: "Slides (PDF)" }}</a>{% endif %}
+          {%- if talk.video %}<a href="{{ talk.video }}" target="_blank">Video</a>{% endif %}
+          {%- for l in talk.links %}<a href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}" target="_blank">{{ l.label }}</a>{% endfor %}
+        </div>
+        {%- endif %}
+        {%- if talk.repos %}
+        <p class="update-repos">Repo{% if talk.repos.size > 1 %}s{% endif %}:
+          {% for repo in talk.repos %}<a href="{{ repo.url }}" target="_blank"><code>{{ repo.name }}</code></a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </p>
+        {%- endif %}
+      </div>
+    </li>
+
+    {%- elsif kind == "event" -%}
+    {%- assign event = all_events[idx] -%}
+    {%- assign event_end = event.end | default: event.date -%}
+    <li class="update-item" data-type="event" data-start="{{ parts[0] }}" data-end="{{ event_end | date: '%Y-%m-%d' }}">
+      <div class="update-date">{% if event.date_display %}{{ event.date_display }}{% else %}{{ event.date | date: "%-d %b %Y" }}{% endif %}</div>
+      <div>
+        <span class="update-tag tag-event">Event</span>
+        <h3 class="update-title">{% if event.link %}<a href="{% if event.link contains '://' %}{{ event.link }}{% else %}{{ event.link | relative_url }}{% endif %}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
+        <p class="update-meta">{{ event.location }}</p>
+        {%- if event.summary %}<p class="update-summary">{{ event.summary }}</p>{% endif %}
+        {%- if event.video or event.links %}
+        <div class="update-links">
+          {%- if event.video %}<a href="{{ event.video }}" target="_blank">Videos</a>{% endif %}
+          {%- for l in event.links %}<a href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}" target="_blank">{{ l.label }}</a>{% endfor %}
+        </div>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endif -%}
+  {%- endfor -%}
+  </ul>
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelector('.updates-tabs');
+  var upcoming = document.getElementById('updates-upcoming');
+  var upcomingList = upcoming.querySelector('.updates-list');
+  var recent = document.getElementById('updates-recent');
+  var items = Array.prototype.slice.call(recent.querySelectorAll('.update-item'));
+
+  // Move anything still running or in the future to "Upcoming", soonest first.
+  var d = new Date();
+  var today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  items.forEach(function (item) {
+    if (item.dataset.end >= today) upcomingList.insertBefore(item, upcomingList.firstChild);
+  });
+
+  var hashToFilter = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', blog: 'blog' };
+  var filterToHash = { news: 'announcements', event: 'events', talk: 'talks', blog: 'blog' };
+
+  function apply(filter) {
+    tabs.querySelectorAll('.updates-tab').forEach(function (btn) {
+      btn.setAttribute('aria-pressed', btn.dataset.filter === filter ? 'true' : 'false');
+    });
+    [upcoming, recent].forEach(function (section) {
+      var shown = 0;
+      section.querySelectorAll('.update-item').forEach(function (item) {
+        var match = filter === 'all' || item.dataset.type === filter;
+        item.hidden = !match;
+        if (match) shown++;
+      });
+      section.hidden = shown === 0;
+    });
+  }
+
+  tabs.addEventListener('click', function (e) {
+    var btn = e.target.closest('.updates-tab');
+    if (!btn) return;
+    var filter = btn.dataset.filter;
+    history.replaceState(null, '', filter === 'all' ? location.pathname : '#' + filterToHash[filter]);
+    apply(filter);
+  });
+
+  function fromHash() {
+    apply(hashToFilter[location.hash.slice(1)] || 'all');
+  }
+  window.addEventListener('hashchange', fromHash);
+  tabs.classList.add('is-ready');
+  fromHash();
+})();
+</script>

@@ -23,7 +23,7 @@ collections:
 # Navigation
 header_pages:
   - charter.md
-  - news.md
+  - updates.md
 
 # Social links
 twitter_username: fp_launchpad

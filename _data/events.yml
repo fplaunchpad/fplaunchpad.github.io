@@ -1,0 +1,91 @@
+# Events shown on /updates/. Source of truth: org-info/events/README.md.
+# `date` is the start date (used for sorting); `end` is optional, for multi-day events.
+# Events whose end date (or start date) is today or later appear under "Upcoming".
+# `link` may be a site path or a full URL. `video` (optional) links to recordings.
+# `links` (optional) is a list of extra {label, url} links.
+# `news` (optional) lists news posts about the event. A news post is left off /updates/ when it
+# is an event's `link` or is listed in its `news`, so the event isn't shown twice.
+events:
+  - title: "FUN OCaml 2027"
+    date: 2027-01-25
+    end: 2027-01-26
+    date_display: "25-26 January 2027"
+    location: "MLR Convention Centre, Bengaluru"
+    summary: >
+      FP Launchpad hosts the first FUN OCaml in India: a day of talks and a keynote, followed by a
+      day of workshops and collaborative hacking. The call for proposals is open through 30 September 2026.
+    link: https://fun-ocaml.com/
+    links:
+      - label: Call for proposals
+        url: https://cfp.fun-ocaml.com/fun-ocaml-2027-bengaluru/cfp
+    news:
+      - /2026/09/07/fun-ocaml-2027-bangalore.html
+
+  - title: "SegFault 2026 Hackathon finale"
+    date: 2026-10-02
+    end: 2026-10-03
+    date_display: "2-3 October 2026"
+    location: "IISc Bengaluru"
+    summary: >
+      In-person finale of an online hackathon on compilers and programming languages. FP Launchpad
+      sponsors the Functional Programming theme.
+    link: /2026/08/19/fp-launchpad-sponsors-segfault-2026.html
+
+  - title: "IndiaFOSS 2026"
+    date: 2026-09-25
+    end: 2026-09-27
+    date_display: "25-27 September 2026"
+    location: "NIMHANS Convention Centre, Bengaluru"
+    summary: >
+      Six talks and workshops from FP Launchpad members, across the main track and the Compilers,
+      Programming Languages and Systems devroom.
+    link: /indiafoss-2026/
+
+  - title: "PROPL 2026: Programming for the Planet"
+    date: 2026-06-15
+    date_display: "15 June 2026"
+    location: "Boulder, Colorado (co-located with PLDI 2026)"
+    summary: >
+      Open working meeting, co-organised by KC Sivaramakrishnan, bringing together climate
+      practitioners and computing researchers to design a next-generation planetary compute engine.
+    link: /2026/04/02/propl-2026.html
+
+  - title: "FP Launchpad Kickoff"
+    date: 2026-04-13
+    date_display: "13 April 2026"
+    location: "IC&SR Building, IIT Madras"
+    summary: >
+      Day-long conference with talks on hardware design, security, formal verification, compilers,
+      programming languages, and AI-augmented software engineering.
+    link: /2026/03/30/fp-launchpad-kickoff.html
+    video: https://www.youtube.com/playlist?list=PLvhoCCkcBeAv4fgWRw5o1q2IpTEAIZBXP
+    news:
+      - /2026/04/26/kickoff-videos.html
+
+  - title: "Talk: Property Based Testing to Verify Pipelined CPU Hardware"
+    date: 2026-04-10
+    date_display: "10 April 2026"
+    location: "Turing Hall, Dept of CS, IIT Madras"
+    summary: >
+      Rishiyur S. Nikhil (Bluespec) on using Haskell QuickCheck to verify a 6-stage pipelined RISC-V CPU.
+    link: /2026/04/09/rishiyur-nikhil-property-based-testing-pipelined-cpu.html
+
+  - title: "Talk: Agentic Proof-oriented Programming"
+    date: 2026-04-07
+    date_display: "7 April 2026"
+    location: "Turing Hall, Dept of CS, IIT Madras"
+    summary: >
+      Nik Swamy (Microsoft Research) on using AI agents with F* and Pulse to build programs with
+      formal proofs of correctness.
+    link: /2026/04/03/nik-swamy-agentic-proof-oriented-programming.html
+
+  - title: "CS Exebit 2026"
+    date: 2026-03-28
+    end: 2026-03-29
+    date_display: "28-29 March 2026"
+    location: "IIT Madras"
+    summary: >
+      Annual technical exhibition of the IIT Madras CS department. KC Sivaramakrishnan gave a talk on
+      Functional Programming and OCaml, followed by a hands-on OCaml workshop. Pranav Ramesh led a
+      workshop on Lean.
+    link: https://www.csexebit.page/
