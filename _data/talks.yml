@@ -1,4 +1,7 @@
-# Newest first within each venue_type (internal / external).
+# Talks shown on /updates/, which sorts by date, so order here doesn't matter.
+# `venue_type` is internal (IIT Madras) or external. Optional: `date_display`, `abstract`, `slides`
+# (+ `slides_label`), `video`, `repos`, `links` (list of {label, url}), `news` (announcement posts
+# this talk covers; they're then left off /updates/).
 talks:
   - title: "Introduction to Modes in OxCaml, Part III: Beyond Modes"
     speaker: Avik Shakhari
@@ -231,3 +234,26 @@ talks:
     repos:
       - name: sal
         url: https://github.com/fplaunchpad/sal
+
+  - title: "From Convergence to Confidence: Push-Button Verification for Replicated Data Types"
+    speaker: KC Sivaramakrishnan
+    designation: PI
+    date: 2026-04-27
+    venue: "Invited Keynote, PaPoC 2026 (co-located with EuroSys 2026)"
+    venue_type: external
+    slides: https://kcsrk.info/slides/RDT_verification_papoc_2026.pdf
+    news:
+      - /2026/04/29/papoc-2026.html
+
+  - title: "Sal: Multi-modal Verification of Replicated Data Types"
+    speaker: Pranav Ramesh, Vimala Soundarapandian, KC Sivaramakrishnan
+    date: 2026-04-27
+    venue: "Paper presentation, PaPoC 2026 (co-located with EuroSys 2026)"
+    venue_type: external
+    slides: https://kcsrk.info/papers/sal_jan26.pdf
+    slides_label: "Paper (PDF)"
+    links:
+      - label: Explainer
+        url: /sal/
+    news:
+      - /2026/04/29/papoc-2026.html
