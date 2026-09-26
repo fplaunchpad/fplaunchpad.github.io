@@ -1,6 +1,3 @@
-{%- if site.announcement -%}
-<a class="announcement-bar" href="{{ site.announcement.link | relative_url }}">{{ site.announcement.text }} &rarr;</a>
-{%- endif -%}
 <header class="site-header" role="banner">
 
   <div class="wrapper">
@@ -38,3 +35,6 @@
     {%- endif -%}
   </div>
 </header>
+{%- if site.announcement -%}
+<a class="announcement-bar" href="{{ site.announcement.link | relative_url }}">{{ site.announcement.text }} &rarr;</a>
+{%- endif -%}

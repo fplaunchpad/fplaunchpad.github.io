@@ -37,7 +37,7 @@ exclude:
   - Gemfile.lock
   - README.md
 
-# Site-wide announcement strip above the header (_includes/header.html). Delete this block to remove it.
+# Site-wide announcement strip below the menu bar (_includes/header.html). Delete this block to remove it.
 announcement:
   text: "Applications are open for the Post-Baccalaureate Fellowship, Cohort 2"
   link: /2026/09/24/applications-open-post-bacc-fellowship-cohort-2.html
