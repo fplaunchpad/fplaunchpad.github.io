@@ -60,8 +60,10 @@ talks:
     links:
       - label: Description
         url: https://fossunited.org/c/indiafoss/2026/cfp/699fhigvkl
+      - label: Notebook
+        url: https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/
       - label: Schedule
-        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
+        url: https://platform.fossunited.org/c/indiafoss/2026/workshops
 
   - title: "Introduction to Modes in OxCaml, Part III: Beyond Modes"
     speaker: Avik Shakhari

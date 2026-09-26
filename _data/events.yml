@@ -41,8 +41,10 @@ events:
       Programming Languages and Systems devroom.
     link: /indiafoss-2026/
     links:
-      - label: Schedule
+      - label: Talk schedule
         url: https://fossunited.org/dashboard/schedule/indiafoss/2026
+      - label: Workshop schedule
+        url: https://platform.fossunited.org/c/indiafoss/2026/workshops
 
   - title: "PROPL 2026: Programming for the Planet"
     date: 2026-06-15
