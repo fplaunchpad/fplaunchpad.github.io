@@ -10,8 +10,10 @@ talks:
     venue: "IndiaFOSS 2026, NIMHANS Convention Centre, Bengaluru"
     venue_type: external
     links:
-      - label: Proposal
+      - label: Description
         url: https://fossunited.org/c/indiafoss/2026/cfp/8s4g5qj3oq
+      - label: Schedule
+        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
 
   - title: "Benchmarking can be hard, here's why we're still creating a new one for OCaml"
     speaker: Navaneeth M. Nambiar
@@ -20,8 +22,10 @@ talks:
     venue: "IndiaFOSS 2026, Compilers, Programming Languages and Systems devroom, Bengaluru"
     venue_type: external
     links:
-      - label: Proposal
+      - label: Description
         url: https://fossunited.org/c/indiafoss/2026/cfp/6aasju7noq
+      - label: Schedule
+        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
 
   - title: "PythonBPF - now with loops, custom funcs, and more maps!"
     speaker: Pragyansh Chaturvedi
@@ -30,8 +34,10 @@ talks:
     venue: "IndiaFOSS 2026, Compilers, Programming Languages and Systems devroom, Bengaluru"
     venue_type: external
     links:
-      - label: Proposal
+      - label: Description
         url: https://fossunited.org/c/indiafoss/2026/cfp/299lpkmuqh
+      - label: Schedule
+        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
 
   - title: "LGTM Is Not A Theorem"
     speaker: Durwasa Chakraborty
@@ -40,8 +46,10 @@ talks:
     venue: "IndiaFOSS 2026, Compilers, Programming Languages and Systems devroom, Bengaluru"
     venue_type: external
     links:
-      - label: Proposal
+      - label: Description
         url: https://fossunited.org/c/indiafoss/2026/cfp/8cbv4mpi6o
+      - label: Schedule
+        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
 
   - title: "Fun and Profit with OCaml (workshop)"
     speaker: Alina Banerjee
@@ -50,8 +58,10 @@ talks:
     venue: "IndiaFOSS 2026 pre-conference workshop, Bengaluru"
     venue_type: external
     links:
-      - label: Proposal
+      - label: Description
         url: https://fossunited.org/c/indiafoss/2026/cfp/699fhigvkl
+      - label: Schedule
+        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
 
   - title: "Introduction to Modes in OxCaml, Part III: Beyond Modes"
     speaker: Avik Shakhari

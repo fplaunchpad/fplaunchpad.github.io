@@ -40,6 +40,9 @@ events:
       Five talks and workshops from FP Launchpad members, across the main track and the Compilers,
       Programming Languages and Systems devroom.
     link: /indiafoss-2026/
+    links:
+      - label: Schedule
+        url: https://fossunited.org/dashboard/schedule/indiafoss/2026
 
   - title: "PROPL 2026: Programming for the Planet"
     date: 2026-06-15
