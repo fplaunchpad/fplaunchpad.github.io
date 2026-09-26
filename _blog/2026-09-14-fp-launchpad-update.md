@@ -32,7 +32,7 @@ The fellowship received **48 applications**. We shortlisted **12 candidates**, w
 - **[Avik Shakhari](https://github.com/recluse099)**, from Chennai Mathematical Institute, is interested in type theory and formal methods, and works on programming-language approaches to security.
 - **[Smayan Agarwal](https://github.com/SmayanAgarwal)**, from Ashoka University, combines interests in mathematics and programming languages with a focus on social good.
 - **[Dhruv](https://github.com/ButteryPaws)**, from IIT Bombay, joins after working in finance and is exploring security and low-level systems.
-- **[Kaustubh Maske Patil](https://kaustubh.page)**, from BITS Pilani, is a generalist programmer with interests in free and open-source software, self-hosting, and functional programming.
+- **[Kaustubh M](https://kaustubh.page)**, from BITS Pilani, is a generalist programmer with interests in free and open-source software, self-hosting, and functional programming.
 - **[Vipul Cariappa](https://vipulcariappa.xyz/)**, from Ramaiah University, worked on Python and C/C++ interoperability at CERN and is interested in compilers and developer tools.
 
 We were disappointed that none of the candidates shortlisted in this round were women. We will soon open a focused application round for the FP Launchpad fellowship specifically for women.
@@ -69,7 +69,7 @@ To attract the next cohort of researchers to FP Launchpad, we have announced **[
 
 ### OCaml workshops
 
-We are adapting the textbook for people trying OCaml in a shorter, guided session. Alina Banerjee, Vimala Soundarapandian, and Kaustubh Maske Patil are preparing [*Fun and Profit with OCaml*](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/). This three-hour beginner workshop runs on 25 September at [IndiaFOSS](https://fossunited.org/indiafoss/2026), a free and open-source software conference in Bengaluru. It covers OCaml basics, data types and pattern matching, and modules, using the textbook's runnable examples and a slide view for teaching.
+We are adapting the textbook for people trying OCaml in a shorter, guided session. Alina Banerjee, Vimala Soundarapandian, and Kaustubh M are preparing [*Fun and Profit with OCaml*](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/). This three-hour beginner workshop runs on 25 September at [IndiaFOSS](https://fossunited.org/indiafoss/2026), a free and open-source software conference in Bengaluru. It covers OCaml basics, data types and pattern matching, and modules, using the textbook's runnable examples and a slide view for teaching.
 
 Smayan contributed interactive [Game of Life](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/05-game-of-life.html) and [Tic-Tac-Toe](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/04-tic-tac-toe.html) exercises. Participants can use the final part of the session to build one of the games. The [workshop repository](https://github.com/fplaunchpad/indiafoss-2026-ocaml-workshop) is available for anyone who wants to work through the material or use it in another setting.
 
