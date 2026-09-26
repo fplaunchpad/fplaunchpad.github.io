@@ -74,7 +74,7 @@ events:
     news:
       - /2026/04/26/kickoff-videos.html
 
-  - title: "Talk: Property Based Testing to Verify Pipelined CPU Hardware"
+  - title: "Talk by FPL Advisor Rishiyur Nikhil: Property Based Testing to Verify Pipelined CPU Hardware"
     date: 2026-04-10
     date_display: "10 April 2026"
     location: "Turing Hall, Dept of CS, IIT Madras"
@@ -82,7 +82,7 @@ events:
       Rishiyur S. Nikhil (Bluespec) on using Haskell QuickCheck to verify a 6-stage pipelined RISC-V CPU.
     link: /2026/04/09/rishiyur-nikhil-property-based-testing-pipelined-cpu.html
 
-  - title: "Talk: Agentic Proof-oriented Programming"
+  - title: "Talk by FPL Advisor Nik Swamy: Agentic Proof-oriented Programming"
     date: 2026-04-07
     date_display: "7 April 2026"
     location: "Turing Hall, Dept of CS, IIT Madras"
