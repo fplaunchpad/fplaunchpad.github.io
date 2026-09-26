@@ -3,6 +3,10 @@ layout: blog-post
 title: "What the Interns Built This Summer"
 date: 2026-08-10
 author: FP Launchpad
+blurb: >-
+  Our summer interns formalized school arithmetic in Lean, added biodiversity data to CoRE Stack,
+  found and fixed a subtle bug in a verified CRDT, pushed OxCaml cryptography toward C speeds, and
+  model-checked lock-free data structures.
 ---
 
 <style>
@@ -77,7 +81,7 @@ The project moved from an XOR [stream cipher](https://en.wikipedia.org/wiki/Stre
 
 ## Concurrent data structures
 
-**Zeeshan Mohammed Rangrej**, from [IIT Palakkad](https://iitpkd.ac.in/), took [CS6868](https://fplaunchpad.org/cs6868_s26/), our concurrent programming course, before writing any test code. Working with [Navaneeth Nambiar](https://github.com/curche), he wrote [DSCheck test cases for a lock-free Trieber stack](https://github.com/fplaunchpad/cs6868_s26/pull/9). Using [DSCheck](https://github.com/ocaml-multicore/dscheck)'s `TracedAtomic`, he exhaustively explored every valid interleaving of concurrent push and pop operations on [OCaml domains](https://v2.ocaml.org/manual/parallelism.html). No counterexample trace means a sequential ordering exists that explains every concurrent execution: the definition of [linearizability](https://en.wikipedia.org/wiki/Linearizability). He extended the same approach to a lock-free linked list.
+**Zeeshan Mohammed Rangrej**, from [IIT Palakkad](https://iitpkd.ac.in/), took [CS6868](https://fplaunchpad.org/cs6868_s26/), our concurrent programming course, before writing any test code. Working with [Navaneeth Nambiar](https://github.com/curche), he wrote [DSCheck test cases for a lock-free Treiber stack](https://github.com/fplaunchpad/cs6868_s26/pull/9). Using [DSCheck](https://github.com/ocaml-multicore/dscheck)'s `TracedAtomic`, he exhaustively explored every valid interleaving of concurrent push and pop operations on [OCaml domains](https://v2.ocaml.org/manual/parallelism.html). No counterexample trace means a sequential ordering exists that explains every concurrent execution: the definition of [linearizability](https://en.wikipedia.org/wiki/Linearizability). He extended the same approach to a lock-free linked list.
 
 He validated the checks against a deliberately buggy implementation of the list, and confirmed DSCheck caught the injected fault every time. Reading [Godefroid's thesis](https://patricegodefroid.github.io/public_psfiles/thesis.pdf) on systematic exploration of concurrent programs pointed at DSCheck's next gap: extending it from [safety properties](https://en.wikipedia.org/wiki/Safety_and_liveness_properties) to liveness properties, [now an open issue](https://github.com/fplaunchpad/cs6868_s26/issues/10) on the course repository. Zeeshan is currently reading how [Software Transactional Memory](https://en.wikipedia.org/wiki/Software_transactional_memory) implementations track read and write sets and detect conflicts, with an eye toward implementing and testing one himself. His internship has ended, but he continues as a remote collaborator.
 
@@ -89,9 +93,10 @@ He validated the checks against a deliberately buggy implementation of the list,
 
 ## Separation logic
 
-**Chaitanya Agarwal**, a PhD student at [NYU](https://www.nyu.edu/), visited for the summer to explore formal-verification angles connected to his PhD thesis, working with [Prof. Aishwarya](https://cystar.iitm.ac.in/aishwarya-inner-people/) and KC. His most visible contribution was two internal talks, [Introduction to Separation Logic](https://fplaunchpad.org/talks/) and its sequel a week later, both adapted from the [Iris tutorial at POPL 2021](https://gitlab.mpi-sws.org/iris/tutorial-popl21/-/blob/master/talks/iris-popl21-tutorial.pdf), the [ACM symposium](https://en.wikipedia.org/wiki/Symposium_on_Principles_of_Programming_Languages) where Iris itself was introduced.
+**Chaitanya Agarwal**, a PhD student at [NYU](https://www.nyu.edu/), visited for the summer to explore formal-verification angles connected to his PhD thesis, working with [Prof. Aishwarya](https://cystar.iitm.ac.in/aishwarya-inner-people/) and KC. His most visible contribution was two internal talks, [Introduction to Separation Logic](/updates/#talk-introduction-to-separation-logic) and [its sequel](/updates/#talk-introduction-to-separation-logic-part-ii) a week later, both adapted from the [Iris tutorial at POPL 2021](https://gitlab.mpi-sws.org/iris/tutorial-popl21/-/blob/master/talks/iris-popl21-tutorial.pdf), the [ACM symposium](https://en.wikipedia.org/wiki/Symposium_on_Principles_of_Programming_Languages) where Iris itself was introduced.
 
 <p class="resource-links">
-<a class="resource-btn" href="https://fplaunchpad.org/talks/" target="_blank">Talks page</a>
+<a class="resource-btn" href="/updates/#talk-introduction-to-separation-logic" target="_blank">Talk</a>
+<a class="resource-btn" href="/updates/#talk-introduction-to-separation-logic-part-ii" target="_blank">Talk, part II</a>
 <a class="resource-btn" href="https://gitlab.mpi-sws.org/iris/tutorial-popl21/-/blob/master/talks/iris-popl21-tutorial.pdf" target="_blank">Iris tutorial slides (PDF)</a>
 </p>
