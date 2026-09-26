@@ -31,6 +31,22 @@ events:
       sponsors the Functional Programming theme.
     link: /2026/08/19/fp-launchpad-sponsors-segfault-2026.html
 
+  - title: "Workshop: Fun and Profit with OCaml"
+    date: 2026-09-25
+    date_display: "25 September 2026"
+    location: "IndiaFOSS 2026 pre-conference workshops, Bengaluru"
+    summary: >
+      Hands-on OCaml workshop by Alina Banerjee, Smayan Agarwal, Kaustubh M and Vimala Soundarapandian,
+      at IndiaFOSS 2026.
+    link: https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/
+    links:
+      - label: Notebook
+        url: https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/
+      - label: Description
+        url: https://fossunited.org/c/indiafoss/2026/cfp/699fhigvkl
+      - label: Workshop schedule
+        url: https://platform.fossunited.org/c/indiafoss/2026/workshops
+
   - title: "IndiaFOSS 2026"
     date: 2026-09-25
     end: 2026-09-27
