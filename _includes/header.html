@@ -35,3 +35,6 @@
     {%- endif -%}
   </div>
 </header>
+{%- if site.announcement -%}
+<a class="announcement-bar" href="{{ site.announcement.link | relative_url }}">{{ site.announcement.text }} &rarr;</a>
+{%- endif -%}

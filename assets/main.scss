@@ -331,3 +331,17 @@ details {
     gap: 0.2rem;
   }
 }
+
+/* Site-wide announcement strip below the menu bar (configured under `announcement:` in _config.yml) */
+.announcement-bar {
+  display: block;
+  background: #2a7ae2;
+  color: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+
+  &:visited { color: #fff; }
+  &:hover { color: #fff; background: #1f63bd; text-decoration: none; }
+}
