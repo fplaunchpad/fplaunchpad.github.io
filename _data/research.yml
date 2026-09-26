@@ -10,7 +10,7 @@ themes:
       practical integration into OCaml and WebAssembly.
     related_opensource:
       - text: "OCaml 5: Multicore &amp; Algebraic Effects"
-        url: /opensource/#ocaml-5-multicore--algebraic-effects
+        url: "#oss-ocaml-5-multicore-algebraic-effects"
     publications:
       - title: Continuing WebAssembly with Effect Handlers
         authors: Luna Phipps-Costin et al.
@@ -58,9 +58,9 @@ themes:
       data structures, and testing tools for concurrent programs.
     related_opensource:
       - text: "OCaml 5: Multicore &amp; Algebraic Effects"
-        url: /opensource/#ocaml-5-multicore--algebraic-effects
+        url: "#oss-ocaml-5-multicore-algebraic-effects"
       - text: "Multicore Runtimes &amp; Performance"
-        url: /opensource/#multicore-runtimes--performance
+        url: "#oss-multicore-runtimes-performance"
     publications:
       - title: Retrofitting Parallelism onto OCaml
         authors: KC Sivaramakrishnan et al.
@@ -123,7 +123,7 @@ themes:
       the complexity of weak consistency.
     related_opensource:
       - text: "Distributed &amp; Eventually Consistent Systems"
-        url: /opensource/#distributed--eventually-consistent-systems
+        url: "#oss-distributed-eventually-consistent-systems"
     publications:
       - title: Sal&#58; Multi-modal Verification of Replicated Data Types
         authors: Pranav Ramesh et al.
@@ -179,7 +179,7 @@ themes:
       and techniques for reducing runtime overheads in concurrent settings.
     related_opensource:
       - text: "Multicore Runtimes &amp; Performance"
-        url: /opensource/#multicore-runtimes--performance
+        url: "#oss-multicore-runtimes-performance"
     publications:
       - title: A Mechanically Verified Garbage Collector for OCaml
         authors: Sheera Shamsu et al.

@@ -12,7 +12,7 @@ blurb: >-
 
 Five months after the [FP Launchpad kickoff on 13 April]({% post_url 2026-03-30-fp-launchpad-kickoff %}), here is where things stand.
 
-- Six [fellows](/team/) have joined from a pool of 48 applicants. We also hosted eight summer interns and celebrated two PhD graduations.
+- Six [fellows](/about/#team) have joined from a pool of 48 applicants. We also hosted eight summer interns and celebrated two PhD graduations.
 - Our [online OCaml course](https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs90) now has about 1,200 students enrolled.
 - Research highlights include two papers, [FIDES](https://kcsrk.info/papers/fides_asiaccs_2026.pdf) and [Sal](https://kcsrk.info/papers/sal_jan26.pdf), and work with Microsoft Research on a [verified generational garbage collector](https://risemsr.github.io/blog/2026-08-21-gc/) integrated with OCaml's bytecode runtime.
 - Coding agents are helping us build implementations and proofs, while we investigate how to improve human understanding of machine-written theorems and proofs.
@@ -37,11 +37,11 @@ The fellowship received **48 applications**. We shortlisted **12 candidates**, w
 
 We were disappointed that none of the candidates shortlisted in this round were women. We will soon open a focused application round for the FP Launchpad fellowship specifically for women.
 
-**[Akhil Tulluri](/team/)** has joined as a full-time researcher. Following his master's studies at Northeastern University, he is working on the performance and formal verification of OCaml's garbage collectors, alongside [Sheera Shamsu](/team/), who completed her PhD in July.
+**[Akhil Tulluri](/about/#team)** has joined as a full-time researcher. Following his master's studies at Northeastern University, he is working on the performance and formal verification of OCaml's garbage collectors, alongside [Sheera Shamsu](/about/#team), who completed her PhD in July.
 
 **[Vimala Soundarapandian](https://sites.google.com/view/vimala90/)** has joined as a Research Scientist after completing her PhD. Akhil, Vimala, and the six fellows join existing research staff **[Alina Banerjee](https://www.blue-indus.in/)** and **[Navaneeth Nambiar](https://github.com/curche)**.
 
-**Sanjay Karanth**, our Technical Program Manager, coordinates project updates and helps the group plan and follow through on its work. You can read more about the wider group on our [team page](/team/).
+**Sanjay Karanth**, our Technical Program Manager, coordinates project updates and helps the group plan and follow through on its work. You can read more about the wider group on our [team page](/about/#team).
 
 ### Summer internships
 
@@ -83,7 +83,7 @@ A central research question for FP Launchpad is how people can choose and unders
 
 When an OCaml program no longer needs an object, the garbage collector can reclaim its memory. Getting this wrong can corrupt data that the program is still using, which is why verifying the collector is an important part of our charter's goal of a verified runtime for OCaml and OxCaml.
 
-[Sheera Shamsu](/team/) graduated with a PhD in July. Her doctoral research produced a mechanically verified collector for OCaml, described in [*A Mechanically Verified Garbage Collector for OCaml*](https://doi.org/10.1007/s10817-025-09721-0), published in the *Journal of Automated Reasoning* in 2025. An earlier port of her collector to current F* and Pulse was a case study in the Microsoft Research team's [*Proofs Promptly: Proof-Oriented Programming with AI Agents (Experience Report)*](https://doi.org/10.1145/3828709), presented at the International Conference on Functional Programming (ICFP) in August 2026.
+[Sheera Shamsu](/about/#team) graduated with a PhD in July. Her doctoral research produced a mechanically verified collector for OCaml, described in [*A Mechanically Verified Garbage Collector for OCaml*](https://doi.org/10.1007/s10817-025-09721-0), published in the *Journal of Automated Reasoning* in 2025. An earlier port of her collector to current F* and Pulse was a case study in the Microsoft Research team's [*Proofs Promptly: Proof-Oriented Programming with AI Agents (Experience Report)*](https://doi.org/10.1145/3828709), presented at the International Conference on Functional Programming (ICFP) in August 2026.
 
 Working with Nik Swamy at Microsoft Research, Sheera and I helped plan the collector's extension into a generational collector, which handles newly allocated and longer-lived objects separately. Nik used coding agents to develop the implementation and proofs in the F* proof-oriented programming language and its concurrent separation logic Pulse, with human review of the specifications. His [account of the work](https://risemsr.github.io/blog/2026-08-21-gc/) describes the progression from the original collector through memory allocation and object movement to integration with OCaml 4.14's bytecode runtime.
 

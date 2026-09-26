@@ -1,0 +1,78 @@
+---
+layout: page
+---
+{{ content }}
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<style>
+.projects-filters:not(.is-ready) {
+  display: none;
+}
+.projects-part + .projects-part {
+  margin-top: 3rem;
+}
+</style>
+
+<div class="tag-filters projects-filters" role="group" aria-label="Show sections">
+  <button type="button" class="tag-btn is-active" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="tag-btn" data-filter="research" aria-pressed="false">Research</button>
+  <button type="button" class="tag-btn" data-filter="open-source" aria-pressed="false">Open Source</button>
+</div>
+
+<section class="projects-part" data-part="research">
+  <h2 id="research">Research</h2>
+  <p>Research at FP Launchpad spans programming languages, systems, and formal verification, with a particular focus on the <a href="https://ocaml.org/">O(x)Caml</a> ecosystem. The work below reflects the research interests of our faculty, and forms the foundation for ongoing and future projects at the centre.</p>
+  {% include projects-research.html %}
+</section>
+
+<section class="projects-part" data-part="open-source">
+  <h2 id="open-source">Open Source</h2>
+  <p>FP Launchpad faculty and affiliates are active contributors to open source software, with deep involvement in the <a href="https://ocaml.org/">OCaml</a> ecosystem and beyond. Below is a snapshot of key contributions, organised by theme.</p>
+  {% include projects-opensource.html %}
+</section>
+
+<script>
+(function () {
+  // Single-select section filter, like /about/. Hash: #research, #open-source. A hash naming a theme
+  // (e.g. #oss-..., from the "Related research / open source" links) opens its section and scrolls to it.
+  var filters = document.querySelector('.projects-filters');
+  var parts = document.querySelectorAll('.projects-part');
+  var TYPES = ['research', 'open-source'];
+
+  function apply(active) {
+    filters.querySelectorAll('.tag-btn').forEach(function (btn) {
+      var on = btn.dataset.filter === active;
+      btn.classList.toggle('is-active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    parts.forEach(function (part) {
+      part.hidden = !(active === 'all' || part.dataset.part === active);
+    });
+  }
+
+  filters.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tag-btn');
+    if (!btn) return;
+    var active = btn.dataset.filter;
+    history.replaceState(null, '', active === 'all' ? location.pathname : '#' + active);
+    apply(active);
+  });
+
+  function fromHash() {
+    var hash = location.hash.slice(1);
+    if (TYPES.indexOf(hash) !== -1) { apply(hash); return; }
+    var target = hash && document.getElementById(hash);
+    var part = target && target.closest('.projects-part');
+    if (part) {
+      apply(part.dataset.part);
+      target.scrollIntoView();
+      return;
+    }
+    apply('all');
+  }
+  window.addEventListener('hashchange', fromHash);
+  filters.classList.add('is-ready');
+  fromHash();
+})();
+</script>

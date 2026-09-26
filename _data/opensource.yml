@@ -10,9 +10,9 @@ themes:
       that fundamentally changed what OCaml can do for concurrent systems programming.
     related_research:
       - text: "Effect Handlers &amp; Language Design"
-        url: /research/#effect-handlers--language-design
+        url: "#research-effect-handlers-language-design"
       - text: "Concurrency &amp; Parallelism"
-        url: /research/#concurrency--parallelism
+        url: "#research-concurrency-parallelism"
     repos:
       - name: ocaml-multicore
         url: https://github.com/ocaml-multicore/multicore-opam
@@ -50,7 +50,7 @@ themes:
       with Irmin (a Git-like database written in OCaml) as a central platform.
     related_research:
       - text: "Distributed Systems &amp; Consistency"
-        url: /research/#distributed-systems--consistency
+        url: "#research-distributed-systems-consistency"
     repos:
       - name: irmin
         url: https://github.com/mirage/irmin
@@ -79,9 +79,9 @@ themes:
       profiling tooling.
     related_research:
       - text: "Concurrency &amp; Parallelism"
-        url: /research/#concurrency--parallelism
+        url: "#research-concurrency-parallelism"
       - text: "Memory Management &amp; Runtime Systems"
-        url: /research/#memory-management--runtime-systems
+        url: "#research-memory-management-runtime-systems"
     repos:
       - name: multiMLton
         url: https://github.com/kayceesrk/multiMLton
