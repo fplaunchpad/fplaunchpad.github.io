@@ -1,5 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
 <style>
 .research-theme { margin-bottom: 3rem; }
 .theme-tags { margin-bottom: 0.5rem; }
@@ -15,19 +13,11 @@
 .pub-toggle:hover { text-decoration: underline; }
 </style>
 
-<div x-data="{ active: 'all' }">
-
-  <div class="tag-filters">
-    <button class="tag-btn" :class="{ 'is-active': active === 'all' }" @click="active = 'all'">All</button>
-    {% for tag in site.data.research.tags_all %}
-    <button class="tag-btn" :class="{ 'is-active': active === '{{ tag }}' }" @click="active = '{{ tag }}'">{{ tag }}</button>
-    {% endfor %}
-  </div>
+<div class="projects-themes">
 
   {% for theme in site.data.research.themes %}
-  {% capture show_cond %}active === 'all'{% for tag in theme.tags %} || active === '{{ tag }}'{% endfor %}{% endcapture %}
-  <div class="research-theme" x-data="{ open: false }" x-show="{{ show_cond }}">
-    <h2>{{ theme.title }}</h2>
+  <div class="research-theme" id="research-{{ theme.title | replace: '&amp;', '' | slugify }}" x-data="{ open: false }">
+    <h3>{{ theme.title }}</h3>
     <div class="theme-tags">
       {% for tag in theme.tags %}
       <span class="theme-tag">{{ tag }}</span>
