@@ -128,7 +128,7 @@
   <button type="button" class="tag-btn" data-filter="news" aria-pressed="false">Announcements</button>
   <button type="button" class="tag-btn" data-filter="event" aria-pressed="false">Events</button>
   <button type="button" class="tag-btn" data-filter="talk" aria-pressed="false">Talks</button>
-  <button type="button" class="tag-btn" data-filter="blog" aria-pressed="false">Blog</button>
+  <button type="button" class="tag-btn" data-filter="blog" aria-pressed="false">Blogposts</button>
 </div>
 
 <div class="updates-section" id="updates-upcoming" hidden>
@@ -160,7 +160,7 @@
     <li class="update-item" data-type="blog" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
       <div class="update-date">{{ post.date | date: "%-d %b %Y" }}</div>
       <div>
-        <span class="theme-tag">Blog</span>
+        <span class="theme-tag">Blogpost</span>
         <h3 class="update-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
         {%- if post.author %}<p class="update-meta">{{ post.author }}</p>{% endif %}
         <p class="update-summary">{% if post.blurb %}{{ post.blurb | strip_html | truncatewords: 30 }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{% endif %}</p>
@@ -241,8 +241,8 @@
 
   // Filters are multi-select: pick any mix of types; none (or all) selected means "All".
   // The URL hash mirrors the selection, e.g. #events+blog.
-  var hashToType = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', blog: 'blog' };
-  var typeToHash = { news: 'announcements', event: 'events', talk: 'talks', blog: 'blog' };
+  var hashToType = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', blogposts: 'blog', blog: 'blog' };
+  var typeToHash = { news: 'announcements', event: 'events', talk: 'talks', blog: 'blogposts' };
   var selected = [];
 
   function apply() {

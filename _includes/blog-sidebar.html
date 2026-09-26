@@ -1,6 +1,6 @@
 <aside class="blog-sidebar">
   {%- assign blog_posts = site.blog | sort: 'date' | reverse -%}
-  {%- if blog_posts.size > 0 -%}
+  {%- if blog_posts.size > 0 and include.hide_recent != true -%}
   <div class="sidebar-section">
     <h3>Recent Posts</h3>
     <ul class="sidebar-posts">
