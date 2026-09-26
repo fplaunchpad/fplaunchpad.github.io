@@ -1,132 +1,9 @@
 <style>
-.updates-tabs {
+.updates-filters:not(.is-ready) {
   display: none;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 1.25rem 0 0.5rem 0;
-}
-.updates-tabs.is-ready {
-  display: flex;
-}
-.updates-tab {
-  font: inherit;
-  font-size: 0.88rem;
-  padding: 0.3rem 0.9rem;
-  border: 1px solid #d0d0d0;
-  border-radius: 999px;
-  background: #fff;
-  color: #444;
-  cursor: pointer;
-}
-.updates-tab:hover {
-  border-color: #999;
-}
-.updates-tab[aria-pressed="true"] {
-  background: #333;
-  border-color: #333;
-  color: #fff;
 }
 .updates-section h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #888;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.3rem;
-  margin: 2rem 0 0 0;
-}
-.updates-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.update-item {
-  display: grid;
-  grid-template-columns: 7.5rem 1fr;
-  gap: 1rem;
-  padding: 0.9rem 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.update-item[hidden] {
-  display: none;
-}
-.update-date {
-  font-size: 0.85rem;
-  color: #828282;
-  padding-top: 0.15rem;
-}
-.update-tag {
-  display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.05rem 0.45rem;
-  border-radius: 3px;
-  margin-bottom: 0.25rem;
-}
-.tag-news  { background: #e8f0fe; color: #1a4fa0; }
-.tag-event { background: #fdf0e1; color: #9a5300; }
-.tag-talk  { background: #e7f5ec; color: #1f6b3a; }
-.tag-blog  { background: #f1eafb; color: #5b3596; }
-.update-title {
-  font-size: 1.02rem;
-  margin: 0 0 0.2rem 0;
-}
-.update-meta {
-  font-size: 0.85rem;
-  color: #666;
-  margin: 0 0 0.4rem 0;
-}
-.update-meta .talk-speaker {
-  font-weight: 600;
-  color: #333;
-}
-.update-meta .talk-designation {
-  font-style: italic;
-  color: #999;
-}
-.update-summary {
-  font-size: 0.92rem;
-  color: #444;
-  line-height: 1.5;
-  margin: 0 0 0.4rem 0;
-}
-.update-item details {
-  margin: 0 0 0.4rem 0;
-}
-.update-item details summary {
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  color: #444;
-}
-.update-item details p {
-  font-size: 0.92rem;
-  color: #444;
-  line-height: 1.5;
-  margin: 0.5rem 0 0 0;
-}
-.update-links {
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-.update-links a + a {
-  margin-left: 1rem;
-}
-.update-repos {
-  font-size: 0.85rem;
-  color: #666;
-  margin: 0.3rem 0 0 0;
-}
-.update-repos code {
-  font-size: 0.85em;
-}
-@media (max-width: 600px) {
-  .update-item {
-    grid-template-columns: 1fr;
-    gap: 0.2rem;
-  }
+  margin: 1.5rem 0 0 0;
 }
 </style>
 
@@ -159,12 +36,12 @@
 {%- endcapture -%}
 {%- assign keys = keys | split: "|" | sort | reverse -%}
 
-<div class="updates-tabs" role="group" aria-label="Filter updates">
-  <button type="button" class="updates-tab" data-filter="all" aria-pressed="true">All</button>
-  <button type="button" class="updates-tab" data-filter="news" aria-pressed="false">Announcements</button>
-  <button type="button" class="updates-tab" data-filter="event" aria-pressed="false">Events</button>
-  <button type="button" class="updates-tab" data-filter="talk" aria-pressed="false">Talks</button>
-  <button type="button" class="updates-tab" data-filter="blog" aria-pressed="false">Blog</button>
+<div class="tag-filters updates-filters" role="group" aria-label="Filter updates">
+  <button type="button" class="tag-btn is-active" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="tag-btn" data-filter="news" aria-pressed="false">Announcements</button>
+  <button type="button" class="tag-btn" data-filter="event" aria-pressed="false">Events</button>
+  <button type="button" class="tag-btn" data-filter="talk" aria-pressed="false">Talks</button>
+  <button type="button" class="tag-btn" data-filter="blog" aria-pressed="false">Blogposts</button>
 </div>
 
 <div class="updates-section" id="updates-upcoming" hidden>
@@ -186,7 +63,7 @@
     <li class="update-item" data-type="news" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
       <div class="update-date">{{ post.date | date: "%-d %b %Y" }}</div>
       <div>
-        <span class="update-tag tag-news">Announcement</span>
+        <span class="theme-tag">Announcement</span>
         <h3 class="update-title"><a href="{{ target | relative_url }}">{{ post.title | escape }}</a></h3>
       </div>
     </li>
@@ -196,7 +73,7 @@
     <li class="update-item" data-type="blog" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
       <div class="update-date">{{ post.date | date: "%-d %b %Y" }}</div>
       <div>
-        <span class="update-tag tag-blog">Blog</span>
+        <span class="theme-tag">Blogpost</span>
         <h3 class="update-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
         {%- if post.author %}<p class="update-meta">{{ post.author }}</p>{% endif %}
         <p class="update-summary">{% if post.blurb %}{{ post.blurb | strip_html | truncatewords: 30 }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{% endif %}</p>
@@ -205,11 +82,12 @@
 
     {%- elsif kind == "talk" -%}
     {%- assign talk = all_talks[idx] -%}
-    <li class="update-item" data-type="talk" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
+    {%- assign talk_slug = talk.title | slugify -%}
+    <li class="update-item" id="talk-{{ talk_slug }}" data-type="talk" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
       <div class="update-date">{% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %b %Y" }}{% endif %}</div>
       <div>
-        <span class="update-tag tag-talk">Talk</span>
-        <h3 class="update-title">{{ talk.title }}</h3>
+        <span class="theme-tag">Talk</span>
+        <h3 class="update-title"><a href="{{ '/updates/' | relative_url }}#talk-{{ talk_slug }}">{{ talk.title }}</a></h3>
         <p class="update-meta">
           <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
           &middot; {{ talk.venue }}
@@ -241,7 +119,7 @@
     <li class="update-item" data-type="event" data-start="{{ parts[0] }}" data-end="{{ event_end | date: '%Y-%m-%d' }}">
       <div class="update-date">{% if event.date_display %}{{ event.date_display }}{% else %}{{ event.date | date: "%-d %b %Y" }}{% endif %}</div>
       <div>
-        <span class="update-tag tag-event">Event</span>
+        <span class="theme-tag">Event</span>
         <h3 class="update-title">{% if event.link %}<a href="{% if event.link contains '://' %}{{ event.link }}{% else %}{{ event.link | relative_url }}{% endif %}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</h3>
         <p class="update-meta">{{ event.location }}</p>
         {%- if event.summary %}<p class="update-summary">{{ event.summary }}</p>{% endif %}
@@ -260,11 +138,12 @@
 
 <script>
 (function () {
-  var tabs = document.querySelector('.updates-tabs');
+  var filters = document.querySelector('.updates-filters');
   var upcoming = document.getElementById('updates-upcoming');
   var upcomingList = upcoming.querySelector('.updates-list');
   var recent = document.getElementById('updates-recent');
   var items = Array.prototype.slice.call(recent.querySelectorAll('.update-item'));
+  var TYPES = ['news', 'event', 'talk', 'blog'];
 
   // Move anything still running or in the future to "Upcoming", soonest first.
   var d = new Date();
@@ -273,17 +152,23 @@
     if (item.dataset.end >= today) upcomingList.insertBefore(item, upcomingList.firstChild);
   });
 
-  var hashToFilter = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', blog: 'blog' };
-  var filterToHash = { news: 'announcements', event: 'events', talk: 'talks', blog: 'blog' };
+  // Filters are multi-select: pick any mix of types; none (or all) selected means "All".
+  // The URL hash mirrors the selection, e.g. #events+blog.
+  var hashToType = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', blogposts: 'blog', blog: 'blog' };
+  var typeToHash = { news: 'announcements', event: 'events', talk: 'talks', blog: 'blogposts' };
+  var selected = [];
 
-  function apply(filter) {
-    tabs.querySelectorAll('.updates-tab').forEach(function (btn) {
-      btn.setAttribute('aria-pressed', btn.dataset.filter === filter ? 'true' : 'false');
+  function apply() {
+    var all = selected.length === 0;
+    filters.querySelectorAll('.tag-btn').forEach(function (btn) {
+      var on = btn.dataset.filter === 'all' ? all : selected.indexOf(btn.dataset.filter) !== -1;
+      btn.classList.toggle('is-active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
     [upcoming, recent].forEach(function (section) {
       var shown = 0;
       section.querySelectorAll('.update-item').forEach(function (item) {
-        var match = filter === 'all' || item.dataset.type === filter;
+        var match = all || selected.indexOf(item.dataset.type) !== -1;
         item.hidden = !match;
         if (match) shown++;
       });
@@ -291,19 +176,43 @@
     });
   }
 
-  tabs.addEventListener('click', function (e) {
-    var btn = e.target.closest('.updates-tab');
+  filters.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tag-btn');
     if (!btn) return;
-    var filter = btn.dataset.filter;
-    history.replaceState(null, '', filter === 'all' ? location.pathname : '#' + filterToHash[filter]);
-    apply(filter);
+    var type = btn.dataset.filter;
+    if (type === 'all') {
+      selected = [];
+    } else if (selected.indexOf(type) !== -1) {
+      selected = selected.filter(function (t) { return t !== type; });
+    } else {
+      selected.push(type);
+    }
+    if (selected.length === TYPES.length) selected = [];
+    selected.sort(function (a, b) { return TYPES.indexOf(a) - TYPES.indexOf(b); });
+    history.replaceState(null, '', selected.length ? '#' + selected.map(function (t) { return typeToHash[t]; }).join('+') : location.pathname);
+    apply();
   });
 
+  // A link to a single talk (#talk-<slug>): show talks and scroll to it.
   function fromHash() {
-    apply(hashToFilter[location.hash.slice(1)] || 'all');
+    var hash = decodeURIComponent(location.hash.slice(1));
+    var prev = document.querySelector('.update-item.is-target');
+    if (prev) prev.classList.remove('is-target');
+    if (hash.indexOf('talk-') === 0 && document.getElementById(hash)) {
+      var item = document.getElementById(hash);
+      selected = ['talk'];
+      apply();
+      item.classList.add('is-target');
+      item.scrollIntoView({ block: 'center' });
+      return;
+    }
+    selected = hash.split(/[+,]/).map(function (h) { return hashToType[h]; }).filter(Boolean);
+    selected = TYPES.filter(function (t) { return selected.indexOf(t) !== -1; });
+    if (selected.length === TYPES.length) selected = [];
+    apply();
   }
   window.addEventListener('hashchange', fromHash);
-  tabs.classList.add('is-ready');
+  filters.classList.add('is-ready');
   fromHash();
 })();
 </script>

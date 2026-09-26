@@ -1,0 +1,102 @@
+<style>
+.blog-filters:not(.is-ready) {
+  display: none;
+}
+/* Month labels: small grey caps, matching the sidebar's section headings */
+.blog-month h2 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #828282;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 0.4em;
+  margin: 2rem 0 0 0;
+}
+.blog-month:first-of-type h2 {
+  margin-top: 0;
+}
+</style>
+
+{%- assign blog_posts = site.blog | sort: 'date' | reverse -%}
+{%- if blog_posts.size == 0 -%}
+<p style="color: #828282;">No posts yet. Check back soon.</p>
+{%- else -%}
+
+<div class="tag-filters blog-filters" role="group" aria-label="Filter blog posts">
+  <button type="button" class="tag-btn is-active" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="tag-btn" data-filter="team" aria-pressed="false">Team posts</button>
+  <button type="button" class="tag-btn" data-filter="digest" aria-pressed="false">Digests</button>
+</div>
+
+{%- assign months = blog_posts | group_by_exp: "post", "post.date | date: '%B %Y'" -%}
+{%- for month in months %}
+<section class="blog-month">
+  <h2>{{ month.name }}</h2>
+  <ul class="updates-list">
+  {%- for post in month.items -%}
+    {%- if post.digest -%}{%- assign kind = "digest" -%}{%- else -%}{%- assign kind = "team" -%}{%- endif %}
+    <li class="update-item" data-type="{{ kind }}">
+      <div class="update-date">{{ post.date | date: "%-d %b" }}</div>
+      <div>
+        <span class="theme-tag">{% if kind == "digest" %}Digest{% else %}Team post{% endif %}</span>
+        <h3 class="update-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        {%- if post.author %}<p class="update-meta">{{ post.author }}</p>{% endif %}
+        <p class="update-summary">{% if post.blurb %}{{ post.blurb }}{% else %}{{ post.excerpt | strip_html | truncatewords: 50 }}{% endif %}</p>
+      </div>
+    </li>
+  {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+
+<script>
+(function () {
+  // Multi-select filters, like /updates/: none (or all) selected means "All". Hash: #team, #digests.
+  var filters = document.querySelector('.blog-filters');
+  var TYPES = ['team', 'digest'];
+  var hashToType = { team: 'team', digests: 'digest' };
+  var typeToHash = { team: 'team', digest: 'digests' };
+  var selected = [];
+
+  function apply() {
+    var all = selected.length === 0;
+    filters.querySelectorAll('.tag-btn').forEach(function (btn) {
+      var on = btn.dataset.filter === 'all' ? all : selected.indexOf(btn.dataset.filter) !== -1;
+      btn.classList.toggle('is-active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.blog-month').forEach(function (month) {
+      var shown = 0;
+      month.querySelectorAll('.update-item').forEach(function (item) {
+        var match = all || selected.indexOf(item.dataset.type) !== -1;
+        item.hidden = !match;
+        if (match) shown++;
+      });
+      month.hidden = shown === 0;
+    });
+  }
+
+  filters.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tag-btn');
+    if (!btn) return;
+    var type = btn.dataset.filter;
+    if (type === 'all') selected = [];
+    else if (selected.indexOf(type) !== -1) selected = selected.filter(function (t) { return t !== type; });
+    else selected.push(type);
+    if (selected.length === TYPES.length) selected = [];
+    history.replaceState(null, '', selected.length ? '#' + selected.map(function (t) { return typeToHash[t]; }).join('+') : location.pathname);
+    apply();
+  });
+
+  function fromHash() {
+    selected = location.hash.slice(1).split(/[+,]/).map(function (h) { return hashToType[h]; }).filter(Boolean);
+    if (selected.length === TYPES.length) selected = [];
+    apply();
+  }
+  window.addEventListener('hashchange', fromHash);
+  filters.classList.add('is-ready');
+  fromHash();
+})();
+</script>
+{%- endif -%}

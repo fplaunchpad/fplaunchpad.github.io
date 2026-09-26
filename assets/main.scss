@@ -3,10 +3,137 @@
 
 @import "minima";
 
-/* Add padding to header */
+/* Header: logo, site name and nav on one vertically centred row */
 .site-header {
   padding-top: 5px;
   padding-bottom: 5px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 60px;
+    margin-right: 15px;
+  }
+}
+
+/* Nav dropdowns: the menu hangs from the left edge of its label, and item text lines up with
+   the label text. */
+.site-nav {
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .dropdown-toggle {
+    cursor: pointer;
+    margin-right: 0 !important;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -12px;
+    margin-top: -12px;
+    background: #fdfdfd;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    min-width: 140px;
+    z-index: 100;
+    padding: 4px 0;
+    text-align: left;
+
+    .page-link {
+      display: block;
+      padding: 6px 12px;
+      margin: 0 !important;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+  }
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+
+  /* Phones: the hamburger menu lists every link, grouped under each dropdown label. */
+  @media screen and (max-width: 600px) {
+    top: calc(50% - 19px);
+
+    .dropdown {
+      display: block;
+      margin-right: 0;
+    }
+
+    .dropdown-toggle {
+      display: block;
+      margin-left: 20px;
+      padding: 5px 10px;
+      color: #828282;
+      cursor: default;
+    }
+
+    .dropdown-menu {
+      display: block;
+      position: static;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      background: none;
+      min-width: 0;
+      text-align: right;
+
+      .page-link {
+        padding: 5px 10px 5px 30px;
+      }
+    }
+  }
+}
+
+/* Filter buttons and tags, shared by /research/ and /updates/ */
+.tag-filters {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag-btn {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #828282;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #828282;
+
+  &.is-active {
+    background: #2a7ae2;
+    border-color: #2a7ae2;
+    color: white;
+  }
+}
+
+.theme-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: monospace;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.3rem;
 }
 
 /* Anchor links for headings */
@@ -63,19 +190,19 @@ details {
   margin-bottom: 1em;
 }
 
-/* Blog two-column layout */
-.page-content .wrapper:has(.blog-layout) {
-  max-width: calc(1020px - 30px * 2);
-}
-
+/* Blog two-column layout. The main column starts where every other page's content starts (the
+   normal 800px wrapper, under the logo); the blogroll sidebar extends into the right margin, as far
+   as the viewport allows. Below 1000px the sidebar drops under the posts. */
 .blog-layout {
   display: grid;
-  grid-template-columns: 1fr 220px;
+  grid-template-columns: minmax(0, 1fr) 220px;
   gap: 2em;
   align-items: start;
+  margin-right: calc(-1 * min(252px, max(0px, (100vw - 800px) / 2 - 16px)));
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
+    margin-right: 0;
   }
 }
 
@@ -190,4 +317,93 @@ details {
   margin-left: 0.4em;
   flex-shrink: 0;
   &:hover { color: #2a7ae2; }
+}
+
+/* Date-column lists, shared by /updates/ and /blog/ */
+.updates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.update-item {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.update-item.is-target {
+  background: #fffbe6;
+  box-shadow: -0.6rem 0 0 #fffbe6, 0.6rem 0 0 #fffbe6;
+}
+.update-item[hidden] {
+  display: none;
+}
+.update-date {
+  font-size: 0.85rem;
+  color: #828282;
+  padding-top: 0.15rem;
+}
+.update-item .theme-tag {
+  margin-bottom: 0.3rem;
+}
+.update-item .update-title {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0 0 0.2rem 0;
+}
+.update-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0 0 0.4rem 0;
+}
+.update-meta .talk-speaker {
+  font-weight: 600;
+  color: #333;
+}
+.update-meta .talk-designation {
+  font-style: italic;
+  color: #828282;
+}
+.update-summary {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0 0 0.4rem 0;
+}
+.update-item details {
+  margin: 0 0 0.4rem 0;
+}
+.update-item details summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #444;
+}
+.update-item details p {
+  font-size: 0.92rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0.5rem 0 0 0;
+}
+.update-links {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.update-links a + a {
+  margin-left: 1rem;
+}
+.update-repos {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.3rem 0 0 0;
+}
+.update-repos code {
+  font-size: 0.85em;
+}
+@media (max-width: 600px) {
+  .update-item {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
 }
