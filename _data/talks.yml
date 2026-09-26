@@ -1,7 +1,8 @@
 # Talks shown on /updates/, which sorts by date, so order here doesn't matter.
-# `venue_type` is internal (IIT Madras) or external. Optional: `date_display`, `abstract`, `slides`
-# (+ `slides_label`), `video`, `repos`, `links` (list of {label, url}), `news` (announcement posts
-# this talk covers; they're then left off /updates/).
+# `venue_type`: external = an FPL member speaking elsewhere (shown as a Talk); internal = a team talk
+# at IIT Madras (shown as a Seminar). Talks by visiting speakers go in events.yml instead.
+# Optional: `date_display`, `abstract`, `slides` (+ `slides_label`), `video`, `repos`, `links` (list
+# of {label, url}), `news` (announcement posts this talk covers; they're then left off /updates/).
 talks:
   - title: "Textbooks that run: interactive, zero-install CS education in the browser"
     speaker: KC Sivaramakrishnan
