@@ -41,6 +41,7 @@
   <button type="button" class="tag-btn" data-filter="news" aria-pressed="false">Announcements</button>
   <button type="button" class="tag-btn" data-filter="event" aria-pressed="false">Events</button>
   <button type="button" class="tag-btn" data-filter="talk" aria-pressed="false">Talks</button>
+  <button type="button" class="tag-btn" data-filter="seminar" aria-pressed="false">Seminars</button>
   <button type="button" class="tag-btn" data-filter="blog" aria-pressed="false">Blogposts</button>
 </div>
 
@@ -83,10 +84,12 @@
     {%- elsif kind == "talk" -%}
     {%- assign talk = all_talks[idx] -%}
     {%- assign talk_slug = talk.title | slugify -%}
-    <li class="update-item" id="talk-{{ talk_slug }}" data-type="talk" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
+    {%- comment -%} Talks = FPL members speaking elsewhere; seminars = internal talks by the team. {%- endcomment -%}
+    {%- if talk.venue_type == "internal" -%}{%- assign talk_type = "seminar" -%}{%- else -%}{%- assign talk_type = "talk" -%}{%- endif %}
+    <li class="update-item" id="talk-{{ talk_slug }}" data-type="{{ talk_type }}" data-start="{{ parts[0] }}" data-end="{{ parts[0] }}">
       <div class="update-date">{% if talk.date_display %}{{ talk.date_display }}{% else %}{{ talk.date | date: "%-d %b %Y" }}{% endif %}</div>
       <div>
-        <span class="theme-tag">Talk</span>
+        <span class="theme-tag">{% if talk_type == "seminar" %}Seminar{% else %}Talk{% endif %}</span>
         <h3 class="update-title"><a href="{{ '/updates/' | relative_url }}#talk-{{ talk_slug }}">{{ talk.title }}</a></h3>
         <p class="update-meta">
           <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.designation %} <span class="talk-designation">({{ talk.designation }})</span>{% endif %}
@@ -143,7 +146,7 @@
   var upcomingList = upcoming.querySelector('.updates-list');
   var recent = document.getElementById('updates-recent');
   var items = Array.prototype.slice.call(recent.querySelectorAll('.update-item'));
-  var TYPES = ['news', 'event', 'talk', 'blog'];
+  var TYPES = ['news', 'event', 'talk', 'seminar', 'blog'];
 
   // Move anything still running or in the future to "Upcoming", soonest first.
   var d = new Date();
@@ -154,8 +157,8 @@
 
   // Filters are multi-select: pick any mix of types; none (or all) selected means "All".
   // The URL hash mirrors the selection, e.g. #events+blog.
-  var hashToType = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', blogposts: 'blog', blog: 'blog' };
-  var typeToHash = { news: 'announcements', event: 'events', talk: 'talks', blog: 'blogposts' };
+  var hashToType = { announcements: 'news', news: 'news', events: 'event', talks: 'talk', seminars: 'seminar', blogposts: 'blog', blog: 'blog' };
+  var typeToHash = { news: 'announcements', event: 'events', talk: 'talks', seminar: 'seminars', blog: 'blogposts' };
   var selected = [];
 
   function apply() {
@@ -193,14 +196,14 @@
     apply();
   });
 
-  // A link to a single talk (#talk-<slug>): show talks and scroll to it.
+  // A link to a single talk or seminar (#talk-<slug>): show its category and scroll to it.
   function fromHash() {
     var hash = decodeURIComponent(location.hash.slice(1));
     var prev = document.querySelector('.update-item.is-target');
     if (prev) prev.classList.remove('is-target');
     if (hash.indexOf('talk-') === 0 && document.getElementById(hash)) {
       var item = document.getElementById(hash);
-      selected = ['talk'];
+      selected = [item.dataset.type];
       apply();
       item.classList.add('is-target');
       item.scrollIntoView({ block: 'center' });

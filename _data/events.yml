@@ -62,15 +62,6 @@ events:
       - label: Workshop schedule
         url: https://platform.fossunited.org/c/indiafoss/2026/workshops
 
-  - title: "PROPL 2026: Programming for the Planet"
-    date: 2026-06-15
-    date_display: "15 June 2026"
-    location: "Boulder, Colorado (co-located with PLDI 2026)"
-    summary: >
-      Open working meeting, co-organised by KC Sivaramakrishnan, bringing together climate
-      practitioners and computing researchers to design a next-generation planetary compute engine.
-    link: /2026/04/02/propl-2026.html
-
   - title: "FP Launchpad Kickoff"
     date: 2026-04-13
     date_display: "13 April 2026"
@@ -83,7 +74,7 @@ events:
     news:
       - /2026/04/26/kickoff-videos.html
 
-  - title: "Talk: Property Based Testing to Verify Pipelined CPU Hardware"
+  - title: "Talk by FPL Advisor Rishiyur Nikhil: Property Based Testing to Verify Pipelined CPU Hardware"
     date: 2026-04-10
     date_display: "10 April 2026"
     location: "Turing Hall, Dept of CS, IIT Madras"
@@ -91,7 +82,7 @@ events:
       Rishiyur S. Nikhil (Bluespec) on using Haskell QuickCheck to verify a 6-stage pipelined RISC-V CPU.
     link: /2026/04/09/rishiyur-nikhil-property-based-testing-pipelined-cpu.html
 
-  - title: "Talk: Agentic Proof-oriented Programming"
+  - title: "Talk by FPL Advisor Nik Swamy: Agentic Proof-oriented Programming"
     date: 2026-04-07
     date_display: "7 April 2026"
     location: "Turing Hall, Dept of CS, IIT Madras"
