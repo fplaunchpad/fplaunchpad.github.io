@@ -1,0 +1,72 @@
+---
+layout: page
+---
+{{ content }}
+
+<style>
+.about-filters:not(.is-ready) {
+  display: none;
+}
+.about-part + .about-part {
+  margin-top: 3rem;
+}
+</style>
+
+<div class="tag-filters about-filters" role="group" aria-label="Show sections">
+  <button type="button" class="tag-btn is-active" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="tag-btn" data-filter="team" aria-pressed="false">Team</button>
+  <button type="button" class="tag-btn" data-filter="partners" aria-pressed="false">Partners</button>
+  <button type="button" class="tag-btn" data-filter="contact" aria-pressed="false">Contact</button>
+</div>
+
+<section class="about-part" data-part="team">
+  <h2 id="team">Team</h2>
+  {% include team-cards.html %}
+</section>
+
+<section class="about-part" data-part="partners">
+  <h2 id="partners">Partners</h2>
+  <p>We collaborate with organisations across research, open source, and education. If you would like to partner with us, write to <a href="mailto:contact@fplaunchpad.org">contact@fplaunchpad.org</a>.</p>
+  {% include partners-cards.html %}
+</section>
+
+<section class="about-part" data-part="contact">
+  <h2 id="contact">Contact</h2>
+  {% include contact-info.html %}
+</section>
+
+<script>
+(function () {
+  // Single-select section filter, styled like /research/ and /updates/. Hash: #team, #partners, #contact.
+  var filters = document.querySelector('.about-filters');
+  var parts = document.querySelectorAll('.about-part');
+  var TYPES = ['team', 'partners', 'contact'];
+
+  function apply(active) {
+    filters.querySelectorAll('.tag-btn').forEach(function (btn) {
+      var on = btn.dataset.filter === active;
+      btn.classList.toggle('is-active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    parts.forEach(function (part) {
+      part.hidden = !(active === 'all' || part.dataset.part === active);
+    });
+  }
+
+  filters.addEventListener('click', function (e) {
+    var btn = e.target.closest('.tag-btn');
+    if (!btn) return;
+    var active = btn.dataset.filter;
+    history.replaceState(null, '', active === 'all' ? location.pathname : '#' + active);
+    apply(active);
+  });
+
+  function fromHash() {
+    var hash = location.hash.slice(1);
+    apply(TYPES.indexOf(hash) !== -1 ? hash : 'all');
+  }
+  window.addEventListener('hashchange', fromHash);
+  filters.classList.add('is-ready');
+  fromHash();
+})();
+</script>

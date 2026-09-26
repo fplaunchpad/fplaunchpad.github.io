@@ -28,7 +28,7 @@
 .person-card h3 a:hover { text-decoration: underline; }
 .person-card .designation { font-size: 0.75rem; color: #666; margin: 0 0 0.4rem 0; }
 .person-card .bio { font-size: 0.78rem; color: #444; margin: 0; line-height: 1.45; }
-.people-section h2 {
+.people-section .people-group {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -43,7 +43,7 @@
 <div class="people-section">
 
   {% for group in site.data.team %}
-  <h2>{{ group.role }}</h2>
+  <h3 class="people-group">{{ group.role }}</h3>
   <div class="people-grid">
 
     {% for person in group.members %}
