@@ -3,6 +3,56 @@
 # (+ `slides_label`), `video`, `repos`, `links` (list of {label, url}), `news` (announcement posts
 # this talk covers; they're then left off /updates/).
 talks:
+  - title: "Textbooks that run: interactive, zero-install CS education in the browser"
+    speaker: KC Sivaramakrishnan
+    designation: PI
+    date: 2026-09-26
+    venue: "IndiaFOSS 2026, NIMHANS Convention Centre, Bengaluru"
+    venue_type: external
+    links:
+      - label: Proposal
+        url: https://fossunited.org/c/indiafoss/2026/cfp/8s4g5qj3oq
+
+  - title: "Benchmarking can be hard, here's why we're still creating a new one for OCaml"
+    speaker: Navaneeth M. Nambiar
+    designation: Research Staff
+    date: 2026-09-26
+    venue: "IndiaFOSS 2026, Compilers, Programming Languages and Systems devroom, Bengaluru"
+    venue_type: external
+    links:
+      - label: Proposal
+        url: https://fossunited.org/c/indiafoss/2026/cfp/6aasju7noq
+
+  - title: "PythonBPF - now with loops, custom funcs, and more maps!"
+    speaker: Pragyansh Chaturvedi
+    designation: Fellow
+    date: 2026-09-26
+    venue: "IndiaFOSS 2026, Compilers, Programming Languages and Systems devroom, Bengaluru"
+    venue_type: external
+    links:
+      - label: Proposal
+        url: https://fossunited.org/c/indiafoss/2026/cfp/299lpkmuqh
+
+  - title: "LGTM Is Not A Theorem"
+    speaker: Durwasa Chakraborty
+    designation: PhD student, IIT Madras
+    date: 2026-09-26
+    venue: "IndiaFOSS 2026, Compilers, Programming Languages and Systems devroom, Bengaluru"
+    venue_type: external
+    links:
+      - label: Proposal
+        url: https://fossunited.org/c/indiafoss/2026/cfp/8cbv4mpi6o
+
+  - title: "Fun and Profit with OCaml (workshop)"
+    speaker: Alina Banerjee
+    designation: Research Staff
+    date: 2026-09-25
+    venue: "IndiaFOSS 2026 pre-conference workshop, Bengaluru"
+    venue_type: external
+    links:
+      - label: Proposal
+        url: https://fossunited.org/c/indiafoss/2026/cfp/699fhigvkl
+
   - title: "Introduction to Modes in OxCaml, Part III: Beyond Modes"
     speaker: Avik Shakhari
     designation: Post-Baccalaureate Fellow
