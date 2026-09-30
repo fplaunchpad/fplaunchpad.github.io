@@ -25,6 +25,47 @@
   }
 }
 
+/* Footer social links: one horizontal row above the footer columns */
+.footer-social {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $grey-color-light;
+
+  .social-media-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+
+    li {
+      float: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .svg-icon {
+      width: 20px;
+      height: 20px;
+      padding-right: 0;
+      vertical-align: middle;
+    }
+
+    a:hover .svg-icon {
+      fill: $brand-color;
+    }
+  }
+}
+
+/* With the social column moved out, split the footer between the other two */
+@media screen and (min-width: 801px) {
+  .footer-col-1 { width: calc(40% - 15px); }
+  .footer-col-3 { width: calc(60% - 15px); }
+}
+
 /* Filter buttons and tags, shared by /projects/, /updates/, /blog/ and /about/ */
 .tag-filters {
   margin-bottom: 2rem;
