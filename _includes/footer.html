@@ -8,25 +8,9 @@
       {%- include social.html -%}
     </div>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
+    <p class="footer-credit">
+      &copy; {{ site.time | date: "%Y" }} <span class="p-name">{{ site.title | escape }}</span> &middot; {{ site.description | escape }}
+    </p>
 
   </div>
 

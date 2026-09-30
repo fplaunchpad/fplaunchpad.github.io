@@ -25,6 +25,15 @@
   }
 }
 
+/* Tighten the gap between page content and footer (minima stacks 30px + 30px) */
+.page-content {
+  padding-bottom: 0;
+}
+
+.site-footer {
+  padding-top: 20px;
+}
+
 /* Footer social links: one labelled row of icons above the footer columns */
 .footer-social {
   display: flex;
@@ -83,10 +92,11 @@
   }
 }
 
-/* With the social column moved out, split the footer between the other two */
-@media screen and (min-width: 801px) {
-  .footer-col-1 { width: calc(40% - 15px); }
-  .footer-col-3 { width: calc(60% - 15px); }
+/* Single-line credit under the icon row, replacing minima's footer columns */
+.footer-credit {
+  @include relative-font-size(0.875);
+  color: $grey-color;
+  margin-bottom: 0;
 }
 
 /* Filter buttons and tags, shared by /projects/, /updates/, /blog/ and /about/ */
