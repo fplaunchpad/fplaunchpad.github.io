@@ -31,12 +31,6 @@
       designation: Research Staff, FP Launchpad · Northeastern University
       bio: "Previously MS CS student @ Northeastern University. Currently working on performance evaluation, benchmarking and formal verification (using F*/Pulse) of OCaml Runtime (Garbage Collectors) as part of FPLaunchpad."
 
-    - name: Kartik Nagar
-      photo: https://kartiknagar.github.io/authors/admin/avatar_hu5e211fc92955e0d7ae0916788998d721_97472_250x250_fill_q90_lanczos_center.jpg
-      website: https://kartiknagar.github.io/
-      designation: Faculty, FP Launchpad · Asst. Professor, CSE IIT Madras
-      bio: "Co-advisor on FPL formal-methods student projects; programming languages and verification."
-
 - role: PhD Students
   members:
     - name: Nitish Yadav
