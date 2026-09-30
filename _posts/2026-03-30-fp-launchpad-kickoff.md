@@ -24,19 +24,19 @@ Registration and breakfast begin at 9:00 AM. The inauguration begins at 10:00 AM
   </thead>
   <tbody>
     <tr style="background-color: #f0f0f0;"><td>09:00 &ndash; 09:45</td><td colspan="2" style="text-align: center;"><strong>Registration + Breakfast</strong></td></tr>
-    <tr><td rowspan="2">10:00 &ndash; 10:30</td><td><img class="sp" src="https://kcsrk.info/assets/profile.jpeg" alt="KC Sivaramakrishnan"><a href="https://kcsrk.info">KC Sivaramakrishnan</a>, Assistant Professor, IIT Madras</td><td>Opening Address <a href="https://youtu.be/fV4-cdVSkBk" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td rowspan="2">10:00 &ndash; 10:30</td><td><img class="sp" src="/assets/images/people/kcsrk-profile.jpg" alt="KC Sivaramakrishnan"><a href="https://kcsrk.info">KC Sivaramakrishnan</a>, Assistant Professor, IIT Madras</td><td>Opening Address <a href="https://youtu.be/fV4-cdVSkBk" target="_blank" title="Watch on YouTube">▶</a></td></tr>
     <tr><td>Director, IIT Madras</td><td>Inaugural Address <a href="https://youtu.be/zreZprRVoGA" target="_blank" title="Watch on YouTube">▶</a></td></tr>
-    <tr><td>10:30 &ndash; 11:15</td><td><img class="sp" src="https://avatars.githubusercontent.com/u/3867081?v=4" alt="Rishiyur S. Nikhil"><a href="https://github.com/rsnikhil">Rishiyur S. Nikhil</a>, CTO and Co-founder, <a href="https://bluespec.com/">Bluespec</a></td><td><a href="#nikhil">Functional Programming and Concurrent Atomic Transactions for Complex Hardware Design</a> <a href="https://youtu.be/aNqWJyDkyoQ" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>10:30 &ndash; 11:15</td><td><img class="sp" src="/assets/images/people/gh-3867081.jpg" alt="Rishiyur S. Nikhil"><a href="https://github.com/rsnikhil">Rishiyur S. Nikhil</a>, CTO and Co-founder, <a href="https://bluespec.com/">Bluespec</a></td><td><a href="#nikhil">Functional Programming and Concurrent Atomic Transactions for Complex Hardware Design</a> <a href="https://youtu.be/aNqWJyDkyoQ" target="_blank" title="Watch on YouTube">▶</a></td></tr>
     <tr style="background-color: #f0f0f0;"><td>11:15 &ndash; 11:30</td><td colspan="2" style="text-align: center;"><strong>Networking break</strong></td></tr>
-    <tr><td>11:30 &ndash; 12:15</td><td><img class="sp" src="https://www.cse.iitm.ac.in/~chester/pubs/chet.png" alt="Chester Rebeiro"><a href="https://www.cse.iitm.ac.in/~chester/">Chester Rebeiro</a>, Professor, IIT Madras</td><td><a href="#rebeiro">Trusted hardware for security critical software</a> <a href="https://youtu.be/Tgmyjkfrnew" target="_blank" title="Watch on YouTube">▶</a></td></tr>
-    <tr><td>12:15 &ndash; 01:00</td><td><img class="sp" src="https://media.licdn.com/dms/image/v2/C5603AQGjQKQtzd8A_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1647665493390?e=2147483647&v=beta&t=ZyRZiDVsvFHmwT1nMmXSL0k0gs45oSEw0Aox4B5SYnE" alt="Krishnan Raghavan"><a href="https://www.linkedin.com/in/krishnan-raghavan-834aa091/">Krishnan Raghavan</a>, CTO and Co-founder, <a href="https://www.pramaanalabs.ai/">Pramaana Labs</a></td><td><a href="#raghavan">Towards verifiable governance with LLMs and Lean</a> <a href="https://youtu.be/NeL8kw6Z8hA" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>11:30 &ndash; 12:15</td><td><img class="sp" src="/assets/images/people/cse-chet.png" alt="Chester Rebeiro"><a href="https://www.cse.iitm.ac.in/~chester/">Chester Rebeiro</a>, Professor, IIT Madras</td><td><a href="#rebeiro">Trusted hardware for security critical software</a> <a href="https://youtu.be/Tgmyjkfrnew" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>12:15 &ndash; 01:00</td><td><img class="sp" src="/assets/images/person-placeholder.svg" alt="Krishnan Raghavan"><a href="https://www.linkedin.com/in/krishnan-raghavan-834aa091/">Krishnan Raghavan</a>, CTO and Co-founder, <a href="https://www.pramaanalabs.ai/">Pramaana Labs</a></td><td><a href="#raghavan">Towards verifiable governance with LLMs and Lean</a> <a href="https://youtu.be/NeL8kw6Z8hA" target="_blank" title="Watch on YouTube">▶</a></td></tr>
     <tr style="background-color: #f0f0f0;"><td>01:00 &ndash; 02:15</td><td colspan="2" style="text-align: center;"><strong>Networking lunch</strong></td></tr>
-    <tr><td>02:15 &ndash; 03:00</td><td><img class="sp" src="https://www.cse.iitb.ac.in/~manas/images/profile.jpg" alt="Manas Thakur"><a href="https://www.cse.iitb.ac.in/~manas/">Manas Thakur</a>, Assistant Professor, IIT Bombay</td><td><a href="#thakur">From Precise Analysis to Efficient JIT Optimization — The Story of an Object Transformed by CompL</a> <a href="https://youtu.be/ovsQmlQmbNE" target="_blank" title="Watch on YouTube">▶</a></td></tr>
-    <tr><td>03:00 &ndash; 03:45</td><td><img class="sp" src="https://anil.recoil.org/images/anil-headshot.webp" alt="Anil Madhavapeddy"><a href="https://anil.recoil.org/">Anil Madhavapeddy</a>, Professor, University of Cambridge</td><td><a href="#madhavapeddy">TESSERA: Functionally Programming Petabytes of Earth Observations</a> <a href="https://youtu.be/-tBv-j5IbmM" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>02:15 &ndash; 03:00</td><td><img class="sp" src="/assets/images/people/cse-profile.jpg" alt="Manas Thakur"><a href="https://www.cse.iitb.ac.in/~manas/">Manas Thakur</a>, Assistant Professor, IIT Bombay</td><td><a href="#thakur">From Precise Analysis to Efficient JIT Optimization — The Story of an Object Transformed by CompL</a> <a href="https://youtu.be/ovsQmlQmbNE" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>03:00 &ndash; 03:45</td><td><img class="sp" src="/assets/images/people/anil-anil-headshot.webp" alt="Anil Madhavapeddy"><a href="https://anil.recoil.org/">Anil Madhavapeddy</a>, Professor, University of Cambridge</td><td><a href="#madhavapeddy">TESSERA: Functionally Programming Petabytes of Earth Observations</a> <a href="https://youtu.be/-tBv-j5IbmM" target="_blank" title="Watch on YouTube">▶</a></td></tr>
     <tr style="background-color: #f0f0f0;"><td>03:45 &ndash; 04:15</td><td colspan="2" style="text-align: center;"><strong>Networking break</strong></td></tr>
-    <tr><td>04:15 &ndash; 04:30</td><td><img class="sp" src="https://avatars.githubusercontent.com/u/715302?v=4" alt="Yaron Minsky">Yaron Minsky, Co-head of Technology, Jane Street (Remote)</td><td><a href="#minsky">Donor Address</a> <a href="https://youtu.be/ytknR-B5Tf8" target="_blank" title="Watch on YouTube">▶</a></td></tr>
-    <tr><td>04:30 &ndash; 05:15</td><td><img class="sp" src="https://cs.brown.edu/~sk/Images/me-2019-04-10-small.jpg" alt="Shriram Krishnamurthi"><a href="https://cs.brown.edu/~sk/">Shriram Krishnamurthi</a>, Professor, Brown University (Remote)</td><td><a href="#krishnamurthi">A Programming Language for Lightweight Diagramming</a> <a href="https://youtu.be/O5bLF5YekkU" target="_blank" title="Watch on YouTube">▶</a></td></tr>
-    <tr><td>05:15 &ndash; 06:00</td><td><img class="sp" src="https://ilyasergey.net/assets/img/ilya-2021-2.jpg" alt="Ilya Sergey"><a href="https://ilyasergey.net/">Ilya Sergey</a>, Associate Professor, National University of Singapore</td><td><a href="#sergey">Mechanising a Regex-Based Borrow Checker: An Experiment in AI-Assisted Metatheory</a> <a href="https://youtu.be/rXvjRABLGKw" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>04:15 &ndash; 04:30</td><td><img class="sp" src="/assets/images/people/gh-715302.jpg" alt="Yaron Minsky">Yaron Minsky, Co-head of Technology, Jane Street (Remote)</td><td><a href="#minsky">Donor Address</a> <a href="https://youtu.be/ytknR-B5Tf8" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>04:30 &ndash; 05:15</td><td><img class="sp" src="/assets/images/people/cs-me-2019-04-10-small.jpg" alt="Shriram Krishnamurthi"><a href="https://cs.brown.edu/~sk/">Shriram Krishnamurthi</a>, Professor, Brown University (Remote)</td><td><a href="#krishnamurthi">A Programming Language for Lightweight Diagramming</a> <a href="https://youtu.be/O5bLF5YekkU" target="_blank" title="Watch on YouTube">▶</a></td></tr>
+    <tr><td>05:15 &ndash; 06:00</td><td><img class="sp" src="/assets/images/people/ilyasergey-ilya-2021-2.jpg" alt="Ilya Sergey"><a href="https://ilyasergey.net/">Ilya Sergey</a>, Associate Professor, National University of Singapore</td><td><a href="#sergey">Mechanising a Regex-Based Borrow Checker: An Experiment in AI-Assisted Metatheory</a> <a href="https://youtu.be/rXvjRABLGKw" target="_blank" title="Watch on YouTube">▶</a></td></tr>
   </tbody>
 </table>
 </div>
@@ -50,7 +50,7 @@ All sessions include opportunities for Q&A and discussion.
 [▶ Watch on YouTube](https://youtu.be/aNqWJyDkyoQ)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://avatars.githubusercontent.com/u/3867081?v=4" alt="Rishiyur S. Nikhil" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/people/gh-3867081.jpg" alt="Rishiyur S. Nikhil" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong><a href="https://github.com/rsnikhil">Rishiyur S. Nikhil, Ph.D.</a></strong> &mdash; Co-founder and CTO, <a href="https://bluespec.com/">Bluespec</a>, Inc.
 </div>
 
@@ -79,7 +79,7 @@ Together, TESLA and FIDES illustrate a unified approach to hardware-enhanced sof
 [▶ Watch on YouTube](https://youtu.be/NeL8kw6Z8hA)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://media.licdn.com/dms/image/v2/C5603AQGjQKQtzd8A_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1647665493390?e=2147483647&v=beta&t=ZyRZiDVsvFHmwT1nMmXSL0k0gs45oSEw0Aox4B5SYnE" alt="Krishnan Raghavan" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/person-placeholder.svg" alt="Krishnan Raghavan" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong><a href="https://www.linkedin.com/in/krishnan-raghavan-834aa091/">Krishnan Raghavan</a></strong> &mdash; CTO and Co-founder, <a href="https://www.pramaanalabs.ai/">Pramaana Labs</a>
 </div>
 
@@ -94,7 +94,7 @@ We present work on combining LLMs with Lean 4, the proof assistant, to build ver
 [▶ Watch on YouTube](https://youtu.be/ovsQmlQmbNE)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://www.cse.iitb.ac.in/~manas/images/profile.jpg" alt="Manas Thakur" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/people/cse-profile.jpg" alt="Manas Thakur" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong><a href="https://www.cse.iitb.ac.in/~manas/">Manas Thakur</a></strong> &mdash; Assistant Professor, IIT Bombay
 </div>
 
@@ -109,7 +109,7 @@ I will present our recent work on static-analysis–guided optimistic stack allo
 [▶ Watch on YouTube](https://youtu.be/-tBv-j5IbmM)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://anil.recoil.org/images/anil-headshot.webp" alt="Anil Madhavapeddy" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/people/anil-anil-headshot.webp" alt="Anil Madhavapeddy" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong><a href="https://anil.recoil.org/">Anil Madhavapeddy</a></strong> &mdash; Professor of Planetary Computing, University of Cambridge
 </div>
 
@@ -126,7 +126,7 @@ In this talk, I'll take you through an array of problems our users are applying 
 [▶ Watch on YouTube](https://youtu.be/ytknR-B5Tf8)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://avatars.githubusercontent.com/u/715302?v=4" alt="Yaron Minsky" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/people/gh-715302.jpg" alt="Yaron Minsky" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong>Yaron Minsky</strong> &mdash; Co-head of Technology, Jane Street
 </div>
 
@@ -137,7 +137,7 @@ In this talk, I'll take you through an array of problems our users are applying 
 [▶ Watch on YouTube](https://youtu.be/O5bLF5YekkU)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://cs.brown.edu/~sk/Images/me-2019-04-10-small.jpg" alt="Shriram Krishnamurthi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/people/cs-me-2019-04-10-small.jpg" alt="Shriram Krishnamurthi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong><a href="https://cs.brown.edu/~sk/">Shriram Krishnamurthi</a> and Siddhartha Prasad</strong> &mdash; Brown University
 </div>
 
@@ -154,7 +154,7 @@ We show how to endow the diagramming language with a spatial semantics and prove
 [▶ Watch on YouTube](https://youtu.be/rXvjRABLGKw)
 
 <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
-<img src="https://ilyasergey.net/assets/img/ilya-2021-2.jpg" alt="Ilya Sergey" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
+<img src="/assets/images/people/ilyasergey-ilya-2021-2.jpg" alt="Ilya Sergey" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1px solid #e0e0e0;flex-shrink:0;">
 <strong><a href="https://ilyasergey.net/">Ilya Sergey</a></strong> &mdash; Associate Professor, National University of Singapore
 </div>
 
