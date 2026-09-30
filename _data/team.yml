@@ -151,6 +151,7 @@
     - name: Pranav Ramesh
       photo: /assets/images/pranav-ramesh.jpg
       designation: BTech (2026), CSE IIT Madras
+      now: PhD (CS), UC Berkeley
       bio: Intersection of formal methods and large language models.
 
     - name: Sheera Shamsu
@@ -168,35 +169,42 @@
     - name: Surendar
       photo: /assets/images/person-placeholder.svg
       designation: MTech student, CSE IIT Madras
+      now: IBM
       bio: "Garbage collection for OCaml's effect handlers and continuation/fiber stack management."
 
     - name: Harisankar Binod
       photo: https://avatars.githubusercontent.com/u/94229107?v=4
       website: https://methaphur.github.io/
       designation: Intern, FP Launchpad · NISER Bhubaneswar (Jun – Jul 2026)
+      now: Returned to NISER Bhubaneswar
       bio: "Proof complexity, automated theorem proving, and type theory, using Lean 4 and Coq/Rocq."
 
     - name: V Krishnan
       photo: /assets/images/person-placeholder.svg
       designation: Intern (2026), FP Launchpad
+      now: Returned to home institution
       bio: ""
 
     - name: Zeeshan Mohammed Rangrej
       photo: /assets/images/person-placeholder.svg
       designation: Intern, FP Launchpad · IIT Palakkad (May – Jul 2026)
+      now: Returned to IIT Palakkad
       bio: ""
 
     - name: Uttkarsh Tiwari
       photo: /assets/images/person-placeholder.svg
       designation: Intern (May – Jul 2026), FP Launchpad · NIT Mizoram
+      now: Returned to NIT Mizoram
       bio: ""
 
     - name: Anubhav Paul
       photo: /assets/images/person-placeholder.svg
       designation: Intern (May – Jul 2026), FP Launchpad
+      now: IIT Delhi
       bio: ""
     - name: Md. Isfarul Haque
       photo: /assets/images/person-placeholder.svg
       website: https://innocentzero.is-a.dev
       designation: BTech student (2022 batch), CSE IIT Madras
+      now: IMC Trading, Mumbai
       bio: Systems and OS developer; interests in type theory, Rust, hardware-software security.

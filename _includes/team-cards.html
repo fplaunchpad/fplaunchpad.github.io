@@ -28,6 +28,8 @@
 .person-card h3 a:hover { text-decoration: underline; }
 .person-card .designation { font-size: 0.75rem; color: #666; margin: 0 0 0.4rem 0; }
 .person-card .bio { font-size: 0.78rem; color: #444; margin: 0; line-height: 1.45; }
+.person-card .now { font-size: 0.78rem; color: #2a7ae2; margin: 0 0 0.4rem 0; }
+.person-card .now strong { font-weight: 600; }
 .people-section .people-group {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -57,6 +59,7 @@
         {% endif %}
       </h3>
       <p class="designation">{{ person.designation }}</p>
+      {% if person.now %}<p class="now"><strong>Now:</strong> {{ person.now }}</p>{% endif %}
       <p class="bio">{{ person.bio }}</p>
     </div>
     {% endfor %}
