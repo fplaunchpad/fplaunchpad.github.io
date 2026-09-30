@@ -2,7 +2,7 @@
   website: https://www.janestreet.com/
   contact_person: ""
   contact_email: ""
-  logo: https://avatars.githubusercontent.com/u/3384712?v=4
+  logo: /assets/images/people/gh-3384712.jpg
   description: Quantitative trading firm and major sponsor of the OCaml ecosystem, supporting the Learn OCaml workshop and open-source OCaml tooling.
   history: Jane Street created the Learn OCaml Workshop used in FPL's education curriculum and is a long-standing sponsor of the OCaml ecosystem.
   future_plan: Leverage Jane Street's OCaml resources and workshops in FPL's education programme.
@@ -11,7 +11,7 @@
   website: https://cfi.iitm.ac.in/
   contact_person: Vedant Sandeep Bhosle
   contact_email: ae22b062@smail.iitm.ac.in
-  logo: https://media.licdn.com/dms/image/v2/C4D0BAQGEK-WB5mNx4g/company-logo_200_200/company-logo_200_200/0/1631336437271?e=2147483647&v=beta&t=u5Pl2PZi_YLTbeFyFkZXysvy0xcRUpT1bhZoWrhI3g0
+  logo: /assets/images/people/linkedin-5fdc74b6.jpg
   description: Student-run club at IIT Madras fostering innovation and technical projects.
   history: Prof. KC Sivaramakrishnan has previously worked with several CFI members.
   future_plan: Collaborate on open-source projects, events, and competitions.
@@ -20,7 +20,7 @@
   website: https://core-stack.org/
   contact_person: Aaditeshwar Seth
   contact_email: aseth@cse.iitd.ac.in
-  logo: https://avatars.githubusercontent.com/u/199718002?v=4
+  logo: /assets/images/people/gh-199718002.png
   description: Works on climate change adaptation, combining satellite data pipelines, graph ML, and community-facing tools to support environmental planning and policy.
   history: >
     First meeting held on 19 March 2026 with Aadi Seth, KC Sivaramakrishnan, Sanjay Karanth,
@@ -37,7 +37,7 @@
   website: https://tarides.com/
   contact_person: Ganesh Narayanan
   contact_email: ganesh@tarides.com
-  logo: https://avatars.githubusercontent.com/u/32128555?v=4
+  logo: /assets/images/people/gh-32128555.png
   description: Company specialising in secure, high-performance systems development using OCaml, with expertise in core OCaml ecosystem projects including MirageOS, Irmin, and Multicore OCaml.
   history: Prof. KC Sivaramakrishnan is a co-founder of Tarides and is affiliated with both organisations.
   future_plan: Collaborate on OCaml open-source projects and co-organize training events.

@@ -14,7 +14,7 @@ On April 13, 2026, we held the kickoff of the FP Launchpad at the IC&SR Building
 
 ### KC Sivaramakrishnan — Opening Address
 
-<img src="https://kcsrk.info/assets/profile.jpeg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [KC Sivaramakrishnan](https://kcsrk.info), Assistant Professor, IIT Madras
+<img src="/assets/images/people/kcsrk-profile.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [KC Sivaramakrishnan](https://kcsrk.info), Assistant Professor, IIT Madras
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/fV4-cdVSkBk" frameborder="0" allowfullscreen></iframe>
 
@@ -40,7 +40,7 @@ The centre's founding donor is [Jane Street](https://www.janestreet.com), who ha
 
 ### Prof. V. Kamakoti — Inaugural Address
 
-<img src="https://heritage.iitm.ac.in/sites/default/files/2022-03/prof-kamakoti.png" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Prof. V. Kamakoti](https://heritage.iitm.ac.in/directors-gallery/prof-v-kamakoti), Director, IIT Madras
+<img src="/assets/images/people/heritage-prof-kamakoti.png" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Prof. V. Kamakoti](https://heritage.iitm.ac.in/directors-gallery/prof-v-kamakoti), Director, IIT Madras
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/zreZprRVoGA" frameborder="0" allowfullscreen></iframe>
 
@@ -64,7 +64,7 @@ All 10 talks are available on YouTube:
 
 ### Functional Programming and Concurrent Atomic Transactions for Complex Hardware Design
 
-<img src="https://avatars.githubusercontent.com/u/3867081?v=4" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Rishiyur S. Nikhil](https://github.com/rsnikhil), CTO and Co-founder, Bluespec
+<img src="/assets/images/people/gh-3867081.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Rishiyur S. Nikhil](https://github.com/rsnikhil), CTO and Co-founder, Bluespec
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/aNqWJyDkyoQ" frameborder="0" allowfullscreen></iframe>
 
@@ -90,7 +90,7 @@ Nikhil is a member of the FPL advisory board. FPL's verifiable voting infrastruc
 
 ### Trusted Hardware for Security-Critical Software
 
-<img src="https://www.cse.iitm.ac.in/~chester/pubs/chet.png" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Chester Rebeiro](https://www.cse.iitm.ac.in/~chester/), Professor, IIT Madras
+<img src="/assets/images/people/cse-chet.png" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Chester Rebeiro](https://www.cse.iitm.ac.in/~chester/), Professor, IIT Madras
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/Tgmyjkfrnew" frameborder="0" allowfullscreen></iframe>
 
@@ -110,7 +110,7 @@ Chester is a faculty member in IIT Madras CS, making him a natural collaborator 
 
 ### Towards Verifiable Governance with LLMs and Lean
 
-<img src="https://media.licdn.com/dms/image/v2/C5603AQGjQKQtzd8A_Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1647665493390?e=2147483647&v=beta&t=ZyRZiDVsvFHmwT1nMmXSL0k0gs45oSEw0Aox4B5SYnE" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Krishnan Raghavan](https://www.linkedin.com/in/krishnan-raghavan-834aa091/), CTO and Co-founder, Pramaana Labs
+<img src="/assets/images/person-placeholder.svg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Krishnan Raghavan](https://www.linkedin.com/in/krishnan-raghavan-834aa091/), CTO and Co-founder, Pramaana Labs
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/NeL8kw6Z8hA" frameborder="0" allowfullscreen></iframe>
 
@@ -130,7 +130,7 @@ The Lean-based techniques he is applying to governance overlap directly with wha
 
 ### From Precise Analysis to Efficient JIT Optimization
 
-<img src="https://www.cse.iitb.ac.in/~manas/images/profile.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Manas Thakur](https://www.cse.iitb.ac.in/~manas/), Assistant Professor, IIT Bombay
+<img src="/assets/images/people/cse-profile.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Manas Thakur](https://www.cse.iitb.ac.in/~manas/), Assistant Professor, IIT Bombay
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ovsQmlQmbNE" frameborder="0" allowfullscreen></iframe>
 
@@ -148,7 +148,7 @@ Manas's work on compiler analysis and runtime optimisation is directly relevant 
 
 ### Mechanising a Regex-Based Borrow Checker: An Experiment in AI-Assisted Metatheory
 
-<img src="https://ilyasergey.net/assets/img/ilya-2021-2.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Ilya Sergey](https://ilyasergey.net/), Associate Professor, National University of Singapore
+<img src="/assets/images/people/ilyasergey-ilya-2021-2.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Ilya Sergey](https://ilyasergey.net/), Associate Professor, National University of Singapore
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/rXvjRABLGKw" frameborder="0" allowfullscreen></iframe>
 
@@ -176,7 +176,7 @@ This is the clearest live demonstration FPL has seen of what AI-assisted formal 
 
 ### Donor Address
 
-<img src="https://avatars.githubusercontent.com/u/715302?v=4" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> Yaron Minsky, Co-head of Technology, Jane Street
+<img src="/assets/images/people/gh-715302.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> Yaron Minsky, Co-head of Technology, Jane Street
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/ytknR-B5Tf8" frameborder="0" allowfullscreen></iframe>
 
@@ -200,7 +200,7 @@ Jane Street is FPL's founding donor, with a commitment of US$2.5 million over fo
 
 ### A Programming Language for Lightweight Diagramming
 
-<img src="https://cs.brown.edu/~sk/Images/me-2019-04-10-small.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Shriram Krishnamurthi](https://cs.brown.edu/~sk/), Professor, Brown University
+<img src="/assets/images/people/cs-me-2019-04-10-small.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Shriram Krishnamurthi](https://cs.brown.edu/~sk/), Professor, Brown University
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/O5bLF5YekkU" frameborder="0" allowfullscreen></iframe>
 
@@ -222,7 +222,7 @@ The practical embedding story is Python, Rust, and Pyret. Shriram is a member of
 
 ### TESSERA: Functionally Programming Petabytes of Earth Observations
 
-<img src="https://anil.recoil.org/images/anil-headshot.webp" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Anil Madhavapeddy](https://anil.recoil.org/), Professor, University of Cambridge
+<img src="/assets/images/people/anil-anil-headshot.webp" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> [Anil Madhavapeddy](https://anil.recoil.org/), Professor, University of Cambridge
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/-tBv-j5IbmM" frameborder="0" allowfullscreen></iframe>
 

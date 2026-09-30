@@ -1,7 +1,7 @@
 - role: Head
   members:
     - name: KC Sivaramakrishnan
-      photo: https://kcsrk.info/assets/profile.jpeg
+      photo: /assets/images/people/kcsrk-profile.jpg
       website: https://kcsrk.info
       designation: Head, FP Launchpad · Asst. Professor, CSE IIT Madras · CTO, Tarides
       bio: Builds robust, secure, and scalable systems using PL technology; led the development of Multicore OCaml, now OCaml 5.
@@ -21,7 +21,7 @@
       bio: Performance evaluation, benchmarking, and eBPF-based tooling for OCaml runtime analysis.
 
     - name: Vimala Soundarapandian
-      photo: https://avatars.githubusercontent.com/u/59866854?v=4
+      photo: /assets/images/people/gh-59866854.jpg
       website: https://sites.google.com/view/vimala90/
       designation: Research Scientist, FP Launchpad
       bio: Formal verification of distributed systems; certified mergeable replicated data types; replication-aware linearizability.
@@ -34,19 +34,19 @@
 - role: PhD Students
   members:
     - name: Nitish Yadav
-      photo: https://yadavnitishyn.github.io/NitishYadavWebpage/images/IMG_0625.jpeg
+      photo: /assets/images/people/yadavnitishyn-nitish.jpg
       website: https://yadavnitishyn.github.io/NitishYadavWebpage/
       designation: PhD student (2024–), CSE IIT Madras (PACE Lab)
       bio: Automated formal verification, model checking, distributed systems, cyber-physical systems.
 
     - name: Durwasa Chakraborty
-      photo: https://avatars.githubusercontent.com/u/6106465?v=4
+      photo: /assets/images/people/gh-6106465.jpg
       website: https://durwasa-chakraborty.github.io
       designation: PhD student (2025–), CSE IIT Madras
       bio: Programming languages, formal methods, data races, concurrent systems programming.
 
     - name: Sai Venkata Krishnan
-      photo: https://cystar.iitm.ac.in/wp-content/uploads/2024/11/inner_SaiVenkata.webp
+      photo: /assets/images/people/cystar-inner_saivenkata.webp
       website: https://saivk.github.io/
       designation: "PhD student (2021–), CSE IIT Madras · PMRF"
       bio: Memory and control-flow security; secure-by-default unikernels for IoT; hardware-software co-designed memory safety and compartmentalization.
@@ -54,7 +54,7 @@
 - role: MS Students
   members:
     - name: Vishakh Desai
-      photo: https://avatars.githubusercontent.com/u/78500008?v=4
+      photo: /assets/images/people/gh-78500008.jpg
       designation: MS student (2025–), CSE IIT Madras
       bio: Formal methods and security analysis applied to election systems.
 
@@ -157,7 +157,7 @@
       bio: "Graduated in July 2026; continuing work on the implementation and formal verification of garbage collectors for OCaml."
 
     - name: Sagar Biswas
-      photo: https://mrsagarbiswas.dpdns.org/Sagar_Biswas.jpeg
+      photo: /assets/images/people/mrsagarbiswas-sagar_biswas.jpg
       website: https://mrsagarbiswas.dpdns.org/
       designation: MTech student (2024–2026), CSE IIT Madras
       bio: High-performance computing, distributed systems, GPU acceleration (CUDA), multicore GC for OCaml.
@@ -169,7 +169,7 @@
       bio: "Garbage collection for OCaml's effect handlers and continuation/fiber stack management."
 
     - name: Harisankar Binod
-      photo: https://avatars.githubusercontent.com/u/94229107?v=4
+      photo: /assets/images/people/gh-94229107.png
       website: https://methaphur.github.io/
       designation: Intern, FP Launchpad · NISER Bhubaneswar (Jun – Jul 2026)
       now: Returned to NISER Bhubaneswar
