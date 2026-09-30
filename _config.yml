@@ -30,6 +30,7 @@ twitter_username: fp_launchpad
 linkedin_url: https://www.linkedin.com/company/fp-launchpad/
 youtube_url: https://www.youtube.com/@fplaunchpad
 github_url: https://github.com/orgs/fplaunchpad/
+zulip_url: https://fplaunchpad.zulipchat.com/join/xc4hb7eprn2xidfgpkamor5q/
 
 # Exclude from processing
 exclude:
