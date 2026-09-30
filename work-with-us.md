@@ -12,3 +12,4 @@ permalink: /work-with-us/
 ## Part-Time / Volunteer Contributors
 
 - [FP Launchpad Part-Time / Volunteer Contributor Interest Form](https://forms.gle/RuufBJuckpLuPGhF9)
+- [Join our Zulip]({{ site.zulip_url }}) to chat with the team and other contributors
