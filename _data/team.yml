@@ -31,6 +31,12 @@
       designation: Research Staff, FP Launchpad · Northeastern University
       bio: "Previously MS CS student @ Northeastern University. Currently working on performance evaluation, benchmarking and formal verification (using F*/Pulse) of OCaml Runtime (Garbage Collectors) as part of FPLaunchpad."
 
+    - name: Sheera Shamsu
+      photo: /assets/images/sheera-shamsu.png
+      website: https://in.linkedin.com/in/sheera-shamsu-70377522
+      designation: Research Staff (part-time), FP Launchpad · Assistant Professor, TKM College of Engineering, Kollam
+      bio: "PhD (2026), CSE IIT Madras. Implementation and formal verification of garbage collectors for OCaml."
+
 - role: PhD Students
   members:
     - name: Nitish Yadav
@@ -148,13 +154,6 @@
       designation: BTech (2026), CSE IIT Madras
       now: PhD (CS), UC Berkeley
       bio: Intersection of formal methods and large language models.
-
-    - name: Sheera Shamsu
-      photo: /assets/images/sheera-shamsu.png
-      website: https://in.linkedin.com/in/sheera-shamsu-70377522
-      designation: PhD (2026), CSE IIT Madras
-      now: Assistant Professor, Dept. of Computer Applications, TKM College of Engineering, Kollam
-      bio: "Graduated in July 2026; continuing work on the implementation and formal verification of garbage collectors for OCaml."
 
     - name: Sagar Biswas
       photo: /assets/images/people/mrsagarbiswas-sagar_biswas.jpg
