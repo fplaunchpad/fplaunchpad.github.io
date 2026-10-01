@@ -51,12 +51,38 @@
   history: ""
   future_plan: ""
 
-# Collaboration not yet started — uncommenting when active
-#- name: FOSS United Foundation
-#  website: https://fossunited.org/
-#  contact_person: ""
-#  contact_email: rahul@fossunited.org
-#  logo: https://avatars.githubusercontent.com/u/61445214?v=4
-#  description: Non-profit dedicated to nurturing India's free and open source software ecosystem through community building, events, and advocacy.
-#  history: Prof. KC Sivaramakrishnan has given talks at FOSS United events including IndiaFOSS.
-#  future_plan: Host FOSS United speakers at FP Launchpad and initiate joint open-source projects.
+- name: FOSS United Foundation
+  website: https://fossunited.org/
+  contact_person: Sai Rahul Poruri
+  contact_email: rahul@fossunited.org
+  logo: /assets/images/partners/fossunited.jpg
+  description: Non-profit dedicated to nurturing India's free and open source software ecosystem through community building, events such as IndiaFOSS and FOSS Hack, and advocacy.
+  history: Prof. KC Sivaramakrishnan has given talks at FOSS United events including IndiaFOSS. FP Launchpad ran a devroom and OCaml workshop at IndiaFOSS 2026.
+  future_plan: ""
+
+- name: Energy and Environment Group, University of Cambridge
+  website: https://www.cst.cam.ac.uk/research/eeg
+  contact_person: ""
+  contact_email: ""
+  logo: /assets/images/partners/cambridge.png
+  description: Group at the Department of Computer Science and Technology that applies computer science to renewable energy integration, energy demand reduction, and environmental impact assessment. Partner on TESSERA, satellite-derived representations for environmental applications.
+  history: ""
+  future_plan: ""
+
+- name: Department of Computer Science, NYU
+  website: https://cs.nyu.edu/home/index.html
+  contact_person: ""
+  contact_email: ""
+  logo: /assets/images/partners/nyu.jpg
+  description: Computer Science department at New York University's Courant Institute. Partner on the verified compilers project.
+  history: ""
+  future_plan: ""
+
+- name: Pramaana Labs
+  website: https://pramaanalabs.ai/
+  contact_person: ""
+  contact_email: ""
+  logo: /assets/images/partners/pramaana.png
+  description: Frontier AI lab building the verification layer for high-stakes AI, turning domain knowledge into machine-checkable systems that deliver proofs and traceable explanations.
+  history: ""
+  future_plan: ""
