@@ -1,88 +1,35 @@
 - name: Jane Street
   website: https://www.janestreet.com/
-  contact_person: ""
-  contact_email: ""
   logo: /assets/images/people/gh-3384712.jpg
-  description: Quantitative trading firm and major sponsor of the OCaml ecosystem, supporting the Learn OCaml workshop and open-source OCaml tooling.
-  history: Jane Street created the Learn OCaml Workshop used in FPL's education curriculum and is a long-standing sponsor of the OCaml ecosystem.
-  future_plan: Leverage Jane Street's OCaml resources and workshops in FPL's education programme.
 
 - name: Centre for Innovation, IIT Madras
   website: https://cfi.iitm.ac.in/
-  contact_person: Vedant Sandeep Bhosle
-  contact_email: ae22b062@smail.iitm.ac.in
   logo: /assets/images/people/linkedin-5fdc74b6.jpg
-  description: Student-run club at IIT Madras fostering innovation and technical projects.
-  history: Prof. KC Sivaramakrishnan has previously worked with several CFI members.
-  future_plan: Collaborate on open-source projects, events, and competitions.
 
 - name: CoRE Stack
   website: https://core-stack.org/
-  contact_person: Aaditeshwar Seth
-  contact_email: aseth@cse.iitd.ac.in
   logo: /assets/images/people/gh-199718002.png
-  description: Works on climate change adaptation, combining satellite data pipelines, graph ML, and community-facing tools to support environmental planning and policy.
-  history: >
-    First meeting held on 19 March 2026 with Aadi Seth, KC Sivaramakrishnan, Sanjay Karanth,
-    and Mukulika Maity. Discussed technical challenges including DAG-based data pipelines,
-    graph embeddings for spatial modelling, NL-to-data analysis tooling, and gradual typing
-    for their Python codebase.
-  future_plan: >
-    Fortnightly meetings going forward. Joint work anchored around two themes: Computing for
-    the Commons and a joint workshop. Near-term: FPL fellows contributing to CoRE Stack's
-    data library and queryability; exploring gradual typing for their codebase; and
-    potentially setting up TESSERA embedding infrastructure at IIT Madras.
 
 - name: Tarides
   website: https://tarides.com/
-  contact_person: Ganesh Narayanan
-  contact_email: ganesh@tarides.com
   logo: /assets/images/people/gh-32128555.png
-  description: Company specialising in secure, high-performance systems development using OCaml, with expertise in core OCaml ecosystem projects including MirageOS, Irmin, and Multicore OCaml.
-  history: Prof. KC Sivaramakrishnan is a co-founder of Tarides and is affiliated with both organisations.
-  future_plan: Collaborate on OCaml open-source projects and co-organize training events.
 
 - name: CyStar, IIT Madras
   website: https://cystar.iitm.ac.in/
-  contact_person: ""
-  contact_email: ""
   logo: /assets/images/cystar-logo.png
-  description: Centre for Cybersecurity, Trust and Reliability at IIT Madras — focused on cybersecurity research, education, and global collaboration.
-  history: ""
-  future_plan: ""
 
 - name: FOSS United Foundation
   website: https://fossunited.org/
-  contact_person: Sai Rahul Poruri
-  contact_email: rahul@fossunited.org
   logo: /assets/images/partners/fossunited.jpg
-  description: Non-profit dedicated to nurturing India's free and open source software ecosystem through community building, events such as IndiaFOSS and FOSS Hack, and advocacy.
-  history: Prof. KC Sivaramakrishnan has given talks at FOSS United events including IndiaFOSS. FP Launchpad ran a devroom and OCaml workshop at IndiaFOSS 2026.
-  future_plan: ""
 
 - name: Energy and Environment Group, University of Cambridge
   website: https://www.cst.cam.ac.uk/research/eeg
-  contact_person: ""
-  contact_email: ""
   logo: /assets/images/partners/cambridge.png
-  description: Group at the Department of Computer Science and Technology that applies computer science to renewable energy integration, energy demand reduction, and environmental impact assessment. Partner on TESSERA, satellite-derived representations for environmental applications.
-  history: ""
-  future_plan: ""
 
 - name: Department of Computer Science, NYU
   website: https://cs.nyu.edu/home/index.html
-  contact_person: ""
-  contact_email: ""
   logo: /assets/images/partners/nyu.jpg
-  description: Computer Science department at New York University's Courant Institute. Partner on the verified compilers project.
-  history: ""
-  future_plan: ""
 
 - name: Pramaana Labs
   website: https://pramaanalabs.ai/
-  contact_person: ""
-  contact_email: ""
   logo: /assets/images/partners/pramaana.png
-  description: Frontier AI lab building the verification layer for high-stakes AI, turning domain knowledge into machine-checkable systems that deliver proofs and traceable explanations.
-  history: ""
-  future_plan: ""
