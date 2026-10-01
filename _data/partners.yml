@@ -2,34 +2,34 @@
   website: https://www.janestreet.com/
   logo: /assets/images/people/gh-3384712.jpg
 
-- name: Centre for Innovation, IIT Madras
-  website: https://cfi.iitm.ac.in/
-  logo: /assets/images/people/linkedin-5fdc74b6.jpg
-
-- name: CoRE Stack
-  website: https://core-stack.org/
-  logo: /assets/images/people/gh-199718002.png
+- name: CyStar, IIT Madras
+  website: https://cystar.iitm.ac.in/
+  logo: /assets/images/cystar-logo.png
 
 - name: Tarides
   website: https://tarides.com/
   logo: /assets/images/people/gh-32128555.png
 
-- name: CyStar, IIT Madras
-  website: https://cystar.iitm.ac.in/
-  logo: /assets/images/cystar-logo.png
+- name: Energy and Environment Group, University of Cambridge
+  website: https://www.cst.cam.ac.uk/research/eeg
+  logo: /assets/images/partners/cambridge.png
+
+- name: CoRE Stack
+  website: https://core-stack.org/
+  logo: /assets/images/people/gh-199718002.png
 
 - name: FOSS United Foundation
   website: https://fossunited.org/
   logo: /assets/images/partners/fossunited.jpg
 
-- name: Energy and Environment Group, University of Cambridge
-  website: https://www.cst.cam.ac.uk/research/eeg
-  logo: /assets/images/partners/cambridge.png
+- name: Pramaana Labs
+  website: https://pramaanalabs.ai/
+  logo: /assets/images/partners/pramaana.png
 
 - name: Department of Computer Science, NYU
   website: https://cs.nyu.edu/home/index.html
   logo: /assets/images/partners/nyu.jpg
 
-- name: Pramaana Labs
-  website: https://pramaanalabs.ai/
-  logo: /assets/images/partners/pramaana.png
+- name: Centre for Innovation, IIT Madras
+  website: https://cfi.iitm.ac.in/
+  logo: /assets/images/people/linkedin-5fdc74b6.jpg
