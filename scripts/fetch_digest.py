@@ -54,12 +54,18 @@ def fetch_posts_for_group(feed_list, seen_urls, since, until):
             continue
 
         require_tag = feed_info.get('require_tag')
+        require_url = feed_info.get('require_url')
 
         for entry in parsed.entries:
             if require_tag:
                 tags = [t.get('term', '') for t in getattr(entry, 'tags', [])]
                 if not any(t.lower() == require_tag.lower() for t in tags):
                     continue
+
+            # For feeds without tags: only keep entries whose link contains this substring
+            # (e.g. '/posts/' to skip short notes and site pages).
+            if require_url and require_url not in entry.get('link', ''):
+                continue
 
             published = None
             for attr in ('published_parsed', 'updated_parsed'):
