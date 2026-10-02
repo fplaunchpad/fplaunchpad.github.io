@@ -21,6 +21,10 @@ members:
   - name: Dhruv
     site: https://butterypaws.github.io
     feed: https://butterypaws.github.io/rss.xml
+  - name: Anirudh Sudhir
+    site: https://anirudhsudhir.com
+    feed: https://anirudhsudhir.com/feed.xml
+    require_url: /posts/
 
 friends:
   - name: Anil Madhavapeddy
