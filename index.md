@@ -20,6 +20,7 @@ The Functional Programming (FP) Launchpad at [IIT Madras](https://www.iitm.ac.in
 
 <ul class="people-list">
   <li><img src="/assets/images/people/kcsrk-profile.jpg" alt="KC Sivaramakrishnan"><span><a href="https://kcsrk.info/">KC Sivaramakrishnan</a>, Head, FP Launchpad · Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
+  <li><img src="/assets/images/people/cse-aishwaryat.png" alt="Aishwarya Thiruvengadam"><span><a href="https://sites.google.com/view/aishwaryat">Aishwarya Thiruvengadam</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
   <li><img src="/assets/images/people/cse-ayon.jpg" alt="Ayon Chakraborty"><span><a href="https://www.cse.iitm.ac.in/~ayon/">Ayon Chakraborty</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
   <li><img src="/assets/images/people/cse-mukulika.jpg" alt="Mukulika Maity"><span><a href="https://www.cse.iitm.ac.in/~mukulika/">Mukulika Maity</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
   <li><img src="/assets/images/people/kartiknagar-avatar_hu5e211fc92955e0d7ae0916788998d721_97472_250x250_fill_q90_lanczos_center.jpg" alt="Kartik Nagar"><span><a href="https://kartiknagar.github.io/">Kartik Nagar</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
