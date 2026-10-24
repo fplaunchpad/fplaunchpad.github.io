@@ -22,8 +22,10 @@ collections:
 
 # Navigation
 header_pages:
-  - charter.md
+  - about.md
+  - projects.md
   - updates.md
+  - work-with-us.md
 
 # Social links
 twitter_username: fp_launchpad
@@ -40,5 +42,5 @@ exclude:
 
 # Site-wide announcement strip below the menu bar (_includes/header.html). Delete this block to remove it.
 announcement:
-  text: "Applications are open for the second cohort of the Post-Baccalaureate Fellowship"
+  text: "Post-Baccalaureate Fellowship: Cohort 2 applications open"
   link: /2026/09/24/applications-open-post-bacc-fellowship-cohort-2.html

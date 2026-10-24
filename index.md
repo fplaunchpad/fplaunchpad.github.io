@@ -4,49 +4,47 @@ title: Home
 permalink: /
 ---
 
-## Vision
+<section class="home-intro" aria-labelledby="home-title">
+  <p class="home-kicker">IIT Madras · Research and education</p>
+  <h1 id="home-title">Efficient, reliable and trustworthy software with mathematical guardrails.</h1>
+  <p>FP Launchpad brings together functional programming, systems research, and formal methods. We build open-source systems and train the next generation of researchers, engineers, and maintainers.</p>
+  <a href="{{ '/about/' | relative_url }}">About the centre &rarr;</a>
+</section>
 
-The Functional Programming (FP) Launchpad at [IIT Madras](https://www.iitm.ac.in/) aims to build research and educational capacity for crafting **efficient, reliable and trustworthy software with mathematical guardrails**. As AI coding agents make software increasingly accessible and enable its production at unprecedented scale, they also introduce far-reaching consequences for civic society. In this context, the centre is founded on the belief that discovering future software engineering best practices requires sustained feedback loops between research and real-world systems, as well as educational structures that cultivate a new generation of maintainers for foundational software.
+<section class="home-section" aria-labelledby="our-work">
+  <h2 id="our-work">Our work</h2>
+  <div class="home-work">
+    <div>
+      <h3>Research</h3>
+      <p>From effect handlers and concurrent programming to verified runtimes and distributed systems.</p>
+      <a href="{{ '/projects/' | relative_url }}#research">Explore our research &rarr;</a>
+    </div>
+    <div>
+      <h3>Open source</h3>
+      <p>Contributions to OCaml 5, multicore runtimes, and tools for building and testing real systems.</p>
+      <a href="{{ '/projects/' | relative_url }}#open-source">Explore our contributions &rarr;</a>
+    </div>
+    <div>
+      <h3>Education</h3>
+      <p>Learn functional programming with our OCaml course, interactive book, and systems tutorials.</p>
+      <a href="{{ '/education/' | relative_url }}">Explore learning resources &rarr;</a>
+    </div>
+  </div>
+</section>
 
-## People
+<section class="home-section" aria-labelledby="latest">
+  <h2 id="latest">Latest</h2>
+  {% include home-latest.html %}
+  <p class="home-more"><a href="{{ '/updates/' | relative_url }}">All updates, events, and talks &rarr;</a></p>
+</section>
 
-### Faculty
+<section class="home-section" aria-labelledby="people">
+  <h2 id="people">People</h2>
+  <p>Our faculty, research staff, fellows, and students work across programming languages, systems, and formal verification, supported by an international advisory board.</p>
+  <p><a href="{{ '/about/' | relative_url }}#team">Meet the team &rarr;</a></p>
+</section>
 
-<style>
-.people-list { list-style: none; padding: 0; margin: 0.5rem 0 1rem 0; }
-.people-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.6rem; }
-.people-list li img { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid #e0e0e0; }
-</style>
-
-<ul class="people-list">
-  <li><img src="/assets/images/people/kcsrk-profile.jpg" alt="KC Sivaramakrishnan"><span><a href="https://kcsrk.info/">KC Sivaramakrishnan</a>, Head, FP Launchpad · Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/cse-aishwaryat.png" alt="Aishwarya Thiruvengadam"><span><a href="https://sites.google.com/view/aishwaryat">Aishwarya Thiruvengadam</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/cse-ayon.jpg" alt="Ayon Chakraborty"><span><a href="https://www.cse.iitm.ac.in/~ayon/">Ayon Chakraborty</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/cse-mukulika.jpg" alt="Mukulika Maity"><span><a href="https://www.cse.iitm.ac.in/~mukulika/">Mukulika Maity</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/kartiknagar-avatar_hu5e211fc92955e0d7ae0916788998d721_97472_250x250_fill_q90_lanczos_center.jpg" alt="Kartik Nagar"><span><a href="https://kartiknagar.github.io/">Kartik Nagar</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/wsai-patanjali.jpg" alt="Patanjali SLPSK"><span><a href="https://wsai.iitm.ac.in/faculty/patanjali-slpsk/">Patanjali SLPSK</a>, Assistant Professor, Wadhwani School of Data Science and AI, IIT Madras</span></li>
-  <li><img src="/assets/images/balaraman-ravindran.jpeg" alt="Balaraman Ravindran"><span><a href="https://www.cse.iitm.ac.in/~ravi/">Balaraman Ravindran</a>, Professor and Head, Wadhwani School of Data Science and AI, IIT Madras</span></li>
-  <li><img src="/assets/images/people/cse-chet.png" alt="Chester Rebeiro"><span><a href="https://www.cse.iitm.ac.in/~chester/">Chester Rebeiro</a>, Professor, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/people-pic4.jpg" alt="NG Srinivas"><span><a href="https://people.cs.rutgers.edu/~sn624/">NG Srinivas</a>, Faculty, Computer Science and Engineering, IIT Madras</span></li>
-  <li><img src="/assets/images/people/cystar-gopal-inner.webp" alt="Gopalakrishnan Srinivasan"><span><a href="https://sites.google.com/view/gsgopal">Gopalakrishnan Srinivasan</a>, Assistant Professor, Computer Science and Engineering, IIT Madras</span></li>
-</ul>
-
-### Advisory Board
-
-<ul class="people-list">
-  <li><img src="/assets/images/chris-casinghino.jpeg" alt="Chris Casinghino"><span><a href="https://tyconmismatch.com/">Chris Casinghino</a>, Software Engineer, Jane Street</span></li>
-  <li><img src="/assets/images/people/cs-suresh-med.jpg" alt="Suresh Jagannathan"><span><a href="https://www.cs.purdue.edu/homes/suresh/">Suresh Jagannathan</a>, Professor, Purdue University</span></li>
-  <li><img src="/assets/images/people/ranjitjhala-rj-color.jpg" alt="Ranjit Jhala"><span><a href="https://ranjitjhala.github.io/">Ranjit Jhala</a>, Professor, University of California, San Diego</span></li>
-  <li><img src="/assets/images/people/cs-me-2019-04-10-small.jpg" alt="Shriram Krishnamurthi"><span><a href="https://www.cs.brown.edu/~sk/">Shriram Krishnamurthi</a>, Professor, Brown University</span></li>
-  <li><img src="/assets/images/people/anil-anil-headshot.webp" alt="Anil Madhavapeddy"><span><a href="https://anil.recoil.org/">Anil Madhavapeddy</a>, Professor, University of Cambridge</span></li>
-  <li><img src="/assets/images/people/gh-3867081.jpg" alt="Rishiyur Nikhil"><span><a href="https://www.linkedin.com/in/rsnikhil/">Rishiyur Nikhil</a>, CTO, Bluespec, Inc</span></li>
-  <li><img src="/assets/images/people/microsoft-newmugshot-5aa2ba94f4164.jpg" alt="Sriram Rajamani"><span><a href="https://www.microsoft.com/en-us/research/people/sriram/">Sriram Rajamani</a>, Corporate Vice President, Microsoft Research</span></li>
-  <li><img src="/assets/images/people/gh-6164339.jpg" alt="Satnam Singh"><span><a href="https://satnam6502.github.io/bio/">Satnam Singh</a>, Software Engineer, <a href="https://harmonic.fun/">Harmonic</a></span></li>
-  <li><img src="/assets/images/people/microsoft-nikportrait-2.jpg" alt="Nik Swamy"><span><a href="https://www.microsoft.com/en-us/research/people/nswamy/">Nik Swamy</a>, Senior Principal Researcher, Microsoft Research</span></li>
-</ul>
-
-## Stay in touch
-
-Sign up for our newsletter to stay informed about upcoming events, open positions, and other opportunities at FP Launchpad. To subscribe, email [contact@fplaunchpad.org](mailto:contact@fplaunchpad.org?subject=Subscribe%20to%20Newsletter) with the subject line "Subscribe to Newsletter". We send updates infrequently and only when there is something meaningful to share.
-
-You can also follow us on GitHub, LinkedIn, Twitter, and YouTube, and chat with us on [Zulip]({{ site.zulip_url }}). The links are in the footer below.
+<section class="home-section" aria-labelledby="stay-in-touch">
+  <h2 id="stay-in-touch">Stay in touch</h2>
+  <p>For occasional updates on our work, events, and opportunities, <a href="mailto:contact@fplaunchpad.org?subject=Subscribe%20to%20Newsletter">subscribe to our newsletter</a> by emailing contact@fplaunchpad.org with the subject “Subscribe to Newsletter”. You can also <a href="{{ site.zulip_url }}">join the conversation on Zulip</a>.</p>
+</section>

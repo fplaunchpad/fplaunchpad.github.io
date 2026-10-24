@@ -1,0 +1,9 @@
+{%- assign latest_posts = site.posts | concat: site.blog | sort: 'date' | reverse -%}
+<ul class="updates-list home-latest">
+  {%- for post in latest_posts limit: 3 -%}
+  <li class="update-item">
+    <time class="update-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%-d %b %Y' }}</time>
+    <h3 class="update-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+  </li>
+  {%- endfor -%}
+</ul>
