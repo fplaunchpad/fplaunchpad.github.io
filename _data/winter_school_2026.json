@@ -1,0 +1,244 @@
+{
+  "title": "FP Launchpad PL Winter School",
+  "dates": "7–11 December 2026",
+  "venue": "SSB 334, IIT Madras",
+  "times": [
+    "09:00–10:20",
+    "10:40–12:00",
+    "14:00–15:20",
+    "15:40–17:00"
+  ],
+  "modules": [
+    {
+      "id": "rocq",
+      "title": "Rocq & Roll",
+      "speakers": [
+        {
+          "name": "Aalok Thakkar",
+          "affiliation": "Ashoka University",
+          "url": "https://www.ashoka.edu.in/profile/aalok-thakkar/"
+        },
+        {
+          "name": "TVH Prathamesh",
+          "affiliation": "Krea University",
+          "url": "https://krea.edu.in/about/faculty/sias/prathamesh-t-v-h/"
+        }
+      ],
+      "lectures": 4,
+      "summary": "Interactive theorem proving in Rocq, from basic definitions and proofs to the type safety of the Simply Typed Lambda Calculus.",
+      "abstract": "This course introduces Rocq, an interactive theorem prover used to formally specify and verify the correctness of logical statements and programs. Starting with basic definitions, inductive types, and proofs, we will gradually build up to formalizing the Simply Typed Lambda Calculus. Along the way, you will gain hands-on experience writing definitions and constructing machine-checked proofs using the SSReflect proof language.",
+      "outline": [
+        "Introduction to Rocq: basic definitions, functions, and proofs",
+        "Inductive types, recursive functions, and proofs by induction",
+        "Simply Typed Lambda Calculus (STLC) in Rocq",
+        "Proving progress, preservation, and type safety of STLC"
+      ],
+      "prerequisites": "Familiarity with introductory logic, including propositional and first-order predicate logic, is recommended. A preparatory handout will be shared with participants.",
+      "setup": "Bring a laptop with Rocq 9.0 and the <a href=\"https://gitlab.mpi-sws.org/iris/stdpp\">stdpp library</a> installed. Participants without a laptop are welcome to pair up during the hands-on sessions.",
+      "resources": [
+        {
+          "label": "Rocq installation instructions",
+          "url": "https://rocq-prover.org/install"
+        },
+        {
+          "label": "Software Foundations: Logical Foundations",
+          "url": "https://softwarefoundations.cis.upenn.edu/lf-current/"
+        },
+        {
+          "label": "Software Foundations: Programming Language Foundations",
+          "url": "https://softwarefoundations.cis.upenn.edu/plf-current/"
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "title": "Type Systems",
+      "speakers": [
+        {
+          "name": "Suresh Jagannathan",
+          "affiliation": "Purdue University",
+          "url": "https://www.cs.purdue.edu/homes/suresh/"
+        }
+      ],
+      "lectures": 4,
+      "summary": "Judgements and the Simply Typed Lambda Calculus, System F, subtyping, type inference, and substructural type systems.",
+      "outline": [
+        "Judgements, propositions, and STLC",
+        "System F and subtyping",
+        "Type inference and bidirectional typing",
+        "Substructural type systems and Rust"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Symbolic Verification of Security Protocols",
+      "speakers": [
+        {
+          "name": "Vaishnavi Sundararajan",
+          "affiliation": "IIT Delhi",
+          "url": "https://homecse.iitd.ac.in/team/vaishnavi-sundararajan/"
+        }
+      ],
+      "lectures": 3,
+      "summary": "Symbolic approaches to verifying security protocols, with take-home exercises between the first and second day.",
+      "setup": "The planned exercises do not require Tamarin or ProVerif."
+    },
+    {
+      "id": "separation",
+      "title": "Concurrent Separation Logic",
+      "speakers": [
+        {
+          "name": "S P Suresh",
+          "affiliation": "Chennai Mathematical Institute",
+          "url": "https://www.cmi.ac.in/~spsuresh/"
+        }
+      ],
+      "lectures": 3,
+      "summary": "An introduction to concurrent separation logic, with examples and a glimpse of Iris."
+    },
+    {
+      "id": "ebpf",
+      "title": "eBPF and Abstract Interpretation",
+      "speakers": [
+        {
+          "name": "Srinivas Narayana",
+          "affiliation": "IIT Madras",
+          "url": "https://people.cs.rutgers.edu/~sn624/"
+        }
+      ],
+      "lectures": 3
+    },
+    {
+      "id": "runtime",
+      "title": "Runtime Systems and JIT Compilation",
+      "speakers": [
+        {
+          "name": "Manas Thakur",
+          "affiliation": "IIT Bombay",
+          "url": "https://www.cse.iitb.ac.in/~manas/"
+        }
+      ],
+      "lectures": 3,
+      "summary": "Runtime-system design and JIT optimisation, connecting program analysis to precise, efficient, and sound execution.",
+      "abstract": "Just-in-time (JIT) compilers offer novel ways to optimize programs based on their execution profile and have found significant usage in languages with managed runtimes. However, as JIT compilation directly affects the execution time of a program, precision-enhancement techniques from the static-analysis world seldom find way into these otherwise powerful systems. Under this backdrop, we would first understand how modern JIT compilers optimize code, in tiered runtime systems, using examples of program analysis aimed at enabling stack allocation of heap objects in Java. We would then understand techniques to not only allocate a large number of objects on stack (leading to reduced garbage collection and improved performance), but to also handle challenges posed by possible dynamism in real-world Java Virtual Machines. In particular, we would talk about AOT-analysis guided optimistic stack allocation, as well as the usage of speculative JIT information in improving the precision of statically computed results. All parts of the story would be bound by the over-arching goal of maintaining precision and efficiency, while being sound, during program execution.",
+      "setup": "Install OpenJDK on your laptop. Any version is suitable for this module."
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-12-07",
+      "label": "Monday",
+      "day": "7 December",
+      "sessions": [
+        {
+          "module": "rocq",
+          "lecture": 1
+        },
+        {
+          "module": "security",
+          "lecture": 1
+        },
+        {
+          "module": "rocq",
+          "lecture": 2
+        },
+        {
+          "module": "security",
+          "lecture": 2
+        }
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "label": "Tuesday",
+      "day": "8 December",
+      "sessions": [
+        {
+          "module": "types",
+          "lecture": 1
+        },
+        {
+          "module": "security",
+          "lecture": 3
+        },
+        {
+          "module": "types",
+          "lecture": 2
+        },
+        {
+          "module": "rocq",
+          "lecture": 3
+        }
+      ]
+    },
+    {
+      "date": "2026-12-09",
+      "label": "Wednesday",
+      "day": "9 December",
+      "sessions": [
+        {
+          "module": "rocq",
+          "lecture": 4
+        },
+        {
+          "module": "types",
+          "lecture": 3
+        },
+        {
+          "module": "separation",
+          "lecture": 1
+        },
+        {
+          "module": "ebpf",
+          "lecture": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-12-10",
+      "label": "Thursday",
+      "day": "10 December",
+      "sessions": [
+        {
+          "module": "types",
+          "lecture": 4
+        },
+        {
+          "module": "separation",
+          "lecture": 2
+        },
+        {
+          "module": "ebpf",
+          "lecture": 2
+        },
+        {
+          "module": "runtime",
+          "lecture": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "label": "Friday",
+      "day": "11 December",
+      "sessions": [
+        {
+          "module": "separation",
+          "lecture": 3
+        },
+        {
+          "module": "runtime",
+          "lecture": 2
+        },
+        {
+          "module": "ebpf",
+          "lecture": 3
+        },
+        {
+          "module": "runtime",
+          "lecture": 3
+        }
+      ]
+    }
+  ]
+}

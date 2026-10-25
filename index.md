@@ -34,6 +34,7 @@ permalink: /
 
 <section class="home-section" aria-labelledby="latest">
   <h2 id="latest">Latest</h2>
+  <p><strong>Coming up · 7–11 December:</strong> <a href="{{ '/winter-school-2026/' | relative_url }}">PL Winter School at IIT Madras</a>. Explore the modules and provisional timetable.</p>
   {% include home-latest.html %}
   <p class="home-more"><a href="{{ '/updates/' | relative_url }}">All updates, events, and talks &rarr;</a></p>
 </section>

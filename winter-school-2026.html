@@ -1,0 +1,86 @@
+---
+layout: home
+title: FP Launchpad PL Winter School 2026
+description: Five days of programming languages, verification, and runtime systems at IIT Madras, 7–11 December 2026.
+permalink: /winter-school-2026/
+---
+{% assign school = site.data.winter_school_2026 %}
+<link rel="stylesheet" href="{{ '/assets/winter-school.css' | relative_url }}">
+<article class="winter-school">
+  <header class="school-intro">
+    <h1>Programming Languages Winter School 2026</h1>
+    <p class="school-dates">{{ school.dates }} <span aria-hidden="true">·</span> <a href="https://maps.app.goo.gl/6JWmWuiSw9BgPPXb7">{{ school.venue }}</a></p>
+    <p>This five-day school introduces programming languages, program verification, and runtime systems through lectures and exercises.</p>
+    <p><strong>Registration:</strong> Coming soon.</p>
+  </header>
+
+  <section class="school-section" aria-labelledby="audience">
+    <h2 id="audience">Audience</h2>
+    <p>The school welcomes senior undergraduates, graduate students, research staff, faculty, and industry professionals in research positions. Prior study of programming languages, functional programming, or proof assistants is not required.</p>
+    <p>Programming experience and discrete mathematics are the core foundations for the school. Theory of computation or a Logic for Mathematics and Computer Science (LMC) course is strongly recommended. Data structures and algorithms are useful preparation. Compilers and operating systems are helpful additional background, but are not required.</p>
+    <p>The discrete mathematics background should include logic and reading and writing basic proofs. Equivalent self-study or work experience is welcome.</p>
+  </section>
+
+  <section class="school-section" aria-labelledby="programme">
+    <h2 id="programme">Timetable</h2>
+    <p>The timetable is provisional. All times are <strong>India Standard Time (UTC+5:30)</strong>. Each lecture lasts 80 minutes, including questions.</p>
+    <p class="school-note">Breaks: 10:20–10:40 and 15:20–15:40. Lunch: 12:00–14:00. No Saturday sessions.</p>
+    <div class="school-timetable-desktop">
+      <table class="school-timetable">
+        <caption class="visually-hidden">Winter School timetable</caption>
+        <thead><tr><th rowspan="2" scope="col">Day</th><th colspan="2" scope="colgroup">Morning</th><th colspan="2" scope="colgroup">Afternoon</th></tr><tr>{% for time in school.times %}<th scope="col">{{ time }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for day in school.days %}
+          <tr>
+            <th scope="row"><time datetime="{{ day.date }}">{{ day.label }}<br>{{ day.day }}</time></th>
+            {% for session in day.sessions %}
+            {% assign module = school.modules | where: 'id', session.module | first %}
+            <td class="school-{{ module.id }}">{{ module.title | escape }}<span class="school-session-speakers">{% for speaker in module.speakers %}{% unless forloop.first %}<br>{% endunless %}{{ speaker.name | escape }}{% endfor %}</span><span class="school-lecture">Lecture {{ session.lecture }}</span></td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="school-timetable-mobile">
+      {% for day in school.days %}
+      <section class="school-day" aria-label="{{ day.label }}, {{ day.day }}">
+        <h3><time datetime="{{ day.date }}">{{ day.label }}, {{ day.day }}</time></h3>
+        <ol>
+          {% for session in day.sessions %}
+          {% assign module = school.modules | where: 'id', session.module | first %}
+          <li class="school-{{ module.id }}"><span class="school-time">{{ school.times[forloop.index0] }}</span><div>{{ module.title | escape }}<span class="school-session-speakers">{% for speaker in module.speakers %}{% unless forloop.first %}<br>{% endunless %}{{ speaker.name | escape }}{% endfor %}</span><span class="school-lecture">Lecture {{ session.lecture }}</span></div></li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="school-section" aria-labelledby="modules">
+    <h2 id="modules">Modules</h2>
+    <p class="school-note">Further abstracts and preparation details will be added as they are confirmed.</p>
+    <div class="school-modules">
+      {% for module in school.modules %}
+      <section class="school-module" aria-labelledby="{{ module.id }}">
+        <p class="school-module-meta">Module {{ forloop.index }} · {{ module.lectures }} lectures</p>
+        <h3 id="{{ module.id }}"><span class="school-swatch school-{{ module.id }}" aria-hidden="true"></span>{{ module.title | escape }}</h3>
+        <p class="school-speaker">{% for speaker in module.speakers %}{% unless forloop.first %} and {% endunless %}<a href="{{ speaker.url | escape }}">{{ speaker.name | escape }}</a> ({{ speaker.affiliation | escape }}){% endfor %}</p>
+        {% if module.abstract %}<p>{{ module.abstract }}</p>{% elsif module.summary %}<p>{{ module.summary }}</p>{% endif %}
+        {% if module.outline %}
+        <ol>{% for lecture in module.outline %}<li>{{ lecture }}</li>{% endfor %}</ol>
+        {% endif %}
+        {% if module.prerequisites %}<p>{{ module.prerequisites }}</p>{% endif %}
+        {% if module.setup %}<p>{{ module.setup }}{% if module.id == 'rocq' %} See the <a href="https://rocq-prover.org/install">Rocq installation instructions</a>.{% endif %}</p>{% endif %}
+        {% if module.resources %}
+        <p>Further reading:</p>
+        <ul>{% for resource in module.resources %}{% unless resource.url == 'https://rocq-prover.org/install' %}<li><a href="{{ resource.url }}">{{ resource.label }}</a></li>{% endunless %}{% endfor %}</ul>
+        {% endif %}
+        {% unless module.abstract or module.summary %}<p class="school-note">Abstract to follow.</p>{% endunless %}
+      </section>
+      {% endfor %}
+    </div>
+  </section>
+
+  <p>Contact: <a href="mailto:contact@fplaunchpad.org?subject=PL%20Winter%20School%202026">contact@fplaunchpad.org</a></p>
+</article>

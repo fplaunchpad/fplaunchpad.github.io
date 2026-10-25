@@ -6,6 +6,16 @@
 # `news` (optional) lists news posts about the event. A news post is left off /updates/ when it
 # is an event's `link` or is listed in its `news`, so the event isn't shown twice.
 events:
+  - title: "FP Launchpad PL Winter School 2026"
+    date: 2026-12-07
+    end: 2026-12-11
+    date_display: "7–11 December 2026"
+    location: "SSB 334, IIT Madras"
+    summary: >
+      Five days of programming languages, verification, and runtime systems, with six modules
+      and 20 lectures. The timetable is provisional; registration is coming soon.
+    link: /winter-school-2026/
+
   - title: "FUN OCaml 2027"
     date: 2027-01-25
     end: 2027-01-26
