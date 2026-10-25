@@ -1,6 +1,6 @@
 /* Keep the event a plain document within the site's usual typography and width. */
 .school-intro { padding: 12px 0 4px; }
-.school-banner { display: block; width: 100%; height: auto; margin-bottom: 24px; }
+.school-banner { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: 60% center; margin-bottom: 24px; }
 .school-intro h1 { font-size: 2rem; line-height: 1.25; letter-spacing: -.5px; }
 .school-dates { font-weight: 600; }
 .school-dates span { padding: 0 5px; }
@@ -30,6 +30,7 @@
 .winter-school .school-ebpf { background: #fff1bf; }
 .winter-school .school-runtime { background: #d9efef; }
 @media (max-width: 700px) {
+  .school-banner { aspect-ratio: 4 / 3; }
   .school-intro h1 { font-size: 1.7rem; }
   .school-dates span { display: block; height: 0; visibility: hidden; }
   .school-timetable-desktop { display: none; }
