@@ -17,7 +17,7 @@ image:
     <h1>Programming Languages Winter School 2026</h1>
     <p class="school-dates">{{ school.dates }} <span aria-hidden="true">·</span> <a href="https://maps.app.goo.gl/6JWmWuiSw9BgPPXb7">{{ school.venue }}</a></p>
     <p>This five-day school introduces programming languages, program verification, and runtime systems through lectures and exercises.</p>
-    <p><strong>Apply to attend:</strong> Applications will open soon. We will review your application and let you know whether you have a seat. Travel and accommodation support will be available for those who need it.</p>
+    <p><strong>Apply to attend:</strong> Applications will open soon. We will review your application and let you know whether you have a seat.</p>
   </header>
 
   <section class="school-section" aria-labelledby="audience">
@@ -44,6 +44,9 @@ image:
             <td class="school-{{ module.id }}">{{ module.title | escape }}<span class="school-session-speakers">{% for speaker in module.speakers %}{% unless forloop.first %}<br>{% endunless %}{{ speaker.name | escape }}{% endfor %}</span><span class="school-lecture">Lecture {{ session.lecture }}</span></td>
             {% endfor %}
           </tr>
+          {% if day.after_lectures %}
+          <tr><th scope="row">After lectures</th><td colspan="4">{{ day.after_lectures | escape }}</td></tr>
+          {% endif %}
           {% endfor %}
         </tbody>
       </table>
@@ -58,6 +61,7 @@ image:
           <li class="school-{{ module.id }}"><span class="school-time">{{ school.times[forloop.index0] }}</span><div>{{ module.title | escape }}<span class="school-session-speakers">{% for speaker in module.speakers %}{% unless forloop.first %}<br>{% endunless %}{{ speaker.name | escape }}{% endfor %}</span><span class="school-lecture">Lecture {{ session.lecture }}</span></div></li>
           {% endfor %}
         </ol>
+        {% if day.after_lectures %}<p><strong>After lectures:</strong> {{ day.after_lectures | escape }}</p>{% endif %}
       </section>
       {% endfor %}
     </div>
