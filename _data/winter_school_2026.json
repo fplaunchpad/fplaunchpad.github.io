@@ -52,7 +52,7 @@
     },
     {
       "id": "types",
-      "title": "Type Systems",
+      "title": "Design of Type Systems",
       "speakers": [
         {
           "name": "Suresh Jagannathan",
@@ -61,13 +61,15 @@
         }
       ],
       "lectures": 4,
-      "summary": "Judgements and the Simply Typed Lambda Calculus, System F, subtyping, type inference, and substructural type systems.",
+      "summary": "Type systems from foundational and practical perspectives: logic and safety, polymorphism, resource management, and refinement types.",
       "outline": [
-        "Judgements, propositions, and STLC",
-        "System F and subtyping",
-        "Type inference and bidirectional typing",
-        "Substructural type systems and Rust"
-      ]
+        "Judgements, Propositions, Curry-Howard, and STLC",
+        "Polymorphism (System F, subtyping, row)",
+        "Substructural Type Systems, Rust",
+        "Refinement Types and Extensions"
+      ],
+      "abstract": "Robin Milner’s famous quote, “Well-typed programs don’t go wrong” speaks to the centrality of types in modern programming. In this module, we will explore the design of type systems from both a foundational and practical perspective. We will bridge abstract logical principles with the mechanics underlying the design and implementation of type systems in real-world languages. The lectures will cover (a) the relationship between types and formal logic, typing judgements, and safety; (b) polymorphism and generics; (c) types and resource management as exemplified in languages like Rust, and (d) refinement types and its various extensions that allow types to carry logical predicates enabling richer and more expressive program reasoning and verification capabilities.",
+      "setup": "No labs are scheduled, and no software installation is required. Recent versions of OCaml and Z3 are optional for participants who would like to try the demonstrations."
     },
     {
       "id": "security",
