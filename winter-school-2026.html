@@ -44,9 +44,6 @@ image:
             <td class="school-{{ module.id }}">{{ module.title | escape }}<span class="school-session-speakers">{% for speaker in module.speakers %}{% unless forloop.first %}<br>{% endunless %}{{ speaker.name | escape }}{% endfor %}</span><span class="school-lecture">Lecture {{ session.lecture }}</span></td>
             {% endfor %}
           </tr>
-          {% if day.after_lectures %}
-          <tr><th scope="row">After lectures</th><td colspan="4">{{ day.after_lectures | escape }}</td></tr>
-          {% endif %}
           {% endfor %}
         </tbody>
       </table>
@@ -61,10 +58,18 @@ image:
           <li class="school-{{ module.id }}"><span class="school-time">{{ school.times[forloop.index0] }}</span><div>{{ module.title | escape }}<span class="school-session-speakers">{% for speaker in module.speakers %}{% unless forloop.first %}<br>{% endunless %}{{ speaker.name | escape }}{% endfor %}</span><span class="school-lecture">Lecture {{ session.lecture }}</span></div></li>
           {% endfor %}
         </ol>
-        {% if day.after_lectures %}<p><strong>After lectures:</strong> {{ day.after_lectures | escape }}</p>{% endif %}
       </section>
       {% endfor %}
     </div>
+  </section>
+
+  <section class="school-section" aria-labelledby="social-outing">
+    <h2 id="social-outing">Social Outing + Dinner</h2>
+    {% for day in school.days %}
+    {% if day.after_lectures %}
+    <p><strong><time datetime="{{ day.date }}">{{ day.label }}, {{ day.day }}</time>, after lectures:</strong> {{ day.after_lectures | escape }}</p>
+    {% endif %}
+    {% endfor %}
   </section>
 
   <section class="school-section" aria-labelledby="modules">
