@@ -7,6 +7,9 @@
 .school-section { margin: 28px 0; }
 .school-section h2 { font-size: 1.5rem; }
 .school-section h3 { font-size: 1.15rem; }
+.school-faq summary { cursor: pointer; font-weight: 600; padding: 8px 0; }
+.school-faq[open] summary { margin-bottom: 8px; }
+.school-faq h3 { margin-top: 18px; }
 .school-note { color: #666; font-size: .9rem; }
 .school-module { margin: 24px 0; }
 .school-module h3 { margin-bottom: 6px; }
