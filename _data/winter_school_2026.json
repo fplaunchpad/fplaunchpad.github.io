@@ -82,8 +82,7 @@
         }
       ],
       "lectures": 3,
-      "summary": "Symbolic approaches to verifying security protocols, with take-home exercises between the first and second day.",
-      "setup": "The planned exercises do not require Tamarin or ProVerif."
+      "abstract": "Roger Needham once said “Security protocols are three-line programs that people still get wrong”. This module discusses exactly why this happens, and how to prevent it, by examining security protocols (and cybersecurity principles, on a broader level) through a logical lens. We will learn how real-world protocols can be abstractly modelled, how common properties can be represented in a basic logical syntax, and how one can verify whether particular properties of interest hold of protocols. If time permits, we will see how such verification can be automated using bespoke tools, but no prior software installation is required."
     },
     {
       "id": "separation",
