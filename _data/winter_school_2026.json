@@ -191,8 +191,8 @@
           "lecture": 1
         },
         {
-          "module": "security",
-          "lecture": 1
+          "module": "types",
+          "lecture": 4
         }
       ],
       "after_lectures": "Social outing to the IITM Heritage Centre, followed by dinner at the CSE department."
@@ -203,8 +203,8 @@
       "day": "10 December",
       "sessions": [
         {
-          "module": "types",
-          "lecture": 4
+          "module": "security",
+          "lecture": 1
         },
         {
           "module": "separation",
