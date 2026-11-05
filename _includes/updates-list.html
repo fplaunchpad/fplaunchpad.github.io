@@ -30,7 +30,7 @@
 {%- capture post_link -%}|{{ p.link }}|{%- endcapture -%}
 {%- unless covered contains post_url or p.link and covered contains post_link -%}{{ p.date | date: "%Y-%m-%d" }}~news~{{ forloop.index0 }}|{%- endunless -%}
 {%- endfor -%}
-{%- for p in site.blog -%}{{ p.date | date: "%Y-%m-%d" }}~blog~{{ forloop.index0 }}|{%- endfor -%}
+{%- for p in site.blog -%}{%- unless p.unlisted -%}{{ p.date | date: "%Y-%m-%d" }}~blog~{{ forloop.index0 }}|{%- endunless -%}{%- endfor -%}
 {%- for t in all_talks -%}{{ t.date | date: "%Y-%m-%d" }}~talk~{{ forloop.index0 }}|{%- endfor -%}
 {%- for e in all_events -%}{{ e.date | date: "%Y-%m-%d" }}~event~{{ forloop.index0 }}|{%- endfor -%}
 {%- endcapture -%}

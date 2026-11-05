@@ -1,4 +1,5 @@
-{%- assign latest_posts = site.posts | concat: site.blog | sort: 'date' | reverse -%}
+{%- assign listed_blog = site.blog | where_exp: 'p', 'p.unlisted != true' -%}
+{%- assign latest_posts = site.posts | concat: listed_blog | sort: 'date' | reverse -%}
 <ul class="updates-list home-latest">
   {%- for post in latest_posts limit: 3 -%}
   <li class="update-item">
