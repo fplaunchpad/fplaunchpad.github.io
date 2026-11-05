@@ -4,7 +4,8 @@ title: "FP Launchpad in the community, September to November 2026"
 date: 2026-11-05
 author: Sanjay Karanth
 permalink: /blog/2026-11-fp-launchpad-in-the-community/
-published: false
+published: true
+unlisted: true
 blurb: >-
   A workshop and four talks at IndiaFOSS, a crowded booth at IICT, climate
   scientists at Healing Earth, two hackathons sponsored, proposals to SciPy
@@ -62,7 +63,7 @@ When the team met to review the workshop, the broadest complaint from participan
 On the main track on 26 September, KC gave [Textbooks that run](https://www.youtube.com/watch?v=2KjUZ5HFSeI&t=4564s), on the interactive, zero-install textbook behind our [NPTEL course](https://onlinecourses.nptel.ac.in/e-learning/course/noc26_cs90) and the workshop. That afternoon, three of the team spoke in the [Compilers, Programming Languages and Systems devroom](https://fossunited.org/indiafoss/2026/devrooms/compilers) ([recording](https://www.youtube.com/watch?v=rb1ZALRGFjw)), organised by [Ashutosh Pandey](https://compilertech.org/):
 
 - Navaneeth on why [benchmarking can be hard, and why we are still building a new benchmark for OCaml](https://fossunited.org/c/indiafoss/2026/cfp/6aasju7noq).
-- Pragyansh on [PythonBPF](https://fossunited.org/c/indiafoss/2026/cfp/299lpkmuqh), which lets developers write Linux kernel programs in a subset of Python, now with loops, custom functions and more map types.
+- Pragyansh, with Varun Mallya, on [PythonBPF](https://fossunited.org/c/indiafoss/2026/cfp/299lpkmuqh), which lets developers write Linux kernel programs in a subset of Python, now with loops, custom functions and more map types.
 - Durwasa on why [LGTM Is Not A Theorem](https://www.youtube.com/watch?v=rb1ZALRGFjw&t=7348s) ([slides](https://anachronisticmonk.github.io/indiafoss/deck.html)).
 
 <figure style="margin:1.5em 0;">
@@ -108,7 +109,12 @@ Alina noted a remark by Lokesh Chellaiya that stayed with us: being told to star
 
 ## IICT 2026 and the booth
 
-A week later, nine of us were at [IICT 2026](https://compilertech.org/) at IISc, Bengaluru, on 2–3 October: Vimala, Navaneeth, [Akhil Tulluri](https://www.linkedin.com/in/akhiltulluri/) (Research Staff), Durwasa, [Sai Venkata Krishnan](https://saivk.github.io/) (PhD student), [Vishakh Desai](https://github.com/vishakhdesai) (MS student), [B Sanjeev Reddy](https://www.linkedin.com/in/sanjeev-sde/) (MS student), [Prakhand Patel](https://www.linkedin.com/in/prakhand-patel/) (MTech student) and Pragyansh. IICT is an ACM compilers conference organised by Ashutosh, who also runs [LLVM Social Bangalore](https://www.youtube.com/@llvmsocialbangalore6067) and the SEGFAULT hackathon. The organisers' funding covered our posters, banners, stickers and booth. Pragyansh presented the [OCaml–MMTk integration](https://github.com/fplaunchpad/ocaml-mmtk), which connects OCaml to a toolkit of garbage collectors, in the [Day 2 morning session](https://www.youtube.com/watch?v=VdUT4RxRBPY). Vimala represented FP Launchpad at the conference's industry dinner.
+A week later, nine of us were at [IICT 2026](https://compilertech.org/) at IISc, Bengaluru, on 2–3 October: Vimala, Navaneeth, [Akhil Tulluri](https://www.linkedin.com/in/akhiltulluri/) (Research Staff), Durwasa, [Sai Venkata Krishnan](https://saivk.github.io/) (PhD student), [Vishakh Desai](https://github.com/vishakhdesai) (MS student), [B Sanjeev Reddy](https://www.linkedin.com/in/sanjeev-sde/) (MS student), [Prakhand Patel](https://www.linkedin.com/in/prakhand-patel/) (MTech student) and Pragyansh. IICT is an ACM compilers conference organised by Ashutosh, who also runs [LLVM Social Bangalore](https://www.youtube.com/@llvmsocialbangalore6067) and the SEGFAULT hackathon. The organisers' funding covered our posters, banners, stickers and booth. Pragyansh presented "OCaml-MMTk: Porting OCaml to the MMTk Garbage Collection Framework", his paper with KC on the [OCaml–MMTk integration](https://github.com/fplaunchpad/ocaml-mmtk), which connects OCaml to a toolkit of garbage collectors, in the [Day 2 morning session](https://www.youtube.com/watch?v=VdUT4RxRBPY). Vimala represented FP Launchpad at the conference's industry dinner.
+
+<figure style="margin:1.5em 0;">
+  <img src="/assets/images/blog/2026-11-outreach/iict-pragyansh-talk.jpg" alt="Pragyansh at the lectern on the IICT stage, beside a large screen showing the title slide 'OCaml-MMTk: Porting OCaml to the MMTk Garbage Collection Framework' by Pragyansh Chaturvedi and KC Sivaramakrishnan, FP Launchpad, IIT Madras" style="width:100%;border-radius:6px;">
+  <figcaption style="font-size:0.9em;color:#666;margin-top:0.4em;">Pragyansh presents OCaml–MMTk at IICT.</figcaption>
+</figure>
 
 The booth, in the AV Rama Rao Auditorium next to Google's, carried two A0 posters: one for FUN OCaml and one for the Post-Baccalaureate Fellowship.
 

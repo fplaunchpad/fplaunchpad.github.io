@@ -16,7 +16,7 @@ sitemap: false
   <link href="{{ '/blog/' | absolute_url }}" rel="alternate" type="text/html"/>
   <id>{{ page.url | absolute_url }}</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  {%- assign blog_posts = site.blog | sort: 'date' | reverse -%}
+  {%- assign blog_posts = site.blog | where_exp: 'p', 'p.unlisted != true' | sort: 'date' | reverse -%}
   {%- for post in blog_posts limit: 20 %}
   <entry>
     <title type="html">{{ post.title | xml_escape }}</title>
