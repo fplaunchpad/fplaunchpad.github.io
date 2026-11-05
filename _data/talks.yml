@@ -98,7 +98,7 @@ talks:
     slides: https://github.com/fplaunchpad/oxcaml-talk
     slides_label: "Slides (runnable, live)"
 
-  - title: "ocaml-mmtk: OCaml on the Memory Management Toolkit as a testbed for functional-language Garbage Collection"
+  - title: "OCaml-MMTk: Porting OCaml to the MMTk Garbage Collection Framework"
     speaker: Pragyansh Chaturvedi
     designation: Fellow
     date: 2026-10-02
