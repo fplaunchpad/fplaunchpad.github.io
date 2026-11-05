@@ -5,7 +5,6 @@ date: 2026-11-05
 author: Sanjay Karanth
 permalink: /blog/2026-11-fp-launchpad-in-the-community/
 published: true
-unlisted: true
 blurb: >-
   A workshop and four talks at IndiaFOSS, a crowded booth at IICT, climate
   scientists at Healing Earth, two hackathons sponsored, proposals to SciPy
