@@ -9,18 +9,18 @@ unlisted: true
 blurb: >-
   A workshop and four talks at IndiaFOSS, a crowded booth at IICT, climate
   scientists at Healing Earth, two hackathons sponsored, proposals to SciPy
-  India, and FUN OCaml in January: what we did and what the team took away.
+  India, and FUN OCaml in January.
 ---
 
-FP Launchpad's charter puts [systems and community]({% post_url 2026-03-30-fp-launchpad-kickoff %}) alongside research and teaching. Between September and November we took that outside IIT Madras: to free and open-source software developers, compiler and programming-languages people, students, and climate and other scientists. Here is what we did, and what we learned.
+FP Launchpad's charter puts [systems and community]({% post_url 2026-03-30-fp-launchpad-kickoff %}) alongside research and teaching. Between September and November we took that outside IIT Madras: to free and open-source software developers, compiler and programming-languages people, students, and climate and other scientists.
 
 - At [IndiaFOSS 2026](https://fossunited.org/indiafoss/2026) in Bengaluru, we ran a three-hour [OCaml workshop](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/) and gave four talks.
 - At [Innovations in Compiler Technology (IICT) 2026](https://compilertech.org/), nine of us attended, Pragyansh presented the OCaml–MMTk work, and our booth was busy enough that the organisers estimated we spoke to **200+ people** on the first day alone.
 - We sponsored two student hackathons: [SEGFAULT](https://segfault.compilertech.org/), where we funded the prizes for the two teams sharing third place, and [Syntax Error](https://hackathon.sdslabs.co/) at IIT Roorkee, which ran a functional programming track with us as Gold sponsor.
-- Three of the team went to the [Healing Earth workshop](https://3cs.ashoka.edu.in/healing-earth-workshop) on climate science and policy at Ashoka University, and three submitted proposals to [SciPy India 2026](https://scipy.in/), as we look for ways to work with scientists who write software.
+- Three of the team went to the [Healing Earth workshop](https://3cs.ashoka.edu.in/healing-earth-workshop) on climate science and policy at Ashoka University, and three submitted proposals to [SciPy India 2026](https://scipy.in/), as we look for ways to contribute to scientific computing.
 - We are hosting [FUN OCaml](https://fun-ocaml.com/) in Bengaluru on 25–26 January 2027, and applications for the [Post-Baccalaureate Fellowship, Cohort 2]({% post_url 2026-09-24-applications-open-post-bacc-fellowship-cohort-2 %}) close on **10 December**.
 
-<p style="font-size:0.9em;color:#666;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:0.5em 0;margin:1.2em 0;"><strong>In this post:</strong> <a href="#indiafoss-2026">IndiaFOSS</a> (<a href="#the-workshop">workshop</a>, <a href="#the-talks">talks</a>) · <a href="#iict-2026-and-the-booth">IICT and the booth</a> · <a href="#two-hackathons">Hackathons</a> (<a href="#segfault">SEGFAULT</a>, <a href="#syntax-error">Syntax Error</a>) · <a href="#scientists-who-write-software">Scientists</a> (<a href="#healing-earth">Healing Earth</a>, <a href="#scipy-india">SciPy</a>) · <a href="#bringing-people-in">Bringing people in</a> · <a href="#looking-ahead">Looking ahead</a></p>
+<p style="font-size:0.9em;color:#666;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:0.5em 0;margin:1.2em 0;"><strong>In this post:</strong> <a href="#indiafoss-2026">IndiaFOSS</a> (<a href="#the-workshop">workshop</a>, <a href="#the-talks">talks</a>) · <a href="#iict-2026-and-the-booth">IICT and the booth</a> · <a href="#two-hackathons">Hackathons</a> (<a href="#segfault">SEGFAULT</a>, <a href="#syntax-error">Syntax Error</a>) · <a href="#software-for-science">Software for science</a> (<a href="#healing-earth">Healing Earth</a>, <a href="#scipy-india">SciPy</a>) · <a href="#bringing-people-in">Bringing people in</a> · <a href="#looking-ahead">Looking ahead</a></p>
 
 ## IndiaFOSS 2026
 
@@ -149,7 +149,7 @@ Of 41 projects evaluated online, nine reached the final at IISc. One was ours: D
 
 In October, [SDSLabs](https://sdslabs.co/), the student technical group at IIT Roorkee, invited us to sponsor the 13th edition of their annual hackathon, [Syntax Error](https://hackathon.sdslabs.co/), held on 23–25 October; SDSLabs says it draws more than 2,000 students. We joined as [Gold sponsor](https://x.com/sdslabs/status/2113335419182182628), and SDSLabs added a [Functional Programming track](https://x.com/sdslabs/status/2113663484827422942) for students to "explore the intersection of mathematics and software by building innovative solutions using functional programming". We suggested a broad theme: AI, functional programming and formal verification for developing correct, efficient and reliable software. Winners and notable projects will be eligible for mentorship at FP Launchpad. Pragyansh, an IIT Roorkee alumnus, pointed us to the event, and we will share results when SDSLabs publishes them.
 
-## Scientists who write software
+## Software for science
 
 Some of the people who most need reliable software are not software engineers. Our work with the [CoRE Stack](https://core-stack.org/) team on environmental planning tools is one example, and Smayan's recollection from IndiaFOSS is about exactly that.
 
