@@ -12,19 +12,19 @@ blurb: >-
   India, and FUN OCaml in January.
 ---
 
-FP Launchpad's charter puts [systems and community]({% post_url 2026-03-30-fp-launchpad-kickoff %}) alongside research and teaching. Between September and November we took that outside IIT Madras: to free and open-source software developers, compiler and programming-languages people, students, and climate and other scientists.
+FP Launchpad's charter puts [systems and community]({% post_url 2026-03-30-fp-launchpad-kickoff %}) alongside research and teaching. This post covers the community events we took part in between September and November.
 
 - At [IndiaFOSS 2026](https://fossunited.org/indiafoss/2026) in Bengaluru, we ran a three-hour [OCaml workshop](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/) and gave four talks.
-- At [Innovations in Compiler Technology (IICT) 2026](https://compilertech.org/), nine of us attended, Pragyansh presented the OCaml–MMTk work, and our booth was busy enough that the organisers estimated we spoke to **200+ people** on the first day alone.
+- At [Innovations in Compiler Technology (IICT) 2026](https://compilertech.org/), nine of us attended, Pragyansh presented the OCaml–MMTk work, and the organisers estimated the team spoke to more than **200 people** at our booth on the first day.
 - We sponsored two student hackathons: [SEGFAULT](https://segfault.compilertech.org/), where we funded the prizes for the two teams sharing third place, and [Syntax Error](https://hackathon.sdslabs.co/) at IIT Roorkee, which ran a functional programming track with us as Gold sponsor.
 - Three of the team went to the [Healing Earth workshop](https://3cs.ashoka.edu.in/healing-earth-workshop) on climate science and policy at Ashoka University, and three submitted proposals to [SciPy India 2026](https://scipy.in/), as we look for ways to contribute to scientific computing.
 - We are hosting [FUN OCaml](https://fun-ocaml.com/) in Bengaluru on 25–26 January 2027, and applications for the [Post-Baccalaureate Fellowship, Cohort 2]({% post_url 2026-09-24-applications-open-post-bacc-fellowship-cohort-2 %}) close on **10 December**.
 
-<p style="font-size:0.9em;color:#666;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:0.5em 0;margin:1.2em 0;"><strong>In this post:</strong> <a href="#indiafoss-2026">IndiaFOSS</a> (<a href="#the-workshop">workshop</a>, <a href="#the-talks">talks</a>) · <a href="#iict-2026-and-the-booth">IICT and the booth</a> · <a href="#two-hackathons">Hackathons</a> (<a href="#segfault">SEGFAULT</a>, <a href="#syntax-error">Syntax Error</a>) · <a href="#software-for-science">Software for science</a> (<a href="#healing-earth">Healing Earth</a>, <a href="#scipy-india">SciPy</a>) · <a href="#bringing-people-in">Bringing people in</a> · <a href="#looking-ahead">Looking ahead</a></p>
+<p style="font-size:0.9em;color:#666;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:0.5em 0;margin:1.2em 0;"><strong>In this post:</strong> <a href="#indiafoss-2026">IndiaFOSS</a> (<a href="#the-workshop">workshop</a>, <a href="#the-talks">talks</a>) · <a href="#iict-2026">IICT</a> · <a href="#two-hackathons">Hackathons</a> (<a href="#segfault">SEGFAULT</a>, <a href="#syntax-error">Syntax Error</a>) · <a href="#software-for-science">Software for science</a> (<a href="#healing-earth">Healing Earth</a>, <a href="#scipy-india">SciPy</a>) · <a href="#joining-fp-launchpad">Joining FP Launchpad</a> · <a href="#looking-ahead">Looking ahead</a></p>
 
 ## IndiaFOSS 2026
 
-[IndiaFOSS](https://fossunited.org/indiafoss/2026), run by [FOSS United](https://fossunited.org/), is India's largest free and open-source software conference. It took over the NIMHANS Convention Centre in Bengaluru from 25 to 27 September. The [September update](/blog/2026-09-fp-launchpad-update/) previewed our sessions.
+[IndiaFOSS](https://fossunited.org/indiafoss/2026), run by [FOSS United](https://fossunited.org/), is India's largest free and open-source software conference. It was held at the NIMHANS Convention Centre in Bengaluru from 25 to 27 September. The [September update](/blog/2026-09-fp-launchpad-update/) previewed our sessions.
 
 Nine of us attended: [KC Sivaramakrishnan](https://kcsrk.info) (Faculty), [Alina Banerjee](https://www.blue-indus.in/) (Research Staff), [Navaneeth Nambiar](https://www.linkedin.com/in/navaneeth-nambiar/) (Research Staff), [Vimala Soundarapandian](https://sites.google.com/view/vimala90/) (Research Scientist), [Durwasa Chakraborty](https://durwasa-chakraborty.github.io) (PhD student), [Pragyansh Chaturvedi](https://people.ubuntu.com/~r41k0u/portfolio/) (Fellow), [Smayan Agarwal](https://github.com/SmayanAgarwal) (Fellow), [Kaustubh M](https://kaustubh.page) (Fellow) and [Anirudh Sudhir](https://www.linkedin.com/in/anirudhsudhir/) (Intern).
 
@@ -71,7 +71,7 @@ On the main track on 26 September, KC gave [Textbooks that run](https://www.yout
   <figcaption style="font-size:0.9em;color:#666;margin-top:0.4em;">Navaneeth explains why benchmarking is hard, in the Compilers, Programming Languages and Systems devroom.</figcaption>
 </figure>
 
-Durwasa's recollection is about something larger than the talk, and Durwasa has since expanded it into a longer post, [From "Kundalahalli Is Not Kundalahalli Gate" to "LGTM Is Not a Theorem"](https://durwasa-chakraborty.github.io/posts/a-return-to-bangalore-for-indiafoss/).
+Durwasa has since written a longer post, [From "Kundalahalli Is Not Kundalahalli Gate" to "LGTM Is Not a Theorem"](https://durwasa-chakraborty.github.io/posts/a-return-to-bangalore-for-indiafoss/).
 
 <img src="/assets/images/people/gh-6106465.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> Durwasa
 
@@ -93,7 +93,7 @@ Durwasa's recollection is about something larger than the talk, and Durwasa has 
 >
 > Prof. [Mohit Tahiliani](https://www.linkedin.com/in/mohittahiliani)'s talk was my favorite talk. I strongly share his view that the open source revolution and really the free software revolution should be taken forward by India and Indians. I asked him how his course project avoids Hacktoberfest-style PR spam, since students are rewarded for opening PRs. He kindly explained the two-tier strategy he uses to keep NIT K's name from being diluted.
 
-### What caught our eye
+### Projects we noticed
 
 The team kept a shared channel of notes during the conference. A few projects we want to follow up on:
 
@@ -105,9 +105,9 @@ The team kept a shared channel of notes during the conference. A few projects we
 - [Redkill](https://redkill.in/), an open-source, safety-critical, formally verified real-time operating system.
 - [Package URL](https://packageurl.org/), a specification that makes it possible to track vulnerabilities at the package level.
 
-Alina noted a remark by Lokesh Chellaiya that stayed with us: being told to start on an open-source project through issues tagged "good first issue" felt like "being left blindfolded in a forest". It is a fair warning for anyone, us included, who expects newcomers to find their own way in.
+Alina noted a remark by Lokesh Chellaiya: being told to start on an open-source project through issues tagged "good first issue" felt like "being left blindfolded in a forest".
 
-## IICT 2026 and the booth
+## IICT 2026
 
 A week later, nine of us were at [IICT 2026](https://compilertech.org/) at IISc, Bengaluru, on 2–3 October: Vimala, Navaneeth, [Akhil Tulluri](https://www.linkedin.com/in/akhiltulluri/) (Research Staff), Durwasa, [Sai Venkata Krishnan](https://saivk.github.io/) (PhD student), [Vishakh Desai](https://github.com/vishakhdesai) (MS student), [B Sanjeev Reddy](https://www.linkedin.com/in/sanjeev-sde/) (MS student), [Prakhand Patel](https://www.linkedin.com/in/prakhand-patel/) (MTech student) and Pragyansh. IICT is an ACM compilers conference organised by Ashutosh, who also runs [LLVM Social Bangalore](https://www.youtube.com/@llvmsocialbangalore6067) and the SEGFAULT hackathon. The organisers' funding covered our posters, banners, stickers and booth. Pragyansh presented "OCaml-MMTk: Porting OCaml to the MMTk Garbage Collection Framework", his paper with KC on the [OCaml–MMTk integration](https://github.com/fplaunchpad/ocaml-mmtk), which connects OCaml to a toolkit of garbage collectors, in the [Day 2 morning session](https://www.youtube.com/watch?v=VdUT4RxRBPY). Vimala represented FP Launchpad at the conference's industry dinner.
 
@@ -128,7 +128,7 @@ The booth, in the AV Rama Rao Auditorium next to Google's, carried two A0 poster
   <figcaption style="font-size:0.9em;color:#666;margin-top:0.4em;">The tea break crowd at the booth on the first morning.</figcaption>
 </figure>
 
-By the organisers' estimate, the team spoke to more than 200 people on the first day, nearly all of them working in compilers and programming languages. Many visitors were interested in working with us but unsure where to start, often because they had not written OCaml before. We pointed them to the [contributor interest form](https://fplaunchpad.org/work-with-us/) and [contact@fplaunchpad.org](mailto:contact@fplaunchpad.org), and we are thinking about better first steps than a form.
+By the organisers' estimate, the team spoke to more than 200 people on the first day, nearly all of them working in compilers and programming languages. Many visitors were interested in working with us but unsure where to start, often because they had not written OCaml before. We pointed them to the [contributor interest form](https://fplaunchpad.org/work-with-us/) and [contact@fplaunchpad.org](mailto:contact@fplaunchpad.org).
 
 <figure style="margin:1.5em 0;">
   <img src="/assets/images/blog/2026-11-outreach/iict-about-poster.jpg" alt="Navaneeth, in a Hacktoberfest t-shirt, explains the white 'FP Launchpad' poster to a group of attendees in a busy corridor" style="width:100%;border-radius:6px;">
@@ -137,7 +137,7 @@ By the organisers' estimate, the team spoke to more than 200 people on the first
 
 ## Two hackathons
 
-Hackathons let us reach students before they have chosen a field. In both cases, we provided funding and the organisers ran the event.
+We sponsored two student hackathons. In both cases, we provided funding and the organisers ran the event.
 
 ### SEGFAULT
 
@@ -151,7 +151,7 @@ In October, [SDSLabs](https://sdslabs.co/), the student technical group at IIT R
 
 ## Software for science
 
-Some of the people who most need reliable software are not software engineers. Our work with the [CoRE Stack](https://core-stack.org/) team on environmental planning tools is one example, and Smayan's recollection from IndiaFOSS is about exactly that.
+Our work with the [CoRE Stack](https://core-stack.org/) team on environmental planning tools is the main way we work with scientists today. Smayan reflected on this after an IndiaFOSS panel.
 
 <img src="/assets/images/smayan-agarwal.jpg" style="width:48px;height:48px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;"> Smayan
 
@@ -161,7 +161,7 @@ Some of the people who most need reliable software are not software engineers. O
 
 ### Healing Earth
 
-Climate scientists are one of the communities we most want to work with, and we are still learning how. On 11–12 September, Smayan, Kaustubh and [S Naveen](https://github.com/Sajjan-Naveen-87) (Exchange student) went to the [Healing Earth workshop](https://3cs.ashoka.edu.in/healing-earth-workshop), run by the Centre for Climate Change and Sustainability at Ashoka University. The first day covered the science of climate change and the second its policy and governance. [Prof. Aaditeshwar Seth](https://www.cse.iitd.ac.in/~aseth/), who leads CoRE Stack at IIT Delhi, spoke on the first day.
+On 11–12 September, Smayan, Kaustubh and [S Naveen](https://github.com/Sajjan-Naveen-87) (Exchange student) went to the [Healing Earth workshop](https://3cs.ashoka.edu.in/healing-earth-workshop), run by the Centre for Climate Change and Sustainability at Ashoka University. The first day covered the science of climate change and the second its policy and governance. [Prof. Aaditeshwar Seth](https://www.cse.iitd.ac.in/~aseth/), who leads CoRE Stack at IIT Delhi, spoke on the first day.
 
 Kaustubh wrote up the science talks [on his blog](https://kaustubh.page/posts/healing-earth-workshop-ashoka-2026/). The workshop produced concrete next steps:
 
@@ -169,7 +169,7 @@ Kaustubh wrote up the science talks [on his blog](https://kaustubh.page/posts/he
 - An introduction, through Prof. Seth, to [Prof. Nipun Batra](https://nipunbatra.github.io/) at IIT Gandhinagar, who works on detecting brick kilns and the pollution they cause from geospatial data, and who thinks foundation models such as TESSERA now make that viable.
 - Follow-up meetings between Smayan and Ashoka faculty Ghazala Shahabuddin, Meghna Agarwala and Gautam Menon, on use cases ranging from afforestation to hydrological data for mapping the risk of waterborne disease in Bengaluru.
 
-Those follow-ups were also humbling: Smayan found it hard to explain to ecologists what concrete projects computer scientists like us could take on. The gap is real. We are not environmental scientists, and the honest way to close it is to keep working on TESSERA and CoRE Stack.
+Smayan found it hard to explain to ecologists what projects we could take on, and we plan to show results from TESSERA and CoRE Stack before asking again.
 
 Separately, at a [PDGI](https://pdgi.org) workshop in Bengaluru, Kaustubh described our CoRE Stack collaboration to people from GramVaani, FOSS United, IT for Change, SAFAR, Tech4Good and the Pranava Institute. Several were interested in working together. Kaustubh has since worked with FOSS United, SAFAR and PDGI on their [call for public interest technologists](https://forum.fossunited.org/t/call-for-public-interest-technologists/9211), which aims to grow India's network of technologists working in the public interest.
 
@@ -181,11 +181,11 @@ Separately, at a [PDGI](https://pdgi.org) workshop in Bengaluru, Kaustubh descri
 - Pragyansh, on using a neural network as a Linux kernel scheduler, straight from a Jupyter notebook, by extending PythonBPF to support the kernel's extensible scheduler class, sched_ext.
 - Kaustubh, on automatic data validation.
 
-The proposals are in review. Either way, we will be at SciPy India on our own campus.
+The proposals are in review.
 
-## Bringing people in
+## Joining FP Launchpad
 
-Every event above doubled as recruiting. Alina, Vimala and Kaustubh all came back with conversations about the fellowship, and at least one workshop participant has since contacted us about joining. Here is where those conversations can go next:
+Alina, Vimala and Kaustubh all came back with conversations about the fellowship, and at least one workshop participant has since contacted us about joining.
 
 - The [Post-Baccalaureate Fellowship, Cohort 2]({% post_url 2026-09-24-applications-open-post-bacc-fellowship-cohort-2 %}) offers two fully funded years of systems and functional programming research at IIT Madras. Applications close on **10 December 2026**.
 - People who cannot move to Chennai can contribute part-time through our [contributor interest form](https://fplaunchpad.org/work-with-us/).
