@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Daily digest: fetches all configured feeds, collects posts from the last 25 hours,
+Digest: fetches all configured feeds (members, friends and FPL's own blog, minus earlier
+digests), collects posts from the last 14 days,
 and writes a single _blog/ digest post. Skips posts already seen in previous digests.
 """
 
@@ -55,6 +56,7 @@ def fetch_posts_for_group(feed_list, seen_urls, since, until):
 
         require_tag = feed_info.get('require_tag')
         require_url = feed_info.get('require_url')
+        exclude_url = feed_info.get('exclude_url')
 
         for entry in parsed.entries:
             if require_tag:
@@ -65,6 +67,11 @@ def fetch_posts_for_group(feed_list, seen_urls, since, until):
             # For feeds without tags: only keep entries whose link contains this substring
             # (e.g. '/posts/' to skip short notes and site pages).
             if require_url and require_url not in entry.get('link', ''):
+                continue
+
+            # Skip entries whose link contains this substring (e.g. '-digest/' so the FPL blog
+            # feed does not pull earlier digests into a new one).
+            if exclude_url and exclude_url in entry.get('link', ''):
                 continue
 
             published = None
@@ -89,6 +96,7 @@ def fetch_posts_for_group(feed_list, seen_urls, since, until):
                 'title': entry.get('title', 'Untitled'),
                 'url': url,
                 'author': feed_info['name'],
+                'short_name': feed_info.get('short_name') or feed_info['name'].split()[0],
                 'published': published,
                 'excerpt': summary,
             })
@@ -117,9 +125,8 @@ def generate_blurb(member_posts, collaborator_posts):
     parts = []
     by_author = {}
     for post in member_posts + collaborator_posts:
-        by_author.setdefault(post['author'], []).append(post['title'])
-    for author, titles in by_author.items():
-        first_name = author.split()[0]
+        by_author.setdefault(post['short_name'], []).append(post['title'])
+    for first_name, titles in by_author.items():
         if len(titles) == 1:
             parts.append(f"<strong>{first_name}</strong>: {titles[0]}")
         else:
@@ -172,7 +179,7 @@ def main():
     seen_urls = load_seen_urls()
     since = now - timedelta(hours=WINDOW_HOURS)
 
-    member_posts = fetch_posts_for_group(feeds.get('members', []), seen_urls, since, now)
+    member_posts = fetch_posts_for_group(feeds.get('site', []) + feeds.get('members', []), seen_urls, since, now)
     collaborator_posts = fetch_posts_for_group(feeds.get('friends', []), seen_urls, since, now)
 
     if not member_posts and not collaborator_posts:
