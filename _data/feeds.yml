@@ -39,3 +39,13 @@ friends:
   - name: Harisankar Binod
     site: https://methaphur.github.io/blogs/
     feed: https://methaphur.github.io/blogs/index.xml
+
+# FP Launchpad's own blog. Read only by scripts/fetch_digest.py (listed under "FPL Members" in
+# digests); kept out of `members` so it doesn't show in the sidebar's member list.
+# exclude_url skips earlier digests so a digest never lists another digest.
+site:
+  - name: FP Launchpad
+    short_name: FP Launchpad
+    site: https://fplaunchpad.org/blog/
+    feed: https://fplaunchpad.org/feed.xml
+    exclude_url: "-digest/"
