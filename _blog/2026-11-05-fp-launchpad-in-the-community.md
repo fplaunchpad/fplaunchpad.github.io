@@ -1,7 +1,7 @@
 ---
 layout: blog-post
-title: "FP Launchpad in the community, September to November 2026"
-date: 2026-11-05
+title: "FP Launchpad in the community, September to November 2026 (Updated)"
+date: 2026-11-12
 author: Sanjay Karanth
 permalink: /blog/2026-11-fp-launchpad-in-the-community/
 published: true
