@@ -11,7 +11,7 @@ blurb: >-
   India, and FUN OCaml in January.
 ---
 
-FP Launchpad's charter puts [systems and community]({% post_url 2026-03-30-fp-launchpad-kickoff %}) alongside research and teaching. This post covers the community events we took part in between September and November.
+FP Launchpad's [charter](/charter/) puts systems and community alongside research and teaching. Since our [founding]({% post_url 2026-03-30-fp-launchpad-kickoff %}), we have been slowly ramping up our community engagement activities. The past few months have been pretty busy: this post covers the community events we took part in between September and November.
 
 - At [IndiaFOSS 2026](https://fossunited.org/indiafoss/2026) in Bengaluru, we ran a three-hour [OCaml workshop](https://fplaunchpad.org/indiafoss-2026-ocaml-workshop/) and gave four talks.
 - At [Innovations in Compiler Technology (IICT) 2026](https://compilertech.org/), nine of us attended, Pragyansh presented the OCaml–MMTk work, and the organisers estimated the team spoke to more than **200 people** at our booth on the first day.
@@ -19,13 +19,13 @@ FP Launchpad's charter puts [systems and community]({% post_url 2026-03-30-fp-la
 - Three of the team went to the [Healing Earth workshop](https://3cs.ashoka.edu.in/healing-earth-workshop) on climate science and policy at Ashoka University, and three submitted proposals to [SciPy India 2026](https://scipy.in/), as we look for ways to contribute to scientific computing.
 - We are hosting [FUN OCaml](https://fun-ocaml.com/) in Bengaluru on 25–26 January 2027, and applications for the [Post-Baccalaureate Fellowship, Cohort 2]({% post_url 2026-09-24-applications-open-post-bacc-fellowship-cohort-2 %}) close on **10 December**.
 
-<p style="font-size:0.9em;color:#666;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:0.5em 0;margin:1.2em 0;"><strong>In this post:</strong> <a href="#indiafoss-2026">IndiaFOSS</a> (<a href="#the-workshop">workshop</a>, <a href="#the-talks">talks</a>) · <a href="#iict-2026">IICT</a> · <a href="#two-hackathons">Hackathons</a> (<a href="#segfault">SEGFAULT</a>, <a href="#syntax-error">Syntax Error</a>) · <a href="#software-for-science">Software for science</a> (<a href="#healing-earth">Healing Earth</a>, <a href="#scipy-india">SciPy</a>) · <a href="#joining-fp-launchpad">Joining FP Launchpad</a> · <a href="#looking-ahead">Looking ahead</a></p>
+<p style="font-size:0.9em;color:#666;border-top:1px solid #eee;border-bottom:1px solid #eee;padding:0.5em 0;margin:1.2em 0;"><strong>In this post:</strong> <a href="#indiafoss-2026">IndiaFOSS</a> (<a href="#the-workshop">workshop</a>, <a href="#the-talks">talks</a>) · <a href="#innovations-in-compiler-technology-iict-2026">IICT</a> · <a href="#two-hackathons">Hackathons</a> (<a href="#segfault">SEGFAULT</a>, <a href="#syntax-error">Syntax Error</a>) · <a href="#software-for-science">Software for science</a> (<a href="#healing-earth">Healing Earth</a>, <a href="#scipy-india">SciPy</a>) · <a href="#joining-fp-launchpad">Joining FP Launchpad</a> · <a href="#collaborating-with-fp-launchpad">Collaborating with FP Launchpad</a> · <a href="#looking-ahead">Looking ahead</a></p>
 
 ## IndiaFOSS 2026
 
-[IndiaFOSS](https://fossunited.org/indiafoss/2026), run by [FOSS United](https://fossunited.org/), is India's largest free and open-source software conference. It was held at the NIMHANS Convention Centre in Bengaluru from 25 to 27 September. The [September update](/blog/2026-09-fp-launchpad-update/) previewed our sessions.
+[IndiaFOSS](https://fossunited.org/indiafoss/2026), run by [FOSS United](https://fossunited.org/), is India's largest free and open-source software conference. FOSS United are friends of ours, and some FPL members, like [KC Sivaramakrishnan](https://kcsrk.info) and [Kaustubh M](https://kaustubh.page), have been participating in their events since before we were founded. IndiaFOSS 2026 was held at the NIMHANS Convention Centre in Bengaluru from 25 to 27 September. The [September update](/blog/2026-09-fp-launchpad-update/) previewed our sessions.
 
-Nine of us attended: [KC Sivaramakrishnan](https://kcsrk.info) (Faculty), [Alina Banerjee](https://www.blue-indus.in/) (Research Staff), [Navaneeth Nambiar](https://www.linkedin.com/in/navaneeth-nambiar/) (Research Staff), [Vimala Soundarapandian](https://sites.google.com/view/vimala90/) (Research Scientist), [Durwasa Chakraborty](https://durwasa-chakraborty.github.io) (PhD student), [Pragyansh Chaturvedi](https://people.ubuntu.com/~r41k0u/portfolio/) (Fellow), [Smayan Agarwal](https://github.com/SmayanAgarwal) (Fellow), [Kaustubh M](https://kaustubh.page) (Fellow) and [Anirudh Sudhir](https://www.linkedin.com/in/anirudhsudhir/) (Intern).
+Nine of us attended: KC (Faculty), [Alina Banerjee](https://www.blue-indus.in/) (Research Staff), [Navaneeth Nambiar](https://www.linkedin.com/in/navaneeth-nambiar/) (Research Staff), [Vimala Soundarapandian](https://sites.google.com/view/vimala90/) (Research Scientist), [Durwasa Chakraborty](https://durwasa-chakraborty.github.io) (PhD student), [Pragyansh Chaturvedi](https://people.ubuntu.com/~r41k0u/portfolio/) (Fellow), [Smayan Agarwal](https://github.com/SmayanAgarwal) (Fellow), Kaustubh (Fellow) and [Anirudh Sudhir](https://www.linkedin.com/in/anirudhsudhir/) (Intern).
 
 We ran one workshop and gave four talks: one on the main track and three in the Compilers, Programming Languages and Systems devroom.
 
@@ -56,6 +56,8 @@ The room was mixed: roughly a third already knew a functional language, and clos
 > Overall, the participants seemed to enjoy the workshop and found it useful, and my other team members did a great job as well. We could have reduced the amount of content slightly to leave more time for the games at the end, which were one of the most interesting parts of the workshop. One of the students who attended the workshop later met me at the IICT conference and mentioned that she enjoyed the workshop and was interested in applying for the Post-Bacc Fellowship at FP Launchpad. Overall, it was a great experience, and I hope to learn from these lessons and make my next workshop even better.
 
 When the team met to review the workshop, the broadest complaint from participants was simple: we covered too much. For the next run, we will cut content, split beginners from people who already know a functional language, rework the most convoluted exercise (a nested pattern match that confused even experienced programmers), and collect contact details so participants can hear about future events.
+
+In the long term, we aim to keep improving the workshop contents, make several variants for audiences of differing sophistication, incorporate feedback from more live sessions, and keep it all [in public](https://github.com/fplaunchpad/indiafoss-2026-ocaml-workshop) for others to take, use, and improve.
 
 ### The talks
 
@@ -106,7 +108,9 @@ The team kept a shared channel of notes during the conference. A few projects we
 
 Alina noted a remark by Lokesh Chellaiya: being told to start on an open-source project through issues tagged "good first issue" felt like "being left blindfolded in a forest".
 
-## IICT 2026
+As our projects mature, we are working on making it easier for outsiders to contribute to our open-source projects. We have already [processed a few requests](https://github.com/fplaunchpad/public_docs/blob/main/volunteers.md). See the [Joining FP Launchpad](#joining-fp-launchpad) section below for more.
+
+## Innovations in Compiler Technology (IICT) 2026
 
 A week later, nine of us were at [IICT 2026](https://compilertech.org/) at IISc, Bengaluru, on 2–3 October: Vimala, Navaneeth, [Akhil Tulluri](https://www.linkedin.com/in/akhiltulluri/) (Research Staff), Durwasa, [Sai Venkata Krishnan](https://saivk.github.io/) (PhD student), [Vishakh Desai](https://github.com/vishakhdesai) (MS student), [B Sanjeev Reddy](https://www.linkedin.com/in/sanjeev-sde/) (MS student), [Prakhand Patel](https://www.linkedin.com/in/prakhand-patel/) (MTech student) and Pragyansh. IICT is an ACM compilers conference organised by [Ashutosh](https://www.linkedin.com/in/ashupdsce/), who also runs [LLVM Social Bangalore](https://www.youtube.com/@llvmsocialbangalore6067) and the SEGFAULT hackathon, and founded the student-run open-source community [Point Blank](https://pointblank.club/). [Ashutosh](https://www.linkedin.com/in/ashupdsce/) has been active in India's FOSS communities for years and supports much of our community outreach: the devroom at IndiaFOSS, our booth at IICT, and [FUN OCaml](https://fun-ocaml.com/) in January, where [Ashutosh](https://www.linkedin.com/in/ashupdsce/) is our point person in Bengaluru and is doing a great deal of the on-the-ground organising. At IICT, the organisers kindly covered the cost of our posters, banners, stickers and booth. Pragyansh presented "OCaml-MMTk: Porting OCaml to the MMTk Garbage Collection Framework", his paper with KC on the OCaml–MMTk integration, which connects OCaml to a toolkit of garbage collectors (code: [ocaml-mmtk](https://github.com/fplaunchpad/ocaml-mmtk) and our [mmtk-core fork](https://github.com/fplaunchpad/mmtk-core)), in the [Day 2 morning session](https://www.youtube.com/watch?v=VdUT4RxRBPY). Vimala represented FP Launchpad at the conference's industry dinner.
 
@@ -197,6 +201,10 @@ All of the code linked above is open, and most of these projects welcome contrib
   <img src="/assets/images/blog/2026-11-outreach/poster-funocaml.jpg" alt="Poster: FUN OCaml Conference and Workshops, Bengaluru, January 25 and 26, 2027, hosted by FP Launchpad and IIT Madras, at MLR Convention Centre" style="flex:1 1 240px;max-width:49%;border-radius:6px;">
 </div>
 
+## Collaborating with FP Launchpad
+
+We are always happy to support other organisations involved in FOSS, programming languages, systems, formal verification, software engineering, AI, or other areas of overlap, on research projects, events, conferences, competitions and hackathons, and open-source projects. If you see an opportunity for collaboration, please reach out to [contact@fplaunchpad.org](mailto:contact@fplaunchpad.org).
+
 ## Looking ahead
 
 Our [Programming Languages Winter School](https://fplaunchpad.org/winter-school-2026/) runs from 7 to 11 December in Turing Hall, Dept of CS, IIT Madras. Later that month, we will be at SciPy India on 19–20 December.
@@ -205,4 +213,4 @@ Our [Programming Languages Winter School](https://fplaunchpad.org/winter-school-
 
 If you met us at one of these events, we would like to hear from you at [contact@fplaunchpad.org](mailto:contact@fplaunchpad.org). For news of future events and openings, join our [Zulip](https://fplaunchpad.zulipchat.com/join/xc4hb7eprn2xidfgpkamor5q/) or follow us on [X](https://x.com/fp_launchpad) and [LinkedIn](https://www.linkedin.com/company/fp-launchpad/).
 
-We thank [Ashutosh](https://www.linkedin.com/in/ashupdsce/) and the IICT and SEGFAULT volunteers, FOSS United and the IndiaFOSS organisers, SDSLabs, and CDAC.
+We thank [Ashutosh](https://www.linkedin.com/in/ashupdsce/) and the IICT and SEGFAULT volunteers, FOSS United and the IndiaFOSS organisers, and SDSLabs for their partnership.
