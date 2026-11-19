@@ -207,7 +207,7 @@ We are always happy to support other organisations involved in FOSS, programming
 
 ## Looking ahead
 
-Our [Programming Languages Winter School](https://fplaunchpad.org/winter-school-2026/) runs from 7 to 11 December in Turing Hall, Dept of CS, IIT Madras. Later that month, we will be at SciPy India on 19–20 December.
+Our [Programming Languages Winter School](https://fplaunchpad.org/winter-school-2026/) runs from 7 to 11 December in CS15, Department of CSE, IIT Madras. Later that month, we will be at SciPy India on 19–20 December.
 
 [FUN OCaml](https://fun-ocaml.com/) comes to the MLR Convention Centre in Bengaluru on **25–26 January 2027**, the first FUN OCaml in India, which we are organising with [Ashutosh](https://www.linkedin.com/in/ashupdsce/) as our point person in Bengaluru. The first day has a keynote and talks, with the venue open until midnight for socialising and hacking; the second day has workshops and hands-on hacking on OCaml projects. [Tickets](https://conf.code.iitm.ac.in/conf/Fun_OCaml_2027/login) are open to students and developers at every level, and you do not need a talk to attend.
 

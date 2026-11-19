@@ -6,7 +6,7 @@ permalink: /education/
 
 ## Winter School 2026
 
-The [FP Launchpad PL Winter School](/winter-school-2026/) runs from 7–11 December 2026 in SSB 334, IIT Madras. Explore six modules on programming languages, verification, and runtime systems. Applications to attend will open soon.
+The [FP Launchpad PL Winter School](/winter-school-2026/) runs from 7–11 December 2026 in CS15, Department of CSE, IIT Madras. Explore six modules on programming languages, verification, and runtime systems. Applications to attend will open soon.
 
 ## OCaml
 
